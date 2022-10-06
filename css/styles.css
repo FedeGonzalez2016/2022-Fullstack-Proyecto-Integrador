@@ -11,3 +11,6 @@ html{
 }
 /*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
 /* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
+div {
+    /*border: 1px solid;*/
+ }
