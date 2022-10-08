@@ -69,7 +69,7 @@ body {
     color:var(--color-claro);
 }
 
-
+.form-floating {margin-bottom: 2rem;}
 .form-signin {
     max-width: 30vw;
     min-width: 400px;
@@ -78,7 +78,6 @@ body {
   
   .form-signin input {
     /* width:10rem; */
-    margin-bottom: 2rem;
     border:none;
     border-bottom: 2px solid var(--color-claro);  
     background-color: transparent;
@@ -91,10 +90,34 @@ body {
     text-decoration: none;
     color:var(--color-claro);
   }
+  /* input[type="checkbox"]:enabled:checked {
+    
+    background-color: #aa1d24 !important;
+    color: white;
+} */
+
+input[type='checkbox'] {
+    accent-color: var(--segundo-complementario);
+}
+  .backToMenu{
+    text-decoration: none;
+    color:var(--segundo-complementario);
+    font-size:1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+  }
   a:hover {
-    color: var(--segundo-complementario);
+    color: var(--tercer-complementario);
 }
 .footer{
     background-color: var(--color-oscuro);
     color:var(--color-claro);
+}
+
+.errorDato{
+    background-color: var(--tercer-complementario);
+    color: var(--color-claro);
+    font-style: italic;
+    
 }
