@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel California - LogIn</title>
+    <title>Hotel California - Registro</title>
     <!-- Aca va el nombre de la pagina por ejemplo "pizzeria don roque" y es lo que se muestra en la pestaña del navegador -->
 
     <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
     <link rel="stylesheet" href="../libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/LogIn.css" />
+    <link rel="stylesheet" href="../css/registro.css" />
   </head>
 
   <body class="sinClase">
     <div class="form-signin w-100 m-auto text-center">
       <div class="row justify-content-center" >
-      <img class="img-fluid d-block mx-auto mb-4 logohc" src="../img/LogoHC.png" alt="LogoHC" width="100" height="">
+      <img class="img-fluid d-block mx-auto mb-4 logohc" src="../img/LogoHC.png" alt="LogoHC" width="75" height="">
       <h1 class="display-5 fw-bold hotelName"> Hotel California </h1>
       <h4 class="subtitle"> Hotel & Spa </h4>
       </div>
@@ -28,56 +28,88 @@
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" reequired>
-                  <label for="floatingInput">Nombre </label>
+                  <input type="text" class="form-control" id="floatingInputN" placeholder="Nombre" reequired>
+                  <label for="floatingInputN">Nombre </label>
                   <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Apellido" reequired>
-                  <label for="floatingInput">Nombre </label>
+                  <input type="text" class="form-control" id="floatingInputA" placeholder="Apellido" reequired>
+                  <label for="floatingInputA">Apellido </label>
                   <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                teléfono
+                <div class="form-floating">
+                  <input type="tel" class="form-control" id="floatingInputT" placeholder="Teléfono" reequired>
+                  <label for="floatingInputT">Teléfono </label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>
               </div>
               <div class="col-md order-last">
-                ciudad
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputC" placeholder="Ciudad" reequired>
+                  <label for="floatingInputC">Ciudad</label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                Nombre de usuario 
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputNU" placeholder="Nombre de usuario" reequired>
+                  <label for="floatingInputNU">Nombre de usuario</label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>
               </div>
               <div class="col-md order-last">
-                Fecha de nacimiento
+                <div class="form-floating">
+                  <input type="date" class="form-control" id="floatingInputD" placeholder="Fecha de Nacimiento" reequired>
+                  <label for="floatingInputD">Fecha de Nacimiento </label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                Email
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInputE" placeholder="nombre@email.com" reequired>
+                  <label for="floatingInputE">Email</label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>              
               </div>
               <div class="col-md order-last">
-                Repetir email
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInputRE" placeholder="nombre@email.com" reequired>
+                  <label for="floatingInputRE"> Repetir email</label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                contraseña
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingInputP" placeholder="Elige una contraseña" reequired>
+                  <label for="floatingInputP">COntraseña</label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>
               </div>
               <div class="col-md order-last">
-                reptetir contraseña
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingInputRP" placeholder="Repite tu contraseña" reequired>
+                  <label for="floatingInputRP">Repetir contraseña</label>
+                  <span class="errorDato"> Este campo es requerido</span>
+                </div>
               </div>
             </div>
           </div>
           <!-- End Example Code -->
           
           <button class="w-100 btn btn-lg btn-complementario" type="submit">Registrarme</button>
-          <p class="mt-5 mb-3">Ya estás registrado? <strong><a href="..pages/LogIn.html" class="registrate"> Iniciá sesión </strong> </a> </p>
+          <p class="mt-5 mb-3">Ya estás registrado? <strong><a href="./LogIn.html" class="logIn"> Iniciá sesión </strong> </a> </p>
         </form>
         </div>         
       </div>
