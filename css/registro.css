@@ -47,6 +47,10 @@ body {
     width: 150px;
     margin-bottom: 0.5rem;
 }
+input, label {
+    margin: .4rem 0;
+  color:var(--color-claro);
+}
 .hotelName{
     margin-bottom: 0.1rem;
 }
