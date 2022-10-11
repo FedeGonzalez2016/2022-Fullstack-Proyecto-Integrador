@@ -11,3 +11,12 @@ html{
 }
 /*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
 /* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
+:root{
+    --color-principal:#33464e;
+    --primer-complementario:#afb0b1;
+    --segundo-complementario:#d7794a;
+    --tercer-complementario: #89553b ;
+    --color-oscuro: #384043;
+    --color-claro: #dfe2e3;
+    --resaltador: #a3b4b9;  
+}
