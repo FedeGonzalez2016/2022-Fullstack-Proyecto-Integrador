@@ -20,3 +20,42 @@ html{
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;  
 }
+ header {
+    background-image:url("../img/campanilla.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 45rem;
+    font-size: 2rem;
+   
+
+  }
+
+ nav > ul {
+    width: 70vw;
+    display: flex;
+   }
+
+
+.titulo {
+    color: var(--color-principal);
+
+}
+footer{
+    background-color: var(--color-oscuro);
+    color:var(--color-claro);
+}
+a {
+    color: var(--color-principal)
+   }
+   a:hover {
+       color: var(--tercer-complementario);
+   }
+   .row {
+    background-color:white;
+   }
+   .botonesInicio {
+    padding: 1rem;
+   }
