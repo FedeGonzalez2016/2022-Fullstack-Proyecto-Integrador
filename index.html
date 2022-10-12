@@ -8,8 +8,8 @@
 
 
     <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
-    <link rel="stylesheet" href="../libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/LogIn.css" />
+    <link rel="stylesheet" href="../2022-Fullstack-Proyecto-Integrador/libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../2022-Fullstack-Proyecto-Integrador/css/styles.css" />
   </head> <!-- no borrar -->
 
 
@@ -19,59 +19,49 @@
 
     <!-- 1) Headder >>> lo hace  VALEN --> 
     <header>
-      <div class="container-fluid">
-      <link rel="stylesheet" href="../2022-Fullstack-Proyecto-Integrador/libs/bootstrap-5.2.2-dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="../2022-Fullstack-Proyecto-Integrador/css/styles.css"/>
-
-      <div class="row">
+      <div id="logo" class="row">
         <div class="col-1">
-          <img src="../2022-Fullstack-Proyecto-Integrador/img/LogoHC.png" alt="Logo Hotel" width="100" height="">
+          <img class="img-fluid mx-auto mb-4 logohc" src="../2022-Fullstack-Proyecto-Integrador/img/LogoHC.png" alt="Logo Hotel" width="100" height="">
         </div>
         <div class="col-1">
           <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
           <h4 class="subtitle"> Hotel & Spa </h4>
         </div>
-       <div class="col-2 text-end">
-          <a  href="../2022-Fullstack-Proyecto-Integrador/pages/LogIn.html" class="botonesInicio" target="_blank" >Ingresar</a>
+        <div class="col">
+          <navbar id= "menu">
+            <ul>
+              <li><a  href="../2022-Fullstack-Proyecto-Integrador/pages/LogIn.html" class="botonesInicio" target="_blank" >Ingresar</a></li>
+              <li><a href="../2022-Fullstack-Proyecto-Integrador/pages/registro.html" class="botonesInicio"  target="_blank">Regístrate</a></li>
+              <li><a href="../2022-Fullstack-Proyecto-Integrador/pages/contacto.html" class="botonesInicio"  target="_blank">Consulta</a></li>
+            </ul>
+          </navbar>
         </div>
-        <div class="col-2 text-end">
-          <a href="../2022-Fullstack-Proyecto-Integrador/pages/registro.html" class="botonesInicio"  target="_blank">Regístrate</a>
-        </div>
-        <div class="col-2 text-end">
-          <a href="../2022-Fullstack-Proyecto-Integrador/pages/contacto.html" class="botonesInicio"  target="_blank">Contacto</a>
-        </div>
-        
       </div>
-        <!-- a) NavBar con navegacion a las secciones que hace tincho --> 
-        <div class="NavBar">
-      <ul class="nav justify-content-end">
-          <li class="nav-item">
-              <a href=#nuestrahistoria class="nav-link link-secondary" >Nuestra historia</a> 
+
+      <nav id="inicio">
+        <ul>
+          <li>
+              <a href=#nuestrahistoria >Nuestra historia</a> 
           </li>
-          <li class="nav-item">
-              <a href=#servicios class="nav-link link-secondary" >Servicios</a>
+          <li>
+              <a href=#servicios  >Servicios</a>
           </li>
-          <li class="nav-item">
-              <a href=#instalaciones class="nav-link link-secondary">Instalaciones</a>
+          <li>
+              <a href=#instalaciones>Instalaciones</a>
           </li>
-          <li class="nav-item">
-              <a href=#habitaciones class="nav-link link-secondary">Habitaciones</a>
+          <li>
+              <a href=#habitaciones >Habitaciones</a>
           </li>
-          <li class="nav-item">
-              <a href=#Contacto class="nav-link link-secondary">Contacto</a>
+          <li>
+              <a href=#contacto >Contacto</a>
           </li>
               
         </ul>
-       </div>
-
-      
-    
-        <!-- nosotros - servicios  - testimonios  - Instalaciones  -  Habitaciones  - Contacto -->
-    
+      </nav>
+      <div class="mensajeBienvenida">
+        <h1 class="welcome">WELCOME TO</h1><h1 class="calHot">CALIFORNIA HOTEL</h1>
       </div>
-    </header>  <!-- no borrar -->
-
-
+    </header>
 
     <section> <!-- no borrar -->
      <!-- a) nosotros -->
@@ -87,17 +77,42 @@
     </section> <!-- no borrar -->
 
 
-
-    <!-- 9) Footer o pie de pagina >>> Lo hace  VALEN -->
-    <footer> <!-- no borrar -->
+    <footer class="footer-distributed"id="contacto">
+      <div class="link">
       <a href="../2022-Fullstack-Proyecto-Integrador/index.html" class="backToMenu">IR AL INICIO</a>
-        <p> No copyright</p>
-        <!-- a) boton scrollup suave  --> 
-        
-        <!-- b) parte verde ver imagen de boceto  --> 
-        <!-- c) parte megra ver imagen de boceto  --> 
-
-    </footer> <!-- no borrar -->
+      </div>
+      <div class="footer-contacto">
+        <div>
+          <i class="bi bi-geo-alt"></i>
+            <p><span>Colón 765</span> Córdoba, Córdoba</p>
+        </div>
+        <div>
+          <i class="bi bi-telephone"></i>
+            <p>+54 9 35142363836</p>
+        </div>
+        <div>
+					<i class="bi bi-envelope"></i>
+					<p><a href="mailto:example@example.com">example@example.com</a></p>
+				</div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-legal">
+            <span>Legales</span>
+            Ante cualquier duda o consulta sobre nuestros Términos y condiciones por favor contáctese por nuestros medios habilitados.
+          </p>
+        </div>
+        <div class="footer-left">
+          <p class="footer-company-name">Company Name © 2015. Todos los derechos reservados</p>
+        </div> 
+        <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+        </div>
+    </footer>
+    <!-- 9) Footer o pie de pagina >>> Lo hace  VALEN -->
+    
 
     <!-- no borrar --> <script src="./libs/boostrap/js/bootstrap.min.js"></script> <!-- no borrar -->
     
