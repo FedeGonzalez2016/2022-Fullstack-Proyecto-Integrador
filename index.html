@@ -8,8 +8,8 @@
 
 
     <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
-    <link rel="stylesheet" href="../libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="../css/LogIn.css" />
+    <link rel="stylesheet" href="../2022-Fullstack-Proyecto-Integrador/libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../2022-Fullstack-Proyecto-Integrador/css/styles.css" />
   </head> <!-- no borrar -->
 
     
@@ -18,137 +18,54 @@
     
 
 <body> <!-- no borrar -->
-    <div class="info"> <!-- links a las paginas para usar en la NabBar -->
-        <a href="pages/LogIn.html">Login</a>
-        <a href="pages/registro.html">Registro</a>
-        <a href="pages/contacto.html">Contacto</a>
-    </div>
+ 
+
 
     <!-- 1) Headder >>> lo hace  VALEN --> 
-    <header>  <!-- no borrar -->
-        <!-- a) Logo  --> 
-        <img class="img-fluid d-block mx-auto mb-4 logohc" src="/img/LogoHC.png" alt="Logo Hotel" width="100" height="">
-        <h1 class="display-5 fw-bold hotelName"> Hotel California </h1>
-        <h4 class="subtitle"> Hotel & Spa </h4>
-        <!-- a) Link Login  -->
-        <a href="file:///C:/Users/valen/Desktop/proyecto-integrador/2022-Fullstack-Proyecto-Integrador/pages/LogIn.html" target="_blank">Login</a>
-
-        <!-- a) Link registro  --> 
-        <a href="file:///C:/Users/valen/Desktop/proyecto-integrador/2022-Fullstack-Proyecto-Integrador/pages/registro.html" target="_blank">Regístrate</a>
-        <!-- a) NavBar con navegacion a las secciones que hace tincho --> 
-        <nav id="navbar" class="nav">
+    <header>
+      <div id="logo" class="row">
+        <div class="col-1">
+          <img class="img-fluid mx-auto mb-4 logohc" src="../2022-Fullstack-Proyecto-Integrador/img/LogoHC.png" alt="Logo Hotel" width="100" height="">
+        </div>
+        <div class="col-1">
+          <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
+          <h4 class="subtitle"> Hotel & Spa </h4>
+        </div>
+        <div class="col">
+          <navbar id= "menu">
             <ul>
-              <li>
-                <a href=#nuestrahistoria class="nav-link">Nuestra historia</a></li>
-               <li>
-              <a href=#servicios class="nav-link">Servicios</a></li>
-              <li>
-                <a href=#instalaciones class="nav-link">Instalaciones</a></li>
-              <li>
-                <a href=#habitaciones class="nav-link">Habitaciones</a></li>
-              <li>
-                <a href=#Contacto class="nav-link">Contacto</a></li>
+              <li><a  href="../2022-Fullstack-Proyecto-Integrador/pages/LogIn.html" class="botonesInicio" target="_blank" >Ingresar</a></li>
+              <li><a href="../2022-Fullstack-Proyecto-Integrador/pages/registro.html" class="botonesInicio"  target="_blank">Regístrate</a></li>
+              <li><a href="../2022-Fullstack-Proyecto-Integrador/pages/contacto.html" class="botonesInicio"  target="_blank">Consulta</a></li>
             </ul>
-           </nav>
-        <!-- nosotros - servicios  - testimonios  - Instalaciones  -  Habitaciones  - Contacto -->
-
-
-    </header>  <!-- no borrar -->
-<br><br><br><br><br>
-<!--
-    <section class="container"> Section de Tincho
-        <div class="container border">Esto es un espacio en blanco</div>
-        <div class="container border text-center">Such a lovely place</div>
-        <div class="container border text-center">Description</div>
-
-        <div class="container px-4 w-100">
-            <div class="row gx-5">
-              <div class="col">
-               <div class="p-3 border bg-light">Container 1 con padding personalizado</div>
-               <div class="container border "><img src="/img/Body/Spa - istockphoto-508423677-612x612.jpg" alt=""></div>
-                <div class="container border text-center">Subtítulo1: Spa</div>
-                <div class="container border text-center">Descripción1: Spa - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Container 2 con padding personalizado</div>
-                <div class="container border"><img src="/img/Body/Swimming pool - urbanization-vertical-image-palm-tree-243790122.jpg" alt=""></div>
-                <div class="container border text-center">Subtítulo2: Swimming Pool</div>
-                <div class="container border text-center">Descripción2: Swimming Pool - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">Container 3 Padding de columna personalizado</div>
-                <div class="container border"><img src="/img/Body/chef.jpg" alt=""></div>
-                <div class="container border text-center">Subtítulo3: Chef</div>
-                <div class="container border text-center">Descripción3: Chef - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
-              </div>
-            </div>
+          </navbar>
         </div>
+      </div>
 
-        <div class="container border">
-            <div class="container border">Container1
-                <div class="container border"><img src="" alt=""></div>
-                <div class="container border text-center">Subtítulo1: Spa</div>
-                <div class="container border text-center">Descripción1: Spa - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
-            </div>
-            
-            <div class="container border">Container2
-                <div class="container border"><img src="" alt=""></div>
-                <div class="container border text-center">Subtítulo2: Swimming Pool</div>
-                <div class="container border text-center">Descripción2: Swimming Pool - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
-            </div>
-
-            <div class="container border">Container3
-                <div class="container border"><img src="" alt=""></div>
-                <div class="container border text-center">Subtítulo3: Chef</div>
-                <div class="container border text-center">Descripción3: Chef - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
-            </div>
-
-        </div>
-
-        <div class="container border text-center">Título2: Our Gallery (fotos)</div>
-        <div class="container border">
-          <div class="row">
-            <div class="col-4">Descripción de Gallery - Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque omnis perspiciatis rerum quos, facilis alias explicabo libero ea? Unde id deserunt aut aperiam blanditiis ducimus labore minima odio delectus beatae.</div>
-          </div>
-        </div>
-       
-
-        <div id="galeria" class="container border w-100">
-            <div class="row align-items-start img-fluid">
-              <div class="col-lg-2 col-md-4 col-sm-1 item1">
-                <img src="/img/Body/Hotel1.jpg" alt="">
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-1 item2">
-                <img src="/img/Body/Hotel2.jpg" alt="">
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-1 item3">
-                <img src="/img/Body/Hotel3.jpg " alt="">
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-1 item4">
-                <img src="/img/Body/Hotel4.jpg" alt="">
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-1 item5">
-                <img src="/img/Body/Hotel5.jpg" alt="">
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-1 item6">
-                <img src="/img/Body/Hotel6.jpg" alt="">
-              </div>
-            </div>
-        </div>
-
-
-        <div class="container border"> Container de carrousel o fotos finales
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-
-    </section>
--->
-
-    <!-- 6) Seccion Principal >>> lo hace  -->
+      <nav id="inicio">
+        <ul>
+          <li>
+              <a href=#nuestrahistoria >Nuestra historia</a> 
+          </li>
+          <li>
+              <a href=#servicios  >Servicios</a>
+          </li>
+          <li>
+              <a href=#instalaciones>Instalaciones</a>
+          </li>
+          <li>
+              <a href=#habitaciones >Habitaciones</a>
+          </li>
+          <li>
+              <a href=#contacto >Contacto</a>
+          </li>
+              
+        </ul>
+      </nav>
+      <div class="mensajeBienvenida">
+        <h1 class="welcome">WELCOME TO</h1><h1 class="calHot">CALIFORNIA HOTEL</h1>
+      </div>
+    </header>
 
     <section> <!-- no borrar -->
      <!-- a) nosotros -->
@@ -164,15 +81,42 @@
     </section> <!-- no borrar -->
 
 
-
+    <footer class="footer-distributed"id="contacto">
+      <div class="link">
+      <a href="../2022-Fullstack-Proyecto-Integrador/index.html" class="backToMenu">IR AL INICIO</a>
+      </div>
+      <div class="footer-contacto">
+        <div>
+          <i class="bi bi-geo-alt"></i>
+            <p><span>Colón 765</span> Córdoba, Córdoba</p>
+        </div>
+        <div>
+          <i class="bi bi-telephone"></i>
+            <p>+54 9 35142363836</p>
+        </div>
+        <div>
+					<i class="bi bi-envelope"></i>
+					<p><a href="mailto:example@example.com">example@example.com</a></p>
+				</div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-legal">
+            <span>Legales</span>
+            Ante cualquier duda o consulta sobre nuestros Términos y condiciones por favor contáctese por nuestros medios habilitados.
+          </p>
+        </div>
+        <div class="footer-left">
+          <p class="footer-company-name">Company Name © 2015. Todos los derechos reservados</p>
+        </div> 
+        <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+        </div>
+    </footer>
     <!-- 9) Footer o pie de pagina >>> Lo hace  VALEN -->
-    <footer> <!-- no borrar -->
-        <p> No copyright</p>
-        <!-- a) boton scrollup suave  --> 
-        <!-- b) parte verde ver imagen de boceto  --> 
-        <!-- c) parte megra ver imagen de boceto  --> 
-
-    </footer> <!-- no borrar -->
+    
 
     <!-- no borrar --> <script src="./libs/boostrap/js/bootstrap.min.js"></script> <!-- no borrar -->
     

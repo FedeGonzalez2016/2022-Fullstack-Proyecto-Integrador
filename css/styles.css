@@ -20,3 +20,157 @@ html{
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;  
 }
+ header {
+    background-image: url("../img/campanilla.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
+    
+  }
+#menu{
+   
+    text-transform: uppercase;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    display: inline-block;
+    margin-right:10px;
+    float: right;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size:small;
+}
+#menu a:hover {
+    color: var(--tercer-complementario)
+}
+
+#logo {
+    background-color: white;
+    text-align: justify;
+    line-height: 20px;
+
+    }
+
+    
+#inicio ul{
+    line-height: 46px;
+    text-align: right;
+    list-style: none;
+    text-transform: uppercase;
+    background-color: var(--color-principal);
+    
+}
+
+#inicio ul li{
+    display: inline-block;
+    font-size:x-large;
+    margin-right:30px;
+    
+
+}
+#inicio a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 75px;
+
+}
+#inicio a:hover{
+    color:black;
+    
+}
+
+.mensajeBienvenida{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:end;
+    padding: 10rem;
+    margin: 21rem auto;
+}
+.calHot{
+    color: var(--segundo-complementario);
+}
+ footer {
+    width: 65%;
+    display: inline-block;
+    height: 40vh;
+    text-align: center;
+    font-size: 20   px;
+    text-decoration: none;
+  } 
+  .footer-distributed{
+	background-color: var(--color-oscuro);
+    background-size:cover;
+	width: 100%;
+	text-align: left;
+    font-size:small;
+	padding: 20px 50px;
+}
+.link{
+    text-align: right;
+    font-size: medium;
+}
+.footer-distributed .footer-contacto,
+.footer-distributed .footer-right, 
+.footer-distributed .footer-left{
+	display: inline-block;
+	vertical-align: top;
+}
+.footer-distributed .footer-contacto{
+	width: 65%;
+    text-align: left;
+}
+.footer-distributed .footer-contacto i.bi-envelope{
+	font-size: 28px;
+	line-height: 40px;
+
+}
+a{
+    color:var(--color-claro)
+}
+a:hover{
+    color:var(--segundo-complementario) ;
+}
+.footer-distributed .footer-contacto p{
+	display: inline-block;
+	color: var(--resaltador);
+    font-weight:400;
+	margin:10;
+}
+
+.footer-distributed .footer-contacto p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:4;
+}
+.footer-distributed .footer-left{
+	width: 65%;
+}
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	margin: -1rem
+}
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-legal{
+	line-height: 30px;
+	color:  var(--primer-complementario);
+	font-size: 13px;
+	
+	margin: 0;
+}
+
+.footer-distributed .footer-company-legal span{
+	display: block;
+	color: var(--primer-complementario);
+	font-size: 14px;
+	margin-bottom: 20px;
+}
