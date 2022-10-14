@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/733d0a15ac.js" crossorigin="anonymous"></script>
     <title>Hotel California - Bienvenides</title> <!-- Aca va el nombre de la pagina por ejemplo "pizzeria don roque" y es lo que se muestra en la pestaña del navegador -->
 
 
@@ -21,7 +22,7 @@
     <header>
       <div id="logo" class="row">
         <div class="col-1">
-          <img class="img-fluid mx-auto mb-4 logohc" src="../2022-Fullstack-Proyecto-Integrador/img/LogoHC.png" alt="Logo Hotel" width="100" height="">
+          <img class="img-fluid mx-auto mb-4 logohc" src="./img/LogoHC.png" alt="Logo Hotel" width="100" height="">
         </div>
         <div class="col-1">
           <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
@@ -30,9 +31,9 @@
         <div class="col">
           <navbar id= "menu">
             <ul>
-              <li><a  href="../2022-Fullstack-Proyecto-Integrador/pages/LogIn.html" class="botonesInicio" target="_blank" >Ingresar</a></li>
-              <li><a href="../2022-Fullstack-Proyecto-Integrador/pages/registro.html" class="botonesInicio"  target="_blank">Regístrate</a></li>
-              <li><a href="../2022-Fullstack-Proyecto-Integrador/pages/contacto.html" class="botonesInicio"  target="_blank">Consulta</a></li>
+              <li><a  href="./pages/LogIn.html" class="botonesInicio" target="_blank" >Login</a></li>
+              <li><a href="./pages/registro.html" class="botonesInicio"  target="_blank">Regístrate</a></li>
+              <li><a href="./pages/contacto.html" class="botonesInicio"  target="_blank">Consulta</a></li>
             </ul>
           </navbar>
         </div>
@@ -77,43 +78,45 @@
     </section> <!-- no borrar -->
 
 
-    <footer class="footer-distributed"id="contacto">
-      <div class="link">
-      <a href="../2022-Fullstack-Proyecto-Integrador/index.html" class="backToMenu">IR AL INICIO</a>
-      </div>
-      <div class="footer-contacto">
-        <div>
-          <i class="bi bi-geo-alt"></i>
-            <p><span>Colón 765</span> Córdoba, Córdoba</p>
-        </div>
-        <div>
-          <i class="bi bi-telephone"></i>
-            <p>+54 9 35142363836</p>
-        </div>
-        <div>
-					<i class="bi bi-envelope"></i>
-					<p><a href="mailto:example@example.com">example@example.com</a></p>
-				</div>
-      </div>
-      <div class="footer-right">
-          <p class="footer-company-legal">
-            <span>Legales</span>
-            Ante cualquier duda o consulta sobre nuestros Términos y condiciones por favor contáctese por nuestros medios habilitados.
-          </p>
-        </div>
-        <div class="footer-left">
-          <p class="footer-company-name">Company Name © 2015. Todos los derechos reservados</p>
-        </div> 
-        <div class="footer-icons">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
-        </div>
-    </footer>
-    <!-- 9) Footer o pie de pagina >>> Lo hace  VALEN -->
-    
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+          <nav class="row">
+              <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">Regresar al Inicio</a>
+              <ul class="col-3 list-unstyled">
+                  <li>
+                      <i class="fa-thin fa-location-pin"></i>Colón 765</li>
+                  <li>Córdoba,Argentina</li>
+                  <li><i class="fa-thin fa-phone"></i> +54 9 351657954</li>
+                  <li><p><a href="mailto:example@example.com"><i class="fa-light fa-envelope"></i>example@example.com</a></p></li>
 
+              </ul>
+              <ul class="col-3 list-unstyled">
+                  <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+                  <li class="d-flex justify-content-between">
+                      <a href="https://www.instagram.com/" target="_blank" class="text-reset">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="https://es-la.facebook.com/" target="_blank" class="text-reset">
+                          <i class="fa-brands fa-facebook"></i>
+                      </a>
+                      <a href="https://twitter.com/" target="_blank" class="text-reset">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.google.com.ar/" target="_blank" class="text-reset">
+                      <i class="fa-brands fa-google-plus-g"></i>
+                  </a>
+                  </li>
+              </ul>
+              <ul class="col-3 list list-unstyled">
+                  <li><a href="#" class="text-reset">Legales</a></li>
+                  <li><a href="#" class="text-reset">Publicidad</a></li>
+                  <li><a href="#" class="text-reset">Politicas de privacidad</a></li>
+                  <li><a href="#" class="text-reset">Bases y condiciones</a></li>
+              </ul>
+          </nav>
+      </div>
+
+  </footer>
     <!-- no borrar --> <script src="./libs/boostrap/js/bootstrap.min.js"></script> <!-- no borrar -->
     
 </body> <!-- no borrar -->
