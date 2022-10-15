@@ -88,9 +88,28 @@ html{
     font-family: 'Times New Roman', Times, serif;
     text-align:end;
     padding: 10rem;
-    margin: 21rem auto;
+    margin-top: 21rem auto;
+    margin-bottom: 4rem ;
 }
 .calHot{
     color: var(--segundo-complementario);
 }
  
+@media only screen and (max-width: 992px){
+    .descripcion-de-imagenes{
+        padding-top: 28%;
+    }    
+}
+
+@media only screen and (max-width: 768px){
+    .descripcion-de-imagenes{
+        padding-top: 22%;
+    }    
+}
+
+@media only screen and (max-width: 574px){
+    .descripcion-de-imagenes{
+        padding-top: 2%;
+        padding-bottom: 8%;
+    }    
+}
