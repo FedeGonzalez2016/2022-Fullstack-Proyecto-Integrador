@@ -20,3 +20,77 @@ html{
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;  
 }
+ header {
+    background-image: url("../img/campanilla.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
+    
+  }
+#menu{
+   
+    text-transform: uppercase;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    margin-right:10px;
+    float: right;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size:small;
+}
+#menu a:hover {
+    color: var(--tercer-complementario)
+}
+
+#logo {
+    background-color: white;
+    text-align: justify;
+    line-height: 20px;
+
+    }
+
+    
+#inicio ul{
+    line-height: 46px;
+    text-align: right;
+    list-style: none;
+    text-transform: uppercase;
+    background-color: var(--color-principal);
+    
+}
+
+#inicio ul li{
+    display: inline-block;
+    font-size:x-large;
+    margin-right:30px;
+    
+
+}
+#inicio a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 75px;
+
+}
+#inicio a:hover{
+    color:black;
+    
+}
+
+.mensajeBienvenida{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:end;
+    padding: 10rem;
+    margin: 21rem auto;
+}
+.calHot{
+    color: var(--segundo-complementario);
+}
+ 

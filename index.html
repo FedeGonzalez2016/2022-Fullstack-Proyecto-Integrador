@@ -4,34 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/733d0a15ac.js" crossorigin="anonymous"></script>
     <title>Hotel California - Bienvenides</title> <!-- Aca va el nombre de la pagina por ejemplo "pizzeria don roque" y es lo que se muestra en la pestaña del navegador -->
 
 
     <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
-    <link rel="stylesheet" href="../libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head> <!-- no borrar -->
 
 
 <body> <!-- no borrar -->
-    <div class="info"> <!-- links a las paginas para usar en la NabBar -->
-        <a href="pages\LogIn.html">Login</a>
-    </div>
+ 
+
 
     <!-- 1) Headder >>> lo hace  VALEN --> 
-    <headder>  <!-- no borrar -->
-        <p> AVÇCA VA A TRABAJAR VALEN  Y TINCHO NO VA A ESCRIBIR NADA EN ESTA PARTE</p>
+    <header>
+      <div id="logo" class="row">
+        <div class="col-1">
+          <img class="img-fluid mx-auto mb-4 logohc" src="./img/LogoHC.png" alt="Logo Hotel" width="100" height="">
+        </div>
+        <div class="col-1">
+          <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
+          <h4 class="subtitle"> Hotel & Spa </h4>
+        </div>
+        <div class="col">
+          <navbar id= "menu">
+            <ul>
+              <li><a  href="./pages/LogIn.html" class="botonesInicio" target="_blank" >Login</a></li>
+              <li><a href="./pages/registro.html" class="botonesInicio"  target="_blank">Regístrate</a></li>
+              <li><a href="./pages/contacto.html" class="botonesInicio"  target="_blank">Consulta</a></li>
+            </ul>
+          </navbar>
+        </div>
+      </div>
 
-        <!-- a) Logo  --> 
-        <!-- a) Link Login  --> 
-        <!-- a) Link registro  --> 
-        <!-- a) NavBar con navegacion a las secciones que hace tincho --> 
-        <!-- nosotros - servicios  - testimonios  - Instalaciones  -  Habitaciones  - Contacto -->
-
-
-    </headder>  <!-- no borrar -->
-
-
+      <nav id="inicio">
+        <ul>
+          <li>
+              <a href=#nuestrahistoria >Nuestra historia</a> 
+          </li>
+          <li>
+              <a href=#servicios  >Servicios</a>
+          </li>
+          <li>
+              <a href=#instalaciones>Instalaciones</a>
+          </li>
+          <li>
+              <a href=#habitaciones >Habitaciones</a>
+          </li>
+          <li>
+              <a href=#contacto >Contacto</a>
+          </li>
+              
+        </ul>
+      </nav>
+      <div class="mensajeBienvenida">
+        <h1 class="welcome">WELCOME TO</h1><h1 class="calHot">CALIFORNIA HOTEL</h1>
+      </div>
+    </header>
 
     <section> <!-- no borrar -->
      <!-- a) nosotros -->
@@ -47,16 +78,45 @@
     </section> <!-- no borrar -->
 
 
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+          <nav class="row">
+              <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">Regresar al Inicio</a>
+              <ul class="col-3 list-unstyled">
+                  <li>
+                      <i class="fa-thin fa-location-pin"></i>Colón 765</li>
+                  <li>Córdoba,Argentina</li>
+                  <li><i class="fa-thin fa-phone"></i> +54 9 351657954</li>
+                  <li><p><a href="mailto:example@example.com"><i class="fa-light fa-envelope"></i>example@example.com</a></p></li>
 
-    <!-- 9) Footer o pie de pagina >>> Lo hace  VALEN -->
-    <footer> <!-- no borrar -->
-        <p> ACA VA A TRABAJAR VALEN Y TINCHO NO VA A ESCRIBIR NADA EN ESTA PARTE</p>
-        <!-- a) boton scrollup suave  --> 
-        <!-- b) parte verde ver imagen de boceto  --> 
-        <!-- c) parte megra ver imagen de boceto  --> 
+              </ul>
+              <ul class="col-3 list-unstyled">
+                  <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+                  <li class="d-flex justify-content-between">
+                      <a href="https://www.instagram.com/" target="_blank" class="text-reset">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="https://es-la.facebook.com/" target="_blank" class="text-reset">
+                          <i class="fa-brands fa-facebook"></i>
+                      </a>
+                      <a href="https://twitter.com/" target="_blank" class="text-reset">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.google.com.ar/" target="_blank" class="text-reset">
+                      <i class="fa-brands fa-google-plus-g"></i>
+                  </a>
+                  </li>
+              </ul>
+              <ul class="col-3 list list-unstyled">
+                  <li><a href="#" class="text-reset">Legales</a></li>
+                  <li><a href="#" class="text-reset">Publicidad</a></li>
+                  <li><a href="#" class="text-reset">Politicas de privacidad</a></li>
+                  <li><a href="#" class="text-reset">Bases y condiciones</a></li>
+              </ul>
+          </nav>
+      </div>
 
-    </footer> <!-- no borrar -->
-
+  </footer>
     <!-- no borrar --> <script src="./libs/boostrap/js/bootstrap.min.js"></script> <!-- no borrar -->
     
 </body> <!-- no borrar -->
