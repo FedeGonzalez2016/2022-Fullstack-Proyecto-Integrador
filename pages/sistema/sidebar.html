@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sidebar</title>
+
+        <link rel="stylesheet" href="/libs/bootstrap-5.2.2-dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/css/setup1.css" />
+    </head>
+
+        <div class="container ">
+          <div class="row ">
+            <div class="col-3  bg-dark text-white "> <!-- Esta es la columna Sidebar que opcupa 3/12 lugares en grillado de Bootstrap-->
+              <div class="container w-100">
+                <div class="row border border-primary pt-2">
+                  <p>HOTEL CALIFORNIA</p>
+                </div>
+                <div class="row border border-primary p-2">
+                  <a href="" class="text-decoration-none text-white">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <i class="bi bi-person-circle"></i>RECEPCIONISTA</a>
+                </div>
+                <div class="row border border-primary p-2">
+                  <a href="" class="text-decoration-none text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#home"></use></svg>
+                    <i class="bi bi-house"></i></i> Inicio</a>
+                </div>
+                <div class="row border border-primary p-2">
+                  <a href="" class="text-decoration-none text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#speedometer2"></use></svg>
+                    <i class="bi bi-calendar2-week"></i> Reservas</a>
+                </div>
+                <div class="row border border-primary p-2">
+                  <a href="" class="text-decoration-none text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#table"></use></svg>
+                    <i class="bi bi-building"></i> Instalaciones</a>
+                </div>
+                <div class="row border border-primary p-2">
+                  <a href="" class="text-decoration-none text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#grid"></use></svg>
+                    <i class="bi bi-people"></i> Clientes</a>
+                </div>
+                <div class="row border border-primary p-2">
+                  <a href="" class="text-decoration-none text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#people-circle"></use></svg>
+                    <i class="bi bi-person-plus"></i>
+                    Usuarios</a>
+                </div>
+                <div class="row border border-primary p-2">
+                  <a href="/pages/sistema/setup.html" class="text-decoration-none text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#people-circle"></use></svg>
+                    <i class="bi bi-gear"></i> Configuración</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="container">
+                <div class="row">
+                  <h1>Inicio</h1>
+                </div>
+                <div class="row m-4 p-1"> <!--En esta línea va la info sobre ocupación de habitaciones-->
+                  <div class="col-4 border rounded float-start bg-info text-white text-center p-1">
+                    <p>Total de Habitaciones</p>
+                    <p>50</p>
+                  </div>
+                  <div class="col-4 border rounded float-center bg-success text-white text-center p-1">
+                    <p>Habitaciones Libres</p>
+                    <p>45</p>
+                  </div>
+                  <div class="col-4 border rounded float-end bg-danger text-white text-center p-1">
+                    <p>Habitaciones ocupadas</p>
+                    <p>5</p>
+                  </div>
+                </div>
+                <div class="row border rounded text-center bg-primary text-white p-5"> <!--En esta línea va el botón sobre Promociones-->
+                  <h1>Promociones</h1>
+                </div>
+                <div class="row border rounded text-center bg-warning text-white mt-3"> <!--En esta línea va el botón sobre Reservar-->
+                  <h1>Reservar</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!--   
+        <div class="col-4">
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="height: 820px;">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4">HOTEL CALIFORNIA</span>
+              </a>
+              <hr>
+              <a href="inicio.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <i class="bi bi-person-circle"></i>
+                  <span class="fs-4">Recepcionista</span>
+                </a>
+              <hr>
+              <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                  <a href="inicio.html" class="nav-link text-white" aria-current="page">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#home"></use></svg>
+                    <i class="bi bi-house"></i></i>
+                    INICIO
+                  </a>
+                </li>
+                <li>
+                  <a href="reservas.html" class="nav-link text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#speedometer2"></use></svg>
+                    <i class="bi bi-calendar2-week"></i>
+                    RESERVAS
+                  </a>
+                </li>
+                <li>
+                  <a href="instalaciones.html" class="nav-link text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#table"></use></svg>
+                    <i class="bi bi-building"></i>
+                    INSTALACIONES
+                  </a>
+                </li>
+                <li>
+                  <a href="clientes.html" class="nav-link text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#grid"></use></svg>
+                    <i class="bi bi-people"></i>
+                    CLIENTES
+                  </a>
+                </li>
+                <li>
+                  <a href="usuarios.html" class="nav-link text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#people-circle"></use></svg>
+                    <i class="bi bi-person-plus"></i>
+                    USUARIOS
+                  </a>
+                </li>
+                <li>
+                  <a href="setup.html" class="nav-link text-white">
+                    <svg class="bi me-2" width="30" height="30"><use xlink:href="#people-circle"></use></svg>
+                    <i class="bi bi-gear"></i>
+                    CONFIGURACIÓN
+                  </a>
+                </li>
+              </ul>
+            </div> 
+          </div> -->
+
+      <script src="/libs/boostrap/js/bootstrap.min.js"></script>
+    </body>
+
+</html> 
