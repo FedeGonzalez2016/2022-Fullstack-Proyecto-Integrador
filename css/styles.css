@@ -26,17 +26,20 @@ html{
     background-size:cover;
     background-position:center center;
     
+
+    
     
   }
 #menu{
-   
     text-transform: uppercase;
+    
 }
 #menu ul{
     list-style: none;
 }
 #menu ul li{
-    margin-right:10px;
+    margin-right: 25px;
+    margin-top: 35px;
     float: right;
 }
 #menu a{
@@ -46,6 +49,18 @@ html{
 }
 #menu a:hover {
     color: var(--tercer-complementario)
+}
+
+@media only screen and (max-width: 992px){
+    .iso-hotel{
+        display: none;
+    }    
+}
+
+@media only screen and (max-width: 1920px){
+    .iso-hotel{
+        padding-left: 40px;
+    }    
 }
 
 #logo {
@@ -94,7 +109,7 @@ html{
 .calHot{
     color: var(--segundo-complementario);
 }
- 
+
 @media only screen and (max-width: 992px){
     .descripcion-de-imagenes{
         padding-top: 28%;
@@ -113,3 +128,4 @@ html{
         padding-bottom: 8%;
     }    
 }
+
