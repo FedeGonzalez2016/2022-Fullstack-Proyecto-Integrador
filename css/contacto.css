@@ -1,16 +1,4 @@
-/* el selector * es universal */
-* {
-    box-sizing: border-box;
-    /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    font-size: 65.5%;
-    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 /*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
 /* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
 :root {
@@ -22,3 +10,185 @@ html {
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;
 }
+*{
+    box-sizing: border-box;
+     /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    font-size: 65.5%;
+    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
+}
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: #e39403;
+}
+header {
+    background-image: url("../img/campanilla.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
+
+    
+    
+  }
+#menu{
+    text-transform: uppercase;
+    
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    margin-right: 25px;
+    margin-top: 35px;
+    float: right;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size:small;
+}
+#menu a:hover {
+    color: var(--tercer-complementario)
+}
+
+@media only screen and (max-width: 992px){
+    .iso-hotel{
+        display: none;
+    }    
+}
+
+@media only screen and (max-width: 1920px){
+    .iso-hotel{
+        padding-left: 40px;
+    }    
+}
+
+#logo {
+    background-color: white;
+    text-align: justify;
+    line-height: 20px;
+
+    }
+
+    
+#inicio ul{
+    line-height: 46px;
+    text-align: right;
+    list-style: none;
+    text-transform: uppercase;
+    background-color: var(--color-principal);
+    
+}
+
+#inicio ul li{
+    display: inline-block;
+    font-size:x-large;
+    margin-right:30px;
+    
+
+}
+#inicio a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 75px;
+
+}
+#inicio a:hover{
+    color:black;
+    
+}
+
+.mensajeBienvenida{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:end;
+    padding: 10rem;
+    margin-top: 21rem auto;
+    margin-bottom: 4rem ;
+}
+.calHot{
+    color: var(--segundo-complementario);
+}
+
+@media only screen and (max-width: 992px){
+    .descripcion-de-imagenes{
+        padding-top: 28%;
+    }    
+}
+
+@media only screen and (max-width: 768px){
+    .descripcion-de-imagenes{
+        padding-top: 22%;
+    }    
+}
+
+@media only screen and (max-width: 574px){
+    .descripcion-de-imagenes{
+        padding-top: 2%;
+        padding-bottom: 8%;
+    }    
+}
+
+
