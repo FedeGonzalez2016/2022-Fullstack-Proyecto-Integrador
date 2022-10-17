@@ -1,0 +1,35 @@
+/* el selector * es universal */ 
+*{
+    box-sizing: border-box; /* calcula automaticamente para que no haya scroll horizontal*/
+    padding:0;
+    margin: 0;
+}
+
+.bi {
+    font-size: 2em;
+}
+
+.texto-info-hab {
+    font-size: 2em;
+}
+
+.texto-promociones {
+    font-size: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-reservar {
+    font-size: 4em;
+}
+/*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
+/* usar rem como unidad de medida para las dimensiones nos permite tener un mejor control del tamaño*/
+:root{
+    --color-principal:#33464e;
+    --primer-complementario:#afb0b1;
+    --segundo-complementario:#d7794a;
+    --tercer-complementario: #89553b ;
+    --color-oscuro: #384043;
+    --color-claro: #dfe2e3;
+    --resaltador: #a3b4b9;  
+}
