@@ -1,47 +1,9 @@
-/* el selector * es universal */ 
 *{
-    box-sizing: border-box; /* calcula automaticamente para que no haya scroll horizontal*/
+    box-sizing: border-box;
     padding:0;
     margin: 0;
-    border-radius:20px;
-    align-items: center;
-    justify-content: center;
 }
 
-
-html{
-    font-size: 65.5%;
-    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
-}
-
-.navbar {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    background-color: black;
-}
-
-.nav-link {
-    font-size: 1.25em;
-}
-
-.bi {
-    font-size: 2em;
-}
-
-.texto-info-hab {
-    font-size: 2em;
-}
-
-.texto-promociones {
-    font-size: 4em;
-}
-
-.texto-reservar {
-    font-size: 4em;
-}
-/*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
-/* usar rem como unidad de medida para las dimensiones nos permite tener un mejor control del tamaño*/
 :root{
     --color-principal:#33464e;
     --primer-complementario:#afb0b1;

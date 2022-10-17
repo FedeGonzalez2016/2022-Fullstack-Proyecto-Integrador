@@ -1,22 +1,133 @@
-<!DOCTYPE html><!-- no borrar -->
-<html lang="en"><!-- no borrar -->
-  <head><!-- no borrar -->
-    <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel California - Contacto</title>
-    <!-- Aca va el nombre de la pagina por ejemplo "pizzeria don roque" y es lo que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/libs/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/362f22d6e7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/733d0a15ac.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
-    <link  rel="stylesheet"  href="../libs/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/contacto.css" />
-  </head><!-- no borrar -->
+<body>
+    <header>
+        <div id="logo" class="row">
+            <div class="col-1">
+                <img class="img m-4 pe-4 logohc" src="/img/LogoHC.png" alt="Logo Hotel" width="100">
+            </div>
+            <div class="col-3 m-auto ps-auto iso-hotel">
+                <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
+                <h4 class="subtitle"> Hotel & Spa </h4>
+            </div>
+            <div class="col">
+                <navbar id="menu">
+                    <ul>
+                        <li><a href="/pages/LogIn.html" class="botonesInicio" target="_blank">Login</a></li>
+                        <li><a href="/pages/registro.html" class="botonesInicio" target="_blank">Regístrate</a></li>
+                        <li><a href="/pages/contacto.html" class="botonesInicio" target="_blank">Consulta</a></li>
+                    </ul>
+                </navbar>
+            </div>
+        </div>
 
-  <body><!-- no borrar -->
-    <h1>Página de contacto, lo hace ALEX</h1>
+        <nav id="inicio">
+            <ul>
+                <li>
+                    <a href=#nuestrahistoria>Nuestra historia</a>
+                </li>
+                <li>
+                    <a href=#servicios>Servicios</a>
+                </li>
+                <li>
+                    <a href=#instalaciones>Instalaciones</a>
+                </li>
+                <li>
+                    <a href=#habitaciones>Habitaciones</a>
+                </li>
+                <li>
+                    <a href="pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mensajeBienvenida">
+            <h1 class="welcome">WELCOME TO</h1>
+            <h1 class="calHot">CALIFORNIA HOTEL</h1>
+        </div>
+    </header>
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Contáctanos</h2>
+            <p>Estamos a disposición para atenderlos, cualquier consulta que tenga, no dude en completar el siguiente
+                formulario:</p>
+            <a href="#"><i class="fa fa-phone"></i> +5493512043544</a>
+            <a href="#"><i class="fa fa-envelope"></i> hotelcalifornia@gmail.com</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Puán 1851, B7600 Mar del Plata, Provincia de Buenos Aires</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Hotel California</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> @hotel_california</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> @cali_hotel</a>
+            <a href="#"><i class="fa-solid fa-calendar-week"></i> Lun. a Vie. de 9 a 18h. Sab de 10 a 14h.</a>
+            <br>
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100548.75826160374!2d-57.55374734038709!3d-38.04362148209759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584ddff235deb11%3A0x1810996d0ab9a4a2!2sHotel%20California!5e0!3m2!1ses!2sar!4v1665699482083!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-6 float-start">
+            <form action="#" autocomplete="off">
+                <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
+                <input type="emal" name="email" placeholder="Tu Email" class="campo">
+                <textarea name="mensaje" placeholder="Ingrese su Consulta"></textarea>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </div>
+    <footer class="bg-dark text-white mt-4 py-4">
+        <div class="container">
+          <nav class="row">
+            <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">Regresar al Inicio</a>
+            <ul class="col-3 list-unstyled">
+              <li>
+                <i class="fa-thin fa-location-pin"></i>Colón 765
+              </li>
+              <li>Córdoba,Argentina</li>
+              <li><i class="fa-thin fa-phone"></i> +54 9 351657954</li>
+              <li>
+                <p><a href="mailto:example@example.com"><i class="fa-light fa-envelope"></i>example@example.com</a></p>
+              </li>
+    
+            </ul>
+            <ul class="col-3 list-unstyled">
+              <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+              <li class="d-flex justify-content-between">
+                <a href="https://www.instagram.com/" target="_blank" class="text-reset">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://es-la.facebook.com/" target="_blank" class="text-reset">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="text-reset">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com.ar/" target="_blank" class="text-reset">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="col-3 list list-unstyled">
+              <li><a href="#" class="text-reset">Legales</a></li>
+              <li><a href="#" class="text-reset">Publicidad</a></li>
+              <li><a href="#" class="text-reset">Politicas de privacidad</a></li>
+              <li><a href="#" class="text-reset">Bases y condiciones</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+      </footer>
+</body>
 
-    <!-- no borrar -->
-    <script src="./libs/boostrap/js/bootstrap.min.js"></script>
-    <!-- no borrar -->
-  </body><!-- no borrar -->
-</html> <!-- no borrar -->
+</html>
