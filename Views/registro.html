@@ -21,87 +21,80 @@
       </div>
       <div class="row justify-content-center" id="formulario">
         <div class="col-lg-12 mx-auto">
-         <form class="formulario">
+         <form class="formulario" action="https://formsubmit.co/federicogonz2015@gmail.com" method="POST">
+          <!-- API utilizada para probar envío de información a mail personal al apretar el botón "submit" https://formsubmit.co/-->
           <h1 class="h1 mb-5 fw-normal">Registrate</h1>
           <!-- Example Code -->
           <div class="container text-center">
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                  <input type="text" class="form-control" name="nombre" id="nombre" onblur="verificarNombre(this)" placeholder="Nombre" required>
                   <label for="name">Nombre </label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                  <input type="text" class="form-control" name="apellido" id="apellido" onblur="verificarApellido(this)" placeholder="Apellido" required>
                   <label for="apellido">Apellido </label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required>
+                  <input type="number" class="form-control" name="telefono" id="telefono" onblur="verificarTelefono(this)" placeholder="Teléfono" required>
                   <label for="telefono">Teléfono </label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
+                  <input type="text" class="form-control" name="ciudad" id="ciudad" onblur="verificarCiudad(this)" placeholder="Ciudad" required>
                   <label for="ciudad">Ciudad</label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="nombre-usuario" placeholder="Nombre de usuario" required>
-                  <label for="nombre-usuario">Nombre de usuario</label>
-                  <span class="errorDato"> Este campo es requerido</span>
+                  <input type="text" class="form-control" name="nombre-usuario" id="nombreUsuario" onblur="verificarUsuario(this)"
+                   placeholder="Nombre de usuario" required>
+                  <label for="nombreUsuario">Nombre de usuario</label>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="date" class="form-control" id="fecha-nacimiento" placeholder="Fecha de Nacimiento" required>
+                  <input type="date" class="form-control" name="fecha-nacimiento" id="fecha-nacimiento" value="1999-01-01"
+                  min="1922-01-01" max="2022-10-20" placeholder="Fecha de Nacimiento" required>
                   <label for="fecha-nacimiento">Fecha de Nacimiento </label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="email" placeholder="nombre@email.com" required>
+                  <input type="email" class="form-control" name="email" id="email" onblur="verificarEmail(this)" placeholder="nombre@email.com" required>
                   <label for="email">Email</label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>              
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="repetir-email" placeholder="nombre@email.com" required>
+                  <input type="email" class="form-control" name="repetir-email" id="repetir-email" onblur="verificarEmailRepetido(this)"  placeholder="nombre@email.com" required>
                   <label for="repetir-email"> Repetir email</label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="password" class="form-control" id="password" placeholder="Elige una contraseña" required>
+                  <input type="password" class="form-control" name="password" id="password" onblur="verificarPassword(this)" placeholder="Elige una contraseña" required>
                   <label for="password">Contraseña</label>
-                  <span class="errorDato"> Este campo es requerido</span>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="password" class="form-control" id="repetir-password" placeholder="Repite tu contraseña" required>
-                  <label for="repetir-password">Repetir contraseña</label>
-                  <span class="errorDato"> Este campo es requerido</span>
+                  <input type="password" class="form-control" name="repetir-password" id="repetirPassword" onblur="verificarPasswordRepetido(this)"  placeholder="Repite tu contraseña" required>
+                  <label for="repetirPassword">Repetir contraseña</label>
                 </div>
               </div>
             </div>
