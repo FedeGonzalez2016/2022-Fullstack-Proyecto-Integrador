@@ -1,0 +1,131 @@
+/* el selector * es universal */ 
+*{
+    box-sizing: border-box; /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
+    padding:0;
+    margin: 0;
+}
+
+html{
+    font-size: 65.5%;
+    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
+}
+/*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
+/* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
+:root{
+    --color-principal:#33464e;
+    --primer-complementario:#afb0b1;
+    --segundo-complementario:#d7794a;
+    --tercer-complementario: #89553b ;
+    --color-oscuro: #384043;
+    --color-claro: #dfe2e3;
+    --resaltador: #a3b4b9;  
+}
+ header {
+    background-image: url("../img/campanilla.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    
+
+    
+    
+  }
+#menu{
+    text-transform: uppercase;
+    
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    margin-right: 25px;
+    margin-top: 35px;
+    float: right;
+}
+#menu a{
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size:small;
+}
+#menu a:hover {
+    color: var(--tercer-complementario)
+}
+
+@media only screen and (max-width: 992px){
+    .iso-hotel{
+        display: none;
+    }    
+}
+
+@media only screen and (max-width: 1920px){
+    .iso-hotel{
+        padding-left: 40px;
+    }    
+}
+
+#logo {
+    background-color: white;
+    text-align: justify;
+    line-height: 20px;
+
+    }
+
+    
+#inicio ul{
+    line-height: 46px;
+    text-align: right;
+    list-style: none;
+    text-transform: uppercase;
+    background-color: var(--color-principal);
+    
+}
+
+#inicio ul li{
+    display: inline-block;
+    font-size:x-large;
+    margin-right:30px;
+    
+
+}
+#inicio a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 75px;
+
+}
+#inicio a:hover{
+    color:black;
+    
+}
+
+.mensajeBienvenida{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:end;
+    padding: 10rem;
+    margin-top: 21rem auto;
+    margin-bottom: 4rem ;
+}
+.calHot{
+    color: var(--segundo-complementario);
+}
+
+@media only screen and (max-width: 992px){
+    .descripcion-de-imagenes{
+        padding-top: 28%;
+    }    
+}
+
+@media only screen and (max-width: 768px){
+    .descripcion-de-imagenes{
+        padding-top: 22%;
+    }    
+}
+
+@media only screen and (max-width: 574px){
+    .descripcion-de-imagenes{
+        padding-top: 2%;
+        padding-bottom: 8%;
+    }    
+}
+
