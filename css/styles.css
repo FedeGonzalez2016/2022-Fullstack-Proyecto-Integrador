@@ -25,14 +25,9 @@ html{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
-    
-
-    
-    
-  }
+    }
 #menu{
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
 #menu ul{
     list-style: none;
@@ -129,3 +124,6 @@ html{
     }    
 }
 
+#logueado{
+    display: none;
+}

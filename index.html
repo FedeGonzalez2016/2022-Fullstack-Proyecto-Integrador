@@ -9,8 +9,8 @@
 
 
     <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
-    <link rel="stylesheet" href="/libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.2-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head> <!-- no borrar -->
 
 
@@ -24,7 +24,7 @@
       <header>
         <div id="logo" class="row">
           <div class="col-1">
-            <img class="img m-4 pe-4 logohc" src="/img/LogoHC.png" alt="Logo Hotel" width="100">
+            <img class="img m-4 pe-4 logohc" src="./img/LogoHC.png" alt="Logo Hotel" width="100">
           </div>
           <div class="col-3 m-auto ps-auto iso-hotel">
             <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
@@ -33,31 +33,23 @@
           <div class="col">
             <navbar id="menu">
               <ul>
-                <li><a href="/Views/LogIn.html" class="botonesInicio" target="_blank" >Login</a></li>
-                <li><a href="/Views/registro.html" class="botonesInicio"  target="_blank">Regístrate</a></li>
-                <li><a href="/Views/contacto.html" class="botonesInicio"  target="_blank">Consulta</a></li>
+                <li><a href="#" class="botonesInicio" id="logueado">CERRAR SESIÓN</a></li>
+                <li><a href="./Views/LogIn.html" class="botonesInicio" target="_blank" >Login</a></li>
+                <li><a href="./Views/registro.html" class="botonesInicio"  target="_blank">Regístrate</a></li>
+                <li><a href="./Views/contacto.html" class="botonesInicio"  target="_blank">Consulta</a></li>
+                <li id="logueado"><p>Bienvenido/a , username </p></li>
               </ul>
             </navbar>
           </div>
         </div>
-
         <nav id="inicio">
           <ul>
-            <li>
-              <a href=#nuestrahistoria >Nuestra historia</a> 
-            </li>
-            <li>
-              <a href=#servicios  >Servicios</a>
-            </li>
-            <li>
-              <a href=#instalaciones>Instalaciones</a>
-            </li>
-            <li>
-              <a href=#habitaciones >Habitaciones</a>
-            </li>
-            <li>
-              <a href="Views/contacto.html" >Contacto</a>
-            </li>
+            <li><a href=#nuestrahistoria>Nuestra historia</a> </li>
+           <li><a href=#servicios>Servicios</a></li>
+            <li><a href=#instalaciones>Instalaciones</a></li>
+            <li><a href=#habitaciones>Habitaciones</a></li>
+            <li><a href=#contacto >Contacto</a></li>
+            <li><a href="./Views/sistema/inicio.html" id="logueado">Mis reservas</a></li>
           </ul>
         </nav>
         <div class="mensajeBienvenida">
@@ -95,7 +87,7 @@
     <div class="row "> <!--Este es el DIV Padre para que todo pueda entrar en una línea horizontal en lg-->
       <div class="container col-lg-4 col-sm-12">
         <div class="container text-center col-lg-12 col-sm-6 float-sm-start imagen-zoom">
-          <img src="/img/Body/Spa 612x612.jpg" class="img-fluid rounded" alt="Mujer en Spa">
+          <img src="./img/Body/Spa 612x612.jpg" class="img-fluid rounded" alt="Mujer en Spa">
         </div>
         <div class="container text-center col-lg-12 col-sm-6 float-sm-end descripcion-de-imagenes"> <!--Usar @ para cambiar el padding según tamaño-->
           <div class="container text-center ">Subtítulo1: Spa</div>
@@ -105,7 +97,7 @@
           
       <div class="container col-lg-4 col-sm-12">
         <div class="container text-center col-lg-12 col-sm-6 float-sm-end imagen-zoom">
-          <img src="/img/Body/Swimming pool.jpg" class="img-fluid rounded" alt="Piscina">
+          <img src="./img/Body/Swimming pool.jpg" class="img-fluid rounded" alt="Piscina">
         </div>
         <div class="container col-lg-12 col-sm-6 float-sm-start descripcion-de-imagenes">
           <div class="container text-center ">Subtítulo2: Swimming Pool</div>
@@ -115,7 +107,7 @@
             
       <div class="container col-lg-4 col-sm-12">
         <div class="container text-center col-lg-12 col-sm-6 float-sm-start imagen-zoom">
-          <img src="/img/Body/chef.jpg" class="img-fluid rounded" alt="Chef">
+          <img src="./img/Body/chef.jpg" class="img-fluid rounded" alt="Chef">
         </div>
         <div class="container  col-lg-12 col-sm-6 float-sm-end descripcion-de-imagenes">
           <div class="container text-center ">Subtítulo3: Chef</div>
@@ -144,19 +136,19 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="/img/room01.jpg" class="d-block w-100 img-fluid" alt="...">
+              <img src="./img/room01.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/room02.jpg" class="d-block w-100 img-fluid" alt="...">
+              <img src="./img/room02.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/restaurant.jpg" class="d-block w-100 img-fluid" alt="...">
+              <img src="./img/restaurant.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/pileta.jpg" class="d-block w-100 img-fluid" alt="...">
+              <img src="./img/pileta.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="/img/spa.jpg" class="d-block w-100 img-fluid" alt="...">
+              <img src="./img/spa.jpg" class="d-block w-100 img-fluid" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -175,46 +167,46 @@
 
         <!-- A continuación el Footer-->
 
-    <footer class="bg-dark text-white mt-4 py-4">
-      <div class="container">
-          <nav class="row">
-              <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">Regresar al Inicio</a>
-              <ul class="col-3 list-unstyled">
-                  <li>
-                      <i class="fa-thin fa-location-pin"></i>Colón 765</li>
-                  <li>Córdoba,Argentina</li>
-                  <li><i class="fa-thin fa-phone"></i> +54 9 351657954</li>
-                  <li><p><a href="mailto:example@example.com"><i class="fa-light fa-envelope"></i>example@example.com</a></p></li>
-
-              </ul>
-              <ul class="col-3 list-unstyled">
-                  <li class="font-weight-bold text-uppercase">Redes Sociales</li>
-                  <li class="d-flex justify-content-between">
-                      <a href="https://www.instagram.com/" target="_blank" class="text-reset">
-                          <i class="fa-brands fa-instagram"></i>
-                      </a>
-                      <a href="https://es-la.facebook.com/" target="_blank" class="text-reset">
-                          <i class="fa-brands fa-facebook"></i>
-                      </a>
-                      <a href="https://twitter.com/" target="_blank" class="text-reset">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://www.google.com.ar/" target="_blank" class="text-reset">
-                      <i class="fa-brands fa-google-plus-g"></i>
-                  </a>
-                  </li>
-              </ul>
-              <ul class="col-3 list list-unstyled">
-                  <li><a href="#" class="text-reset">Legales</a></li>
-                  <li><a href="#" class="text-reset">Publicidad</a></li>
-                  <li><a href="#" class="text-reset">Politicas de privacidad</a></li>
-                  <li><a href="#" class="text-reset">Bases y condiciones</a></li>
-              </ul>
-          </nav>
-      </div>
-
-  </footer>
-    <!-- no borrar --> <script src="/libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> <!-- no borrar -->
+        <footer class="bg-dark text-white mt-4 py-4">
+          <div class="container" id="contacto">
+              <nav class="row">
+                  <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">Regresar al Inicio</a>
+                  <ul class="col-3 list-unstyled">
+                      <li>
+                          <i class="fa-thin fa-location-pin"></i>Colón 765</li>
+                      <li>Córdoba,Argentina</li>
+                      <li><i class="fa-thin fa-phone"></i> +54 9 351657954</li>
+                      <li><p><a href="mailto:example@example.com"><i class="fa-light fa-envelope"></i>example@example.com</a></p></li>
     
+                  </ul>
+                  <ul class="col-3 list-unstyled">
+                      <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+                      <li class="d-flex justify-content-between">
+                          <a href="https://www.instagram.com/" target="_blank" class="text-reset">
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a href="https://es-la.facebook.com/" target="_blank" class="text-reset">
+                              <i class="fa-brands fa-facebook"></i>
+                          </a>
+                          <a href="https://twitter.com/" target="_blank" class="text-reset">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.google.com.ar/" target="_blank" class="text-reset">
+                          <i class="fa-brands fa-google-plus-g"></i>
+                      </a>
+                      </li>
+                  </ul>
+                  <ul class="col-3 list list-unstyled">
+                      <li><a href="#" class="text-reset">Legales</a></li>
+                      <li><a href="#" class="text-reset">Publicidad</a></li>
+                      <li><a href="#" class="text-reset">Politicas de privacidad</a></li>
+                      <li><a href="#" class="text-reset">Bases y condiciones</a></li>
+                  </ul>
+              </nav>
+          </div>
+    
+      </footer>
+    <!-- no borrar --> <script src="./libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script> <!-- no borrar -->
+    <script src="./js/main.js"></script>
 </body> <!-- no borrar -->
 </html> <!-- no borrar -->
