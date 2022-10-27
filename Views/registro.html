@@ -29,13 +29,13 @@
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="text" class="form-control" name="nombre" id="nombre" onblur="verificarNombre(this)" placeholder="Nombre" required>
+                  <input type="text" class="form-control" name="nombre" id="nombre" pattern="[A-Za-z]+" onblur="verificarNombre(this)" onkeypress="return soloLetras(event);" placeholder="Nombre" required>
                   <label for="name">Nombre </label>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="text" class="form-control" name="apellido" id="apellido" onblur="verificarApellido(this)" placeholder="Apellido" required>
+                  <input type="text" class="form-control" name="apellido" id="apellido" pattern="[A-Za-z]+" onblur="verificarApellido(this)" onkeypress="return soloLetras(event);"  placeholder="Apellido" required>
                   <label for="apellido">Apellido </label>
                 </div>
               </div>
@@ -43,13 +43,13 @@
             <div class="row">
               <div class="col-md  order-first">
                 <div class="form-floating">
-                  <input type="number" class="form-control" name="telefono" id="telefono" onblur="verificarTelefono(this)" placeholder="Teléfono" required>
+                  <input type="number" class="form-control" name="telefono" id="telefono" pattern="[0-9]+" onblur="verificarTelefono(this)" onkeypress="return soloNumeros(event);" placeholder="Teléfono" required>
                   <label for="telefono">Teléfono </label>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="form-floating">
-                  <input type="text" class="form-control" name="ciudad" id="ciudad" onblur="verificarCiudad(this)" placeholder="Ciudad" required>
+                  <input type="text" class="form-control" name="ciudad" id="ciudad" onblur="verificarCiudad(this)" onkeypress="return soloLetras(event);"  placeholder="Ciudad" required>
                   <label for="ciudad">Ciudad</label>
                 </div>
               </div>

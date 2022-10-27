@@ -45,20 +45,6 @@ function verificarTelefono (){
         }
     }
 }
-// Esta función impide que ingresemos caracteres que no esten comprendidos entre el codigo 48 y 57 (numeros) de la codificacion ASCII
-function valideKey(evt){
-    
-    // code is the decimal ASCII representation of the pressed key.
-    var code = (evt.which) ? evt.which : evt.keyCode;
-    
-    if(code==8) { // backspace.
-      return true;
-    } else if(code>=48 && code<=57) { // is a number.
-      return true;
-    } else{ // other keys.
-      return false;
-    }
-}
 
 function verificarCiudad (){
     if (ciudad.value == ""){
@@ -120,10 +106,67 @@ function verificarPasswordRepetido (){
     }
 }
 
+/*function permitirSoloAlfabeto(event) {
+    var charCode = event.keyCode;
+   
+    if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+      
+      return true;
+    else
+      return false;
+  }
 
 
+  <script>
+      document.addEventListener('keydown', (event) => {
+            var keyValue = event.key;
+            var codeValue = event.code;
+          
+            console.log("keyValue: " + keyValue);
+            console.log("codeValue: " + codeValue);
+          }, false);
+    </script>
+*/
 
+function soloLetras(event){
 
+    key = event.KeyCode || event.which;
+    tecla = String.fromCharCode(key).toString();
+    letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁÉÍÓÚáéíóú";
 
+    especiales = [8,13];
+    tecla_especial = false;
+    for (var i in especiales){
+        if (key == especiales[i]){
+            tecla_especial = true;
+            break;
+        }
+    }
 
+    if (letras.indexOf(tecla) == -1 && !tecla_especial)
+    {
+     console.log("Ingresar solo letras");
+     return false;    
+
+    }
+
+}
+
+function soloNumeros (event){
+
+if (window.event){
+   keynum = event.KeyCode; 
+}
+else{
+   keynum = event.which;
+}
+
+if (keynum >47 && keynum <58 || keynum == 8 || keynum == 13)
+{
+    return true;
+}else{
+    console.log("Ingresar solo numeros");
+    return false;
+}
+}
 
