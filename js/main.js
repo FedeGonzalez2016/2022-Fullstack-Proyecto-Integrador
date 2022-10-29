@@ -7,6 +7,7 @@ botonLogin.addEventListener("click", login);
 
 function login() {
     var user, pass;
+    //var logged =false;
 
     user = document.getElementById('floatingInput').value;
     pass = document.getElementById('floatingPassword').value;
@@ -14,8 +15,13 @@ function login() {
 
     if(user == "user1" && pass == "1234"){
         window.location = "../index.html";
-
+        //logged=true; 
     }
+
+    // if logged {
+    //     funcion para mostrar los elementos "logueados"
+    //     funcion para "ocultar" los links a "registrate" y "login"
+    // }
    
 }
 
