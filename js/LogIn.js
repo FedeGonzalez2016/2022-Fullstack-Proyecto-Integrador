@@ -1,3 +1,4 @@
+/*
 var btn = document.getElementById('btn');
 var password = document.getElementById('password');
 var password_incorrecto = document.getElementById('password-incorrecto');
@@ -10,6 +11,22 @@ valido que no vengan vacios los campos y agrego la funcion de evt.preventDefault
 como su nombre lo indica previene o cancela el evento si es que fuera cancelable en este caso 
 el submit lo es y retorno un false para que no siga ejecutando la estructura del if*/
 
+
+function login(){
+    var user,pass;
+
+    user = document.getElementById("floatingInput").value;
+    pass = document.getElementById("floatingPassword").value;
+
+    if(user == "alejandro" && pass == "mainero"){
+        window.location = "/index.html";
+    else 
+        alert("Nombre de usuario y/o contraseña incorrecto")
+    
+    }
+}
+
+/*
 btn.addEventListener('click', function(evt){
     if(password.value === ''){
         console.log('No olvides rellenar el campo contraseña!')
