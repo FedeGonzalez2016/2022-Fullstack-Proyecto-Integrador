@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/362f22d6e7.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/733d0a15ac.js" crossorigin="anonymous"></script>
+    <script src="../js/datosHotel.js" ></script>
 </head>
 
 <body>
@@ -63,13 +64,27 @@
             <h2>Contáctanos</h2>
             <p>Estamos a disposición para atenderlos, cualquier consulta que tenga, no dude en completar el siguiente
                 formulario:</p>
-            <a href="#"><i class="fa fa-phone"></i> +5493512043544</a>
-            <a href="#"><i class="fa fa-envelope"></i> hotelcalifornia@gmail.com</a>
-            <a href="#"><i class="fa fa-map-marked"></i> Puán 1851, B7600 Mar del Plata, Provincia de Buenos Aires</a>
-            <a href="#"><i class="fa-brands fa-facebook"></i> Hotel California</a>
-            <a href="#"><i class="fa-brands fa-twitter"></i> @hotel_california</a>
-            <a href="#"><i class="fa-brands fa-instagram"></i> @cali_hotel</a>
-            <a href="#"><i class="fa-solid fa-calendar-week"></i> Lun. a Vie. de 9 a 18h. Sab de 10 a 14h.</a>
+            <a href="#"><i class="fa fa-phone"></i><script> 
+              document.write(hotel.telefono); 
+              </script></a>
+            <a href="#"><i class="fa fa-envelope"></i> <script> 
+              document.write(hotel.telefono); 
+              </script> </a>
+            <a href="#"><i class="fa fa-map-marked"></i> <script> 
+              document.write(hotel.direccion + " C.P: " + hotel.codPostal + ", "  + hotel.ciudad + ", "  + hotel.provincia + ", " + hotel.pais + "."); 
+              </script> </a>
+            <a href="#"><i class="fa-brands fa-facebook"></i><script> 
+              document.write(hotel.facebook.usuario); 
+              </script></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> <script> 
+              document.write(hotel.twitter.usuario); 
+              </script></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> <script> 
+              document.write(hotel.instragram.usuario); 
+              </script></a>
+            <a href="#"><i class="fa-solid fa-calendar-week"></i>  <script> 
+              document.write(hotel.horario); 
+              </script> </a>
             <br>
             <br>
             <iframe
