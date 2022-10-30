@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* el selector * es universal */
+* {
+    box-sizing: border-box;
+    /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 65.5%;
+    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
+}
+
 /*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
 /* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
 :root {
@@ -9,19 +23,14 @@
     --color-oscuro: #384043;
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;
+    --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
+    --tamanio-fuente:1.5rem;
+    
+    }
+body{
+    font-size:var(--tamanio-fuente);
 }
-*{
-    box-sizing: border-box;
-     /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-html {
-    font-size: 65.5%;
-    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
-}
+
 .container-form{
     width: 100%;
     max-width: 1100px;

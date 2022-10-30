@@ -1,66 +1,76 @@
-/* el selector * es universal */ 
-*{
-    box-sizing: border-box; /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
-    padding:0;
+/* el selector * es universal */
+* {
+    box-sizing: border-box;
+    /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
+    padding: 0;
     margin: 0;
 }
 
-html{
+html {
     font-size: 65.5%;
     /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
 }
+
 /*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
 /* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
-:root{
-    --color-principal:#33464e;
-    --primer-complementario:#afb0b1;
-    --segundo-complementario:#d7794a;
-    --tercer-complementario: #89553b ;
+:root {
+    --color-principal: #33464e;
+    --primer-complementario: #afb0b1;
+    --segundo-complementario: #d7794a;
+    --tercer-complementario: #89553b;
     --color-oscuro: #384043;
     --color-claro: #dfe2e3;
-    --resaltador: #a3b4b9;  
+    --resaltador: #a3b4b9;
+    --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
+    --tamanio-fuente:1.5rem;
+    
+    }
+body{
+    font-size:var(--tamanio-fuente);
 }
- header {
-    background-image: url("../img/campanilla.png");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center center;
     
 
-    
-    
-  }
-#menu{
-    text-transform: uppercase;
-    
+header {
+    background-image: url("../img/campanilla.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
-#menu ul{
+
+#menu {
+    text-transform: uppercase;
+}
+
+#menu ul {
     list-style: none;
 }
-#menu ul li{
+
+#menu ul li {
     margin-right: 25px;
     margin-top: 35px;
     float: right;
 }
-#menu a{
+
+#menu a {
     text-decoration: none;
     color: var(--color-principal);
-    font-size:small;
+    font-size: small;
 }
+
 #menu a:hover {
     color: var(--tercer-complementario)
 }
 
-@media only screen and (max-width: 992px){
-    .iso-hotel{
+@media only screen and (max-width: 992px) {
+    .iso-hotel {
         display: none;
-    }    
+    }
 }
 
-@media only screen and (max-width: 1920px){
-    .iso-hotel{
+@media only screen and (max-width: 1920px) {
+    .iso-hotel {
         padding-left: 40px;
-    }    
+    }
 }
 
 #logo {
@@ -68,64 +78,106 @@ html{
     text-align: justify;
     line-height: 20px;
 
-    }
+}
 
-    
-#inicio ul{
+
+#inicio ul {
     line-height: 46px;
     text-align: right;
     list-style: none;
     text-transform: uppercase;
     background-color: var(--color-principal);
-    
+
 }
 
-#inicio ul li{
+#inicio ul li {
     display: inline-block;
-    font-size:x-large;
-    margin-right:30px;
-    
+    font-size: x-large;
+    margin-right: 30px;
+
 
 }
-#inicio a{
+
+#inicio a {
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
     line-height: 75px;
 
 }
-#inicio a:hover{
-    color:black;
-    
+
+#inicio a:hover {
+    color: black;
+
 }
 
-.mensajeBienvenida{
+.mensajeBienvenida {
     font-family: 'Times New Roman', Times, serif;
-    text-align:end;
+    text-align: end;
     padding: 10rem;
     margin-top: 21rem auto;
-    margin-bottom: 4rem ;
+    margin-bottom: 4rem;
 }
-.calHot{
+
+.calHot {
     color: var(--segundo-complementario);
 }
 
-@media only screen and (max-width: 992px){
-    .descripcion-de-imagenes{
+@media only screen and (max-width: 992px) {
+    .descripcion-de-imagenes {
         padding-top: 28%;
-    }    
+    }
 }
 
-@media only screen and (max-width: 768px){
-    .descripcion-de-imagenes{
+@media only screen and (max-width: 768px) {
+    .descripcion-de-imagenes {
         padding-top: 22%;
-    }    
+    }
 }
 
-@media only screen and (max-width: 574px){
-    .descripcion-de-imagenes{
+@media only screen and (max-width: 574px) {
+    .descripcion-de-imagenes {
         padding-top: 2%;
         padding-bottom: 8%;
-    }    
+    }
 }
 
+#logueado {
+    display: none;
+}
+
+.subttl{
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-style: italic;
+    color:var(--resaltador)
+}
+
+/* acordion */
+.accordion-button {
+    background-color: var(--color-principal);
+    color: var(--color-claro);
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color-principal);
+    background-color: var(--resaltador);
+}
+
+.accordion-body {
+    background-color: var(--color-claro);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2333464e'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); /* ... fill='%23{codigo hexadecimal del color sin el #}'%3e%3cpath fill*/
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23dfe2e3'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); /* ... fill='%23{codigo hexadecimal del color sin el #}'%3e%3cpath fill*/
+}
+
+.accordion-button:focus {
+    box-shadow: var(--shadow-complementario);
+}
