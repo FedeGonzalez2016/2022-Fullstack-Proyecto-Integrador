@@ -21,7 +21,11 @@ html {
     --color-oscuro: #384043;
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;
-}
+    --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
+    --tamanio-fuente:1.5rem;
+    
+    }
+
 
 html,
 body {
@@ -29,6 +33,7 @@ body {
 }
 
 body {
+    font-size:var(--tamanio-fuente);
     background-image: url("../img/campanilla.png");
     background-size: cover;
     display: flex;

@@ -22,8 +22,12 @@ html {
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;
     --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
+    --tamanio-fuente:1.5rem;
     
     }
+body{
+    font-size:var(--tamanio-fuente);
+}
     
 
 header {
@@ -142,6 +146,12 @@ header {
     display: none;
 }
 
+.subttl{
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-style: italic;
+    color:var(--resaltador)
+}
 
 /* acordion */
 .accordion-button {
@@ -152,7 +162,7 @@ header {
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--color-claro);
+    color: var(--color-principal);
     background-color: var(--resaltador);
 }
 
@@ -169,6 +179,5 @@ header {
 }
 
 .accordion-button:focus {
-    border-color: var(--segundo-complementario);
     box-shadow: var(--shadow-complementario);
 }
