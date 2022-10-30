@@ -26,7 +26,6 @@ html {
     
     }
 
-
 html,
 body {
     height: 100%;
@@ -43,11 +42,7 @@ body {
 
 }
 
-/* #heroLogin {
-    background-image:url("../img/campanilla.png"); 
-    background-size: "cover";
-
-} */
+/* seccion logo */
 .logohc{
     width: 150px;
     margin-bottom: 0.5rem;
@@ -58,6 +53,15 @@ body {
 .subtitle{
     margin-top: 0.1rem;
 }
+
+.form-signin {
+    max-width: 30vw;
+    min-width: 400px;
+    padding: 15px;
+  }
+
+  /*recuadro verde*/
+  
 #formulario {
     color:var(--color-claro);
     background-color: var(--color-principal);
@@ -69,29 +73,66 @@ body {
     padding: 2rem;
     margin: 2rem auto;
 }
-.btn-complementario{
-    background-color: var(--segundo-complementario);
-    color:var(--color-claro);
+
+/*links*/
+a {
+    text-decoration: none;
+    color: var(--color-claro);
 }
 
-.form-floating {margin-bottom: 2rem;}
-.form-signin {
-    max-width: 30vw;
-    min-width: 400px;
-    padding: 15px;
-  }
-  
-  .form-signin input {
+a:hover {
+    color: var(--tercer-complementario);
+}
+
+/* formulario*/
+
+.form-floating {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+ .form-control{
+   font-size: var(--tamanio-fuente);
+   color: var(--color-claro);
+ }
+
+ .form-control:focus {
+    color: var(--color-oscuro);
+    background-color:var(--resaltador);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: var(--shadow-complementario);
+}
+
+input {
+    margin: .4rem 0;
+    color: var(--color-claro);
+}
+
+label {
+    margin: -0.5rem 0;
+    color: var(--color-claro);
+}
+
+.form-signin input {
     /* width:10rem; */
-    border:none;
-    border-bottom: 2px solid var(--color-claro);  
+    border: none;
+    border-bottom: 2px solid var(--color-claro);
     background-color: transparent;
     border-radius: 0;
-  }
-  .btn:hover {
+}
+
+/*boton*/
+.btn-complementario {
+    background-color: var(--segundo-complementario);
+    color: var(--color-claro);
+}
+
+.btn:hover {
     background-color: var(--tercer-complementario);
-  }
-  .registrate {
+}
+
+
+.registrate {
     text-decoration: none;
     color:var(--color-claro);
   }
@@ -112,17 +153,8 @@ input[type='checkbox'] {
     font-weight: 500;
 
   }
-  a:hover {
-    color: var(--tercer-complementario);
-}
+ 
 .footer{
     background-color: var(--color-oscuro);
     color:var(--color-claro);
-}
-
-.errorDato{
-    background-color: var(--tercer-complementario);
-    color: var(--color-claro);
-    font-style: italic;
-    
 }

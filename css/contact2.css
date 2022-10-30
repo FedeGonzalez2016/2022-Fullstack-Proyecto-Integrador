@@ -47,11 +47,9 @@ body {
     width: 150px;
     margin-bottom: 0.5rem;
 }
-
 .hotelName {
     margin-bottom: 0.1rem;
 }
-
 .subtitle {
     margin-top: 0.1rem;
 }
@@ -136,9 +134,10 @@ input {
 }
 
 label {
-    margin: -0.5    rem 0;
+    margin: -0.5rem 0;
     color: var(--color-claro);
 }
+
 .form-signin input {
     /* width:10rem; */
     border: none;

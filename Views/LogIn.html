@@ -23,22 +23,22 @@
         <div class="col-lg-12 mx-auto">
          <form class="formulario">
           <h1 class="h1 mb-5 fw-normal">Logueate</h1>
-          <div class="form-floating">
-            <input type="text" class="form-control" id="floatingInput" placeholder="nombre de usuario">
-            <label for="floatingInput">Nombre de Usuario</label>
-            <span class="errorDato"> El nombre de usuario no esta registrado </span>
+          <div class="mb-3 text-start">
+            <input type="text" name="nmobreUsuario"  class="form-control" id="nombreUsuario" placeholder="Nombre de usuario" required>
+            <label for="nombreUsuario" class="form-label text-start">Nombre de Usuario</label>
+            <span id="errorMail" > </span>
           </div>
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Contraseña</label>
-            <span class="errorDato"> La contraseña ingresada es incorrecta </span>
+          <div class="mb-3 text-start">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Coloca tu contraseña" required>
+            <label for="floatingPassword" class="form-label text-start">Contraseña</label>
+            <span id="errorPass"> </span>
           </div>
           <div class="checkbox mb-3">
             <label>
               <input type="checkbox" value="remember-me"> Recordarme
             </label>
           </div>
-          <button class="w-100 btn btn-lg btn-complementario" type="button"id="botonLogin">Ingresar</button>
+          <button class="w-100 btn btn-lg btn-complementario" type="submit"id="botonLogin">Ingresar</button>
           <p class="mt-5 mb-3">Todavía no tenés cuenta? <strong><a href="./registro.html" class="registrate"> Registrate </strong> </a> </p>
         </form>
         </div>         
