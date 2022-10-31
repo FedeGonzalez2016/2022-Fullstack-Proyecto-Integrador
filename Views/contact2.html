@@ -47,37 +47,25 @@
                 <ul class="socialNets text-start">
                   <li> <a href="#"><i class="fa fa-phone"></i>
                       <script>
-                        document.write(hotel.telefono); 
+                        document.write(" "+ hotel.telefono); 
                       </script>
                     </a></li>
                   <li> <a href="#"><i class="fa fa-envelope"></i>
                     <script>
-                      document.write(hotel.email); 
+                      document.write(" "+ hotel.email); 
                     </script>
                   </a></li>
                   <li> <a href="#"><i class="fa fa-map-marked"></i>
                     <script>
-                      document.write(hotel.direccion + " C.P: " + hotel.codPostal + ", " + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
+                      document.write(" "+hotel.direccion + " - C.P: " + hotel.codPostal + "<br>" + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
                     </script>
                   </a></li>
-                  <li> <a href="#"><i class="fa-brands fa-facebook"></i>
-                    <script>
-                      document.write(hotel.facebook.usuario); 
-                    </script>
-                  </a></li>
-                  <li> <a href="#"><i class="fa-brands fa-twitter"></i>
-                    <script>
-                      document.write(hotel.twitter.usuario); 
-                    </script>
-                  </a></li>
-                  <li> <a href="#"><i class="fa-brands fa-instagram"></i>
-                    <script>
-                      document.write(hotel.instragram.usuario); 
-                    </script>
-                  </a></li>
+                  <li> <script> document.write('<a href="'+ hotel.instragram.link + '"><i class="fa-brands fa-instagram"></i>'+" "+ hotel.instragram.usuario + '</a>'); </script> </li>
+                  <li> <script> document.write('<a href="'+ hotel.facebook.link + '"><i class="fa-brands fa-facebook"></i>'+ " "+hotel.facebook.usuario + '</a>'); </script> </li>
+                  <li> <script> document.write('<a href="'+ hotel.twitter.link + '"><i class="fa-brands fa-twitter"></i>'+ " "+ hotel.twitter.usuario + '</a>'); </script> </li>                 
                   <li> <a href="#"><i class="fa-solid fa-calendar-week"></i>
                     <script>
-                      document.write(hotel.abierto); 
+                      document.write(" "+hotel.abierto); 
                     </script>
                   </a></li>
                 </ul>
