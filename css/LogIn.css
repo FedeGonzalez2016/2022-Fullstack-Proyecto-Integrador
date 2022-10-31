@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     border-radius: 2rem;
-    height: 40vh;
+    height: auto;
     text-align: center;
     padding: 2rem;
     margin: 2rem auto;

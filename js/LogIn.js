@@ -14,7 +14,7 @@
                 event.stopPropagation()
             }
 
-        form.classList.add('was-validated')
+        form.classList.add('')
         }, false)
     })
     })() 
@@ -24,8 +24,13 @@
 
 function onEnviar(){
     let form = document.getElementById("myform");
-    let user = document.forms["myform"]["floatingInput"].value;
+    let user = document.forms["myform"]["nombreUsuario"].value;
     let password = document.forms["myform"]["floatingPassword"].value;
+    document.getElementById("usuario-sin-ingresar").style.display = "none";
+    document.getElementById("usuario-incorrecto").style.display = "none";
+    document.getElementById("contrasena-sin-ingresar").style.display = "none";
+    document.getElementById("contrasena-incorrecta").style.display = "none"
+    
     if (form.checkValidity() && user == "user1" && password == "123"){
         console.log("Antes del alert")
         
@@ -39,21 +44,25 @@ function onEnviar(){
         console.log("Usuario vacío")
         document.getElementById("usuario-sin-ingresar").style.display = "block";
         event.preventDefault();
+        event.stopPropagation()
     }
     else if(user != "user1"){
         console.log("Usuario incorrecto")
         document.getElementById("usuario-incorrecto").style.display = "block";
         event.preventDefault();
+        event.stopPropagation()
     }
     
     if (password == ""){
         console.log("Password vacío")
         document.getElementById("contrasena-sin-ingresar").style.display = "block";
         event.preventDefault();
+        event.stopPropagation()
     }
     else if(password != "123"){
         console.log("Contraseña incorrecta")
         document.getElementById("contrasena-incorrecta").style.display = "block";
         event.preventDefault();
+        event.stopPropagation()
     }
 }
