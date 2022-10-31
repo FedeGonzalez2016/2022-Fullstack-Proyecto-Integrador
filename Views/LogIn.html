@@ -21,18 +21,18 @@
       </div>
       <div class="row justify-content-center" id="formulario">
         <div class="col-lg-12 mx-auto">
-          
+
           <form class="formulario" id="myform" novalidate onsubmit="onEnviar()">
-            <h1 class="h1 mb-5 fw-normal">Logueate</h1>
-            <div class="form-floating">
-              <input type="text" class="form-control" id="floatingInput" placeholder="nombre de usuario" required>
-              <label for="floatingInput">Nombre de Usuario</label>
+            <h1 class="h1 mb-5 fw-normal text-start">Logueate</h1>
+            <div class="mb-3 text-start">
+              <input type="text" name="nombreUsuario" class="form-control" id="nombreUsuario" placeholder="nombre de usuario" required>
+              <label for="nombreUsuario" class="form-label text-start">Nombre de Usuario</label>
               <span class="errorDato" id="usuario-incorrecto"> El nombre de usuario no esta registrado </span>
               <span class="errorDato" id="usuario-sin-ingresar"> Ingrese un usuario </span>
             </div>
-            <div class="form-floating">
+            <div class="mb-3 text-start">
               <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-              <label for="floatingPassword">Contraseña</label>
+              <label for="floatingPassword" class="form-label text-start">Contraseña</label>
               <span class="errorDato" id="contrasena-incorrecta"> La contraseña ingresada es incorrecta </span>
               <span class="errorDato" id="contrasena-sin-ingresar"> Ingrese una contraseña </span>
             </div>
@@ -45,7 +45,7 @@
             <p class="mt-5 mb-3">Todavía no tenés cuenta? <strong><a href="./registro.html" class="registrate"> Registrate </strong> </a> </p>
           </form>
 
-        </div>         
+    </div>         
       </div>
       <!--<a href="../index.html" class="backToMenu">VOLVER AL MENU PRINCIPAL</a>-->
     </div>
@@ -53,7 +53,7 @@
   
 <!--footer-->
       
-     <!--no borrar-->  <script src="/libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>  <!--no borrar--> 
+    <!--no borrar-->  <script src="/libs/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>  <!--no borrar--> 
     <script src="/js/LogIn.js"></script>
   </body>
 </html>

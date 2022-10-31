@@ -25,83 +25,83 @@
           <!-- API utilizada para probar envío de información a mail personal al apretar el botón "submit" https://formsubmit.co/-->
           <h1 class="h1 mb-5 fw-normal">Registrate</h1>
           <!-- Example Code -->
-          <div class="container text-center">
+          <div class="container text-start">
             <div class="row">
               <div class="col-md  order-first">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="text" class="form-control" name="nombre" id="nombre" onblur="verificarNombre(this)" placeholder="Nombre" required>
-                  <label for="name">Nombre </label>
+                  <label for="nombre"  class="form-label text-start">Nombre </label>
                 </div>
               </div>
               <div class="col-md order-last">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="text" class="form-control" name="apellido" id="apellido" onblur="verificarApellido(this)" placeholder="Apellido" required>
-                  <label for="apellido">Apellido </label>
+                  <label for="apellido" class="form-label text-start">Apellido </label>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="number" class="form-control" name="telefono" id="telefono" onblur="verificarTelefono(this)" placeholder="Teléfono" required>
-                  <label for="telefono">Teléfono </label>
+                  <label for="telefono"class="form-label text-start">Teléfono </label>
                 </div>
               </div>
               <div class="col-md order-last">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="text" class="form-control" name="ciudad" id="ciudad" onblur="verificarCiudad(this)" placeholder="Ciudad" required>
-                  <label for="ciudad">Ciudad</label>
+                  <label for="ciudad" class="form-label text-start">Ciudad</label>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="text" class="form-control" name="nombre-usuario" id="nombreUsuario" onblur="verificarUsuario(this)"
                    placeholder="Nombre de usuario" required>
-                  <label for="nombreUsuario">Nombre de usuario</label>
+                  <label for="nombreUsuario" class="form-label text-start">Nombre de usuario</label>
                 </div>
               </div>
               <div class="col-md order-last">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="date" class="form-control" name="fecha-nacimiento" id="fecha-nacimiento" value="1999-01-01"
                   min="1922-01-01" max="2022-10-20" placeholder="Fecha de Nacimiento" required>
-                  <label for="fecha-nacimiento">Fecha de Nacimiento </label>
+                  <label for="fecha-nacimiento" class="form-label text-start">Fecha de Nacimiento </label>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="email" class="form-control" name="email" id="email" onblur="verificarEmail(this)" placeholder="nombre@email.com" required>
-                  <label for="email">Email</label>
+                  <label for="email" class="form-label text-start">Email</label>
                 </div>              
               </div>
               <div class="col-md order-last">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="email" class="form-control" name="repetir-email" id="repetir-email" onblur="verificarEmailRepetido(this)"  placeholder="nombre@email.com" required>
-                  <label for="repetir-email"> Repetir email</label>
+                  <label for="repetir-email" class="form-label text-start"> Repetir email</label>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
-                <div class="form-floating">
+                <div class="mb-3 text-start">
                   <input type="password" class="form-control" name="password" id="password" onblur="verificarPassword(this)" placeholder="Elige una contraseña" required>
-                  <label for="password">Contraseña</label>
+                  <label for="password" class="form-label text-start">Contraseña</label>
                 </div>
               </div>
               <div class="col-md order-last">
-                <div class="form-floating">
-                  <input type="password" class="form-control" name="repetir-password" id="repetirPassword" onblur="verificarPasswordRepetido(this)"  placeholder="Repite tu contraseña" required>
-                  <label for="repetirPassword">Repetir contraseña</label>
+                <div class="mb-3 text-start">
+                  <input type="password" class="form-control" name="repetirPassword" id="repetirPassword" onblur="verificarPasswordRepetido(this)"  placeholder="Repite tu contraseña" required>
+                  <label for="repetirPassword" class="form-label text-start">Repetir contraseña</label>
                 </div>
               </div>
             </div>
           </div>
           <!-- End Example Code -->
           
-          <button class="w-100 btn btn-lg btn-complementario" type="submit">Registrarme</button>
+          <button class="w-100 btn btn-lg btn-complementario" type="submit" id="botonRegistrar">Registrarme</button>
           <p class="mt-5 mb-3">Ya estás registrado? <strong><a href="./LogIn.html" class="logIn"> Iniciá sesión </strong> </a> </p>
         </form>
         </div>         
@@ -114,6 +114,6 @@
     </footer> -->
 
     <!-- no borrar --> <script src="./libs/boostrap/js/bootstrap.min.js"></script> <!-- no borrar -->
-    <script src="../js/registro.js"></script>
+   <script src="../js/registro.js"></script>
   </body>
 </html>
