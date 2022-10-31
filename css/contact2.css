@@ -148,6 +148,8 @@ label {
 
 /*boton*/
 .btn-complementario {
+    text-transform: uppercase;
+    font-size: var(--tamanio-fuente) ;
     background-color: var(--segundo-complementario);
     color: var(--color-claro);
 }
@@ -156,6 +158,13 @@ label {
     background-color: var(--tercer-complementario);
 }
 
+.btn:focus-visible {
+    color: var(--color-claro);
+    background-color:  var(--tercer-complementario);
+    border-color: var(--bs-btn-hover-border-color);
+    outline: 0;
+    box-shadow: var(--shadow-complementario);
+}
 
 .backToMenu {
     text-decoration: none;
