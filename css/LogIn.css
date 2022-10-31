@@ -126,3 +126,19 @@ input[type='checkbox'] {
     font-style: italic;
     
 }
+
+#usuario-incorrecto{
+    display: none;
+}
+
+#usuario-sin-ingresar{
+    display: none;
+}
+
+#contrasena-incorrecta{
+    display: none;
+}
+
+#contrasena-sin-ingresar{
+    display: none;
+}

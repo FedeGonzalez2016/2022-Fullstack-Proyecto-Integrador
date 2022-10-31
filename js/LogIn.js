@@ -1,50 +1,59 @@
-/*
-var btn = document.getElementById('btn');
-var password = document.getElementById('password');
-var password_incorrecto = document.getElementById('password-incorrecto');
-var usuario = document.getElementById('usuario');
-var mensaje_para_no_usuario = document.getElementById('mensaje-para-no-usuario');
+// Example starter JavaScript for disabling form submissions if there are invalid fields
 
-/*en tu login te falto agregarle un id a tu botón y pasarle tu funcion validar2(), 
-yo lo hago con listeners para no poner funciones js en el HTML, buenas prácticas, 
-valido que no vengan vacios los campos y agrego la funcion de evt.preventDefault() 
-como su nombre lo indica previene o cancela el evento si es que fuera cancelable en este caso 
-el submit lo es y retorno un false para que no siga ejecutando la estructura del if*/
+(() => {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.formulario')
+
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })() 
 
 
-function login(){
-    var user,pass;
 
-    user = document.getElementById("floatingInput").value;
-    pass = document.getElementById("floatingPassword").value;
 
-    if(user == "alejandro" && pass == "mainero"){
-        window.location = "/index.html";
-    else 
-        alert("Nombre de usuario y/o contraseña incorrecto")
+function onEnviar(){
+    let form = document.getElementById("myform");
+    let user = document.forms["myform"]["floatingInput"].value;
+    let password = document.forms["myform"]["floatingPassword"].value;
+    if (form.checkValidity() && user == "user1" && password == "123"){
+        console.log("Antes del alert")
+        
+        console.log("Después del alert y antes de WinLOC")
+        alert("Pasó la validación correctamente. Llamar a controlador.");  
+        window.location = "../index.html";  
+        console.log("Después de WinLOC")
+    }
     
+    if (user == ""){
+        console.log("Usuario vacío")
+        document.getElementById("usuario-sin-ingresar").style.display = "block";
+        event.preventDefault();
+    }
+    else if(user != "user1"){
+        console.log("Usuario incorrecto")
+        document.getElementById("usuario-incorrecto").style.display = "block";
+        event.preventDefault();
+    }
+    
+    if (password == ""){
+        console.log("Password vacío")
+        document.getElementById("contrasena-sin-ingresar").style.display = "block";
+        event.preventDefault();
+    }
+    else if(password != "123"){
+        console.log("Contraseña incorrecta")
+        document.getElementById("contrasena-incorrecta").style.display = "block";
+        event.preventDefault();
     }
 }
-
-/*
-btn.addEventListener('click', function(evt){
-    if(password.value === ''){
-        console.log('No olvides rellenar el campo contraseña!')
-        alert('No olvides rellenar el campo contraseña!')
-        evt.preventDefault();
-        return false;
-    }
-    
-    else if(usuario.value === ''){
-        console.log('No olvides rellenar el campo usuario!')
-        alert('No olvides rellenar el campo de usuario!')
-        evt.preventDefault();
-        return false;
-    }
-    else if(usuario.value.length > 30){
-        console.log('El nombre del usuario es demasiado largo!')
-        alert('El nombre del usuario es demasiado largo')
-        evt.preventDefault();
-        return false;
-    }
-});
