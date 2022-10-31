@@ -96,7 +96,7 @@ a:hover {
 
 .map-responsive {
     overflow: hidden;
-    padding-bottom: 90%;
+    padding-bottom: 80%; /* establece el heigth*/
     position: relative;
     height: 0;
 }
