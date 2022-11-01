@@ -21,7 +21,10 @@ html {
     --color-oscuro: #384043;
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;
-}
+    --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
+    --tamanio-fuente:1.5rem;
+    
+    }
 
 html,
 body {
@@ -29,6 +32,7 @@ body {
 }
 
 body {
+    font-size:var(--tamanio-fuente);
     background-image: url("../img/campanilla.png");
     background-size: cover;
     display: flex;
@@ -38,11 +42,7 @@ body {
 
 }
 
-/* #heroLogin {
-    background-image:url("../img/campanilla.png"); 
-    background-size: "cover";
-
-} */
+/* seccion logo */
 .logohc{
     width: 150px;
     margin-bottom: 0.5rem;
@@ -53,40 +53,96 @@ body {
 .subtitle{
     margin-top: 0.1rem;
 }
+
+.form-signin {
+    max-width: 30vw;
+    min-width: 400px;
+    padding: 15px;
+  }
+
+  /*recuadro verde*/
+  
 #formulario {
     color:var(--color-claro);
     background-color: var(--color-principal);
     display: flex;
     align-items: center;
     border-radius: 2rem;
-    height: 40vh;
+    height: 50vh;
     text-align: center;
     padding: 2rem;
     margin: 2rem auto;
 }
-.btn-complementario{
-    background-color: var(--segundo-complementario);
-    color:var(--color-claro);
+
+/*links*/
+a {
+    text-decoration: none;
+    color: var(--color-claro);
 }
 
-.form-floating {margin-bottom: 2rem;}
-.form-signin {
-    max-width: 30vw;
-    min-width: 400px;
-    padding: 15px;
-  }
-  
-  .form-signin input {
+a:hover {
+    color: var(--tercer-complementario);
+}
+
+/* formulario*/
+
+.form-floating {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+ .form-control{
+   font-size: var(--tamanio-fuente);
+   color: var(--color-claro);
+ }
+
+ .form-control:focus {
+    color: var(--color-oscuro);
+    background-color:var(--resaltador);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: var(--shadow-complementario);
+}
+
+input {
+    margin: .4rem 0;
+    color: var(--color-claro);
+}
+
+label {
+    margin: -0.5rem 0;
+    color: var(--color-claro);
+}
+
+.form-signin input {
     /* width:10rem; */
-    border:none;
-    border-bottom: 2px solid var(--color-claro);  
+    border: none;
+    border-bottom: 2px solid var(--color-claro);
     background-color: transparent;
     border-radius: 0;
-  }
-  .btn:hover {
+}
+
+/*boton*/
+.btn-complementario {
+    text-transform: uppercase;
+    font-size: var(--tamanio-fuente) ;
+    background-color: var(--segundo-complementario);
+    color: var(--color-claro);
+}
+
+.btn:hover {
     background-color: var(--tercer-complementario);
-  }
-  .registrate {
+}
+
+.btn:focus-visible {
+    color: var(--color-claro);
+    background-color:  var(--tercer-complementario);
+    border-color: var(--bs-btn-hover-border-color);
+    outline: 0;
+    box-shadow: var(--shadow-complementario);
+}
+
+
+.registrate {
     text-decoration: none;
     color:var(--color-claro);
   }
@@ -107,9 +163,7 @@ input[type='checkbox'] {
     font-weight: 500;
 
   }
-  a:hover {
-    color: var(--tercer-complementario);
-}
+ 
 .footer{
     background-color: var(--color-oscuro);
     color:var(--color-claro);
@@ -120,4 +174,20 @@ input[type='checkbox'] {
     color: var(--color-claro);
     font-style: italic;
     
+}
+
+#usuario-incorrecto{
+    display: none;
+}
+
+#usuario-sin-ingresar{
+    display: none;
+}
+
+#contrasena-incorrecta{
+    display: none;
+}
+
+#contrasena-sin-ingresar{
+    display: none;
 }

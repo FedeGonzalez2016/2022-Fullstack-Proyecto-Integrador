@@ -21,10 +21,10 @@ html {
     --color-oscuro: #384043;
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;
-    --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
-    --tamanio-fuente:1.5rem;
-    
-    }
+    --shadow-complementario: 0 0 0 0.25rem rgba(51, 70, 78, 0.3);
+    --tamanio-fuente: 1.5rem;
+
+}
 
 html,
 body {
@@ -32,7 +32,7 @@ body {
 }
 
 body {
-    font-size:var(--tamanio-fuente);
+    font-size: var(--tamanio-fuente);
     background-image: url("../img/campanilla.png");
     background-size: cover;
     display: flex;
@@ -43,27 +43,27 @@ body {
 }
 
 /* seccion logo */
-.logohc{
+.logohc {
     width: 150px;
     margin-bottom: 0.5rem;
 }
-.hotelName{
+.hotelName {
     margin-bottom: 0.1rem;
 }
-.subtitle{
+.subtitle {
     margin-top: 0.1rem;
 }
 
 .form-signin {
-    max-width: 40vw;
+    max-width: 50vw;
     min-width: 400px;
     padding: 15px;
-  }
+}
 
-  /*recuadro verde*/
-  
+/*recuadro verde*/
+
 #formulario {
-    color:var(--color-claro);
+    color: var(--color-claro);
     background-color: var(--color-principal);
     display: flex;
     align-items: center;
@@ -71,6 +71,15 @@ body {
     text-align: center;
     padding: 2rem;
     margin: 2rem auto;
+}
+
+/*lista*/
+ul {
+    list-style: none;
+}
+
+li {
+    padding-bottom: 2rem;
 }
 
 /*links*/
@@ -82,6 +91,24 @@ a {
 a:hover {
     color: var(--tercer-complementario);
 }
+
+/* mapa*/
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 80%; /* establece el heigth*/
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 /* formulario*/
 
 .form-floating {
@@ -139,36 +166,16 @@ label {
     box-shadow: var(--shadow-complementario);
 }
 
-
-.logIn {
+.backToMenu {
     text-decoration: none;
-    color:var(--color-claro);
-  }
-  /* input[type="checkbox"]:enabled:checked {
-    
-    background-color: #aa1d24 !important;
-    color: white;
-} */
-
-input[type='checkbox'] {
-    accent-color: var(--segundo-complementario);
-}
-  .backToMenu{
-    text-decoration: none;
-    color:var(--segundo-complementario);
-    font-size:1.8rem;
+    color: var(--segundo-complementario);
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 500;
 
-  }
-
-.footer{
-    background-color: var(--color-oscuro);
-    color:var(--color-claro);
 }
 
-.errorDato{
-    background-color: var(--tercer-complementario);
+.footer {
+    background-color: var(--color-oscuro);
     color: var(--color-claro);
-    font-style: italic;    
 }
