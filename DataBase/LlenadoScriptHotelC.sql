@@ -23,4 +23,12 @@ insert into tipo_user (Desc_user) value ('Tecnico');
 insert into tipo_user (Desc_user) value ('Cliente');
 
 select * from tipo_user;
+-- ---------------------------------------------------------------------------------------------------------------------
+insert into persona (Nombre, Apellido, Email, Telefono,  Password, CiudadFK ) value ('Agustin', 'Bengolea', 'agustinbengolea97@gmail.com', '1150217843', '54321', 1);
+insert into usuario (Login, Password, Tipo_UsuarioFK, Email, idPersonaFK) value ('admin', '54321', 1, 'agustinbengolea97@gmail.com', 1);
 
+update usuario set Tipo_UsuarioFK = 2 where idUsuario = 1;
+
+select * from usuario;
+select Nombre, Desc_Ciudad
+from persona inner join ciudad on persona.CiudadFK=ciudad.idCiudad;
