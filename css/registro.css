@@ -168,6 +168,7 @@ input[type='checkbox'] {
 }
 
 .errorDato{
+    display:none;
     background-color: var(--tercer-complementario);
     color: var(--color-claro);
     font-style: italic;    

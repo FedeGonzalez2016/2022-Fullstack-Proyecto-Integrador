@@ -29,14 +29,18 @@
             <div class="row">
               <div class="col-md  order-first">
                 <div class="mb-3 text-start">
-                  <input type="text" class="form-control" name="nombre" id="nombre" onblur="verificarNombre(this)" placeholder="Nombre" required>
+                  <input type="text" class="form-control" name="nombre" id="nombre" onblur="verificarNombre(this)" onfocus="ocultarErrorNombre(this)" placeholder="Nombre" required>
                   <label for="nombre"  class="form-label text-start">Nombre </label>
+                  <span id="nombre-incorrecto" class="errorDato"> Debe ingresar un nombre </span>
+                  <span id="nombre-sin-ingresar" class="errorDato"> Ingrese un nombre </span>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="mb-3 text-start">
-                  <input type="text" class="form-control" name="apellido" id="apellido" onblur="verificarApellido(this)" placeholder="Apellido" required>
+                  <input type="text" class="form-control" name="apellido" id="apellido" onblur="verificarApellido(this)" onfocus="ocultarErrorApellido(this)" placeholder="Apellido" required>
                   <label for="apellido" class="form-label text-start">Apellido </label>
+                  <span id="apellido-incorrecto" class="errorDato"> Debe ingresar un apellido </span>
+                  <span id="apellido-sin-ingresar" class="errorDato"> Ingrese un apellido </span>
                   <!--<div class="form-floating">
                   <input type="text" class="form-control" name="nombre" id="nombre" pattern="[A-Za-z]+" onblur="verificarNombre(this)" onkeypress="return soloLetras(event);" placeholder="Nombre" required>
                   <label for="name">Nombre </label>
@@ -52,14 +56,18 @@
             <div class="row">
               <div class="col-md  order-first">
                 <div class="mb-3 text-start">
-                  <input type="number" class="form-control" name="telefono" id="telefono" onblur="verificarTelefono(this)" placeholder="Teléfono" required>
+                  <input type="number" class="form-control" name="telefono" id="telefono" onblur="verificarTelefono(this)" onfocus="ocultarErrorTelefono(this)" placeholder="Teléfono" required>
                   <label for="telefono"class="form-label text-start">Teléfono </label>
+                  <span id="telefono-incorrecto" class="errorDato"> Debe ingresar un teléfono </span>
+                  <span id="telefono-sin-ingresar" class="errorDato"> Ingrese un teléfono </span>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="mb-3 text-start">
-                  <input type="text" class="form-control" name="ciudad" id="ciudad" onblur="verificarCiudad(this)" placeholder="Ciudad" required>
+                  <input type="text" class="form-control" name="ciudad" id="ciudad" onblur="verificarCiudad(this)" onfocus="ocultarErrorCiudad(this)" placeholder="Ciudad" required>
                   <label for="ciudad" class="form-label text-start">Ciudad</label>
+                  <span id="ciudad-incorrecto" class="errorDato"> Debe ingresar una ciudad </span>
+                  <span id="ciudad-sin-ingresar" class="errorDato"> Ingrese una ciudad </span>
                   <!--<div class="form-floating">
                   <input type="number" class="form-control" name="telefono" id="telefono" pattern="[0-9]+" onblur="verificarTelefono(this)" onkeypress="return soloNumeros(event);" placeholder="Teléfono" required>
                   <label for="telefono">Teléfono </label>
@@ -75,9 +83,11 @@
             <div class="row">
               <div class="col-md  order-first">
                 <div class="mb-3 text-start">
-                  <input type="text" class="form-control" name="nombre-usuario" id="nombreUsuario" onblur="verificarUsuario(this)"
+                  <input type="text" class="form-control" name="nombre-usuario" id="nombre-usuario" onblur="verificarUsuario(this)"
                    placeholder="Nombre de usuario" required>
-                  <label for="nombreUsuario" class="form-label text-start">Nombre de usuario</label>
+                  <label for="nombre-usuario" class="form-label text-start">Nombre de usuario</label>
+                  <span id="nombre-usuario-incorrecto" class="errorDato"> Debe ingresar un nombre de usuario </span>
+                  <span id="nombre-usuario-sin-ingresar" class="errorDato"> Ingrese un nombre de usuario </span>
                 </div>
               </div>
               <div class="col-md order-last">
@@ -85,37 +95,49 @@
                   <input type="date" class="form-control" name="fecha-nacimiento" id="fecha-nacimiento" value="1999-01-01"
                   min="1922-01-01" max="2022-10-20" placeholder="Fecha de Nacimiento" required>
                   <label for="fecha-nacimiento" class="form-label text-start">Fecha de Nacimiento </label>
+                  <span id="nacimiento-incorrecto" class="errorDato"> Debe ingresar un nacimiento </span>
+                  <span id="nacimiento-sin-ingresar" class="errorDato"> Ingrese un nacimiento </span>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
                 <div class="mb-3 text-start">
-                  <input type="email" class="form-control" name="email" id="email" onblur="verificarEmail(this)" placeholder="nombre@email.com" required>
+                  <input type="email" class="form-control" name="email" id="email" onblur="verificarEmail(this)" onfocus="ocultarErrorEmail(this)" onfocus="ocultarErrorEmail(this)" placeholder="nombre@email.com" required>
                   <label for="email" class="form-label text-start">Email</label>
+                  <span id="email-incorrecto" class="errorDato"> Debe ingresar un email </span>
+                  <span id="email-sin-ingresar" class="errorDato"> Ingrese un email </span>
                 </div>              
               </div>
               <div class="col-md order-last">
                 <div class="mb-3 text-start">
-                  <input type="email" class="form-control" name="repetir-email" id="repetir-email" onblur="verificarEmailRepetido(this)"  placeholder="nombre@email.com" required>
+                  <input type="email" class="form-control" name="repetir-email" id="repetir-email" onblur="verificarEmailRepetido(this)" onfocus="ocultarErrorEmailRepetido(this)"  placeholder="nombre@email.com" required>
                   <label for="repetir-email" class="form-label text-start"> Repetir email</label>
+                  <span id="repetir-email-incorrecto" class="errorDato"> El email ingresado no coincide</span>
+                  <span id="repetir-email-sin-ingresar" class="errorDato"> El email ingresado debe coincidir </span>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md  order-first">
                 <div class="mb-3 text-start">
-                  <input type="password" class="form-control" name="password" id="password" onblur="verificarPassword(this)" placeholder="Elige una contraseña" required>
+                  <input type="password" class="form-control" name="password" id="password" onblur="verificarPassword(this)" onfocus="ocultarErrorPassword(this)" placeholder="Elige una contraseña" required>
                   <label for="password" class="form-label text-start">Contraseña</label>
+                  <span id="password-incorrecto" class="errorDato"> Debe ingresar un password </span>
+                  <span id="password-sin-ingresar" class="errorDato"> Ingrese un password </span>
                 </div>
               </div>
               <div class="col-md order-last">
                 <div class="mb-3 text-start">
-                  <input type="password" class="form-control" name="repetirPassword" id="repetirPassword" onblur="verificarPasswordRepetido(this)"  placeholder="Repite tu contraseña" required>
-                  <label for="repetirPassword" class="form-label text-start">Repetir contraseña</label>
+                  <input type="password" class="form-control" name="repetirPassword" id="repetir-password"
+                    onblur="verificarPasswordRepetido(this)" onfocus="ocultarErrorPasswordRepetido(this)"
+                    placeholder="Repite tu contraseña" required>
+                  <label for="repetir-password" class="form-label text-start">Repetir contraseña</label>
+                  <span id="repetir-password-incorrecto" class="errorDato"> El password ingresado no coincide </span>
+                  <span id="repetir-password-sin-ingresar" class="errorDato"> El password ingresado debe coincidir </span>
                 </div>
               </div>
-            </div>
+              </div>
           </div>
           <!-- End Example Code -->
           
