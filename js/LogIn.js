@@ -35,10 +35,13 @@ function onEnviar(){
     if (form.checkValidity() && user == "user1" && password == "123"){
         
                 
+        
         window.location = '../index.html'; 
-        
-        
+
         alert("Pasó la validación correctamente. Llamar a controlador."); 
+        
+        
+        
         }
     
     if (user == ""){
