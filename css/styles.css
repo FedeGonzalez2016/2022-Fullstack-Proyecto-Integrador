@@ -125,6 +125,9 @@ header {
     color: var(--segundo-complementario);
 }
 
+#listaServicio {
+    list-style: none;
+}
 @media only screen and (max-width: 992px) {
     .descripcion-de-imagenes {
         padding-top: 28%;

@@ -15,6 +15,7 @@
   <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
   <link rel="stylesheet" href="./libs/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <script src="../2022-Fullstack-Proyecto-Integrador/js/datosUsuario.js"></script>
 </head> <!-- no borrar -->
 
 
@@ -37,7 +38,7 @@
             <li><a href="./Views/registro.html" class="botonesInicio" id="deslogRegistrate" target="_blank">Regístrate</a></li>
             <li><a href="./Views/contact2.html" class="botonesInicio" target="_blank">Consulta</a></li>
             <li id="logueadoBienvenido">
-              <p>Bienvenido/a </p>
+              <p>Bienvenido/a <script>document.write(usuario.nombre + " "+ usuario.apellido)</script></p>
             </li>
           </ul>
         </navbar>
@@ -62,12 +63,12 @@
   <section class="container" style="background: white;">
     <div class="container" id="nuestrahistoria">
       <div class="row text-center">
-        <h2>Such a lovely place</h2>
+        <h2>Enamorate de nuestra esencia</h2>
       </div>
       <div class="row">
-        <div class="col-6 m-auto text-center"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis delectus
-          illum veniam deleniti! Alias consectetur, maiores fugiat libero provident incidunt fuga ipsam repellendus deleniti
-          facere, reprehenderit eaque cupiditate, odit optio.</div>
+        <div class="col-6 m-auto text-center"> <br><hr><strong>Con muchos años de trayectoria en Villa Carlos Paz, trabajamos para brindarte un servicio único, con un entorno ideal para descansar y desconectar de la rutina, rodeado de espacio verde, una hermosa piscina y la mejor vista a las sierras.</strong>
+
+          <br>Una ubicación privilegiada para recorrer todo el Valle de Punilla sin tener que cambiar de hospedaje. A sólo 40 km de Córdoba Capital, nuestra ciudad se destaca por su especial clima serrano, donde es posible disfrutar de sus paisajes durante todo el año, sus balnearios naturales a la vera del río San Antonio y el dique San Roque..</div>
       </div>
     </div>
 
@@ -78,7 +79,20 @@
         <h2> Servicios</h2>
       </div>
       <div class="row">
-        <div class="col-6 m-auto text-center"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis delectus.</div>
+        <div class="col-6 m-auto text-center" >  
+          <ul id="listaServicio">
+            <li>Desayuno completo</li>
+            <li>Piscina y Spa relajante</li>
+            <li>Cocheras y estacionamiento</li>
+            <li>WiFi en áreas públicas y en cada habitación</li>
+            <li>Servicio de bebidas</li>
+            <li>Sala de estar</li>
+            <li>Vista a las sierras</li>
+            <li>Traslados al aeropuerto (costo extra)</li>
+            <li>Servicio de taxi (costo extra)</li>
+            <li>Servicio diario de limpieza: ropa blanca, recambio de toallas y sábanas</li>
+          </ul>
+        </div>
       </div>  
       <br><br>
       <div class="row ">
@@ -90,9 +104,7 @@
           <div class="container text-center col-lg-12 col-sm-6 float-sm-end descripcion-de-imagenes">
             <!--Usar @ para cambiar el padding según tamaño-->
             <div class="container text-center subttl ">Subtítulo1: Spa</div>
-            <div class="container text-center ">Descripción1: Spa - Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi
-              tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
+            <div class="container text-center "><strong>Placer y relax en nuestro Spa:</strong> Se brindan servicios que comprenden baños de vapor, hidromasaje jacuzzi, piscina cubierta y climatizada, salas de relax, gabinetes de estética facial y corporal y gimnasio con aparatos y personal trainers.</div>
           </div>
         </div>
     
@@ -102,9 +114,7 @@
           </div>
           <div class="container col-lg-12 col-sm-6 float-sm-start descripcion-de-imagenes">
             <div class="container text-center subttl ">Subtítulo2: Swimming Pool</div>
-            <div class="container text-center ">Descripción2: Swimming Pool - Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum
-              dolorum sequi tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
+            <div class="container text-center "><strong>Piscina Cubierta y climatizada: </strong>En el segundo nivel del edificio , de importantes dimensiones con novedoso sistema cuello de cisne. Para la práctica de pileta libre o actividades en el agua para todas las edades quer se desarrollan en fechas particulares (consultar disponibilidad).</div>
           </div>
         </div>
     
@@ -114,9 +124,7 @@
           </div>
           <div class="container  col-lg-12 col-sm-6 float-sm-end descripcion-de-imagenes">
             <div class="container text-center subttl">Subtítulo3: Chef</div>
-            <div class="container text-center ">Descripción3: Chef - Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quis adipisci qui, impedit reprehenderit eius eligendi, quia fuga, repellat voluptatum dolorum sequi
-              tempore laborum assumenda consectetur pariatur obcaecati ducimus illo officia?</div>
+            <div class="container text-center "><strong>Desayunos, almuerzos y cenas servidos en el restaurant del hotel o en su habitación: </strong> Restaurant con menú de cocina Internacional. Una variada carta que incluye diversidad de comidas saludables de elaboración casera y opciones de bajas calorías.</div>
           </div>
         </div>
       </div>
@@ -129,14 +137,18 @@
         <h1>Instalaciones</h1>
       </div><br><br>
       <div class="row">
-        <div class="col-6 text-center mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, sit suscipit.
-          Numquam repudiandae expedita enim iure? Natus voluptatum sint explicabo fugit impedit sit ad corporis nesciunt
-          ipsa minus? Quo, neque.
-          Beatae, temporibus voluptatum provident quae excepturi asperiores saepe minima accusamus soluta atque nesciunt
-          autem, in delectus voluptas commodi officia odio! Consequuntur qui molestias id cupiditate sequi accusantium,
-          repellendus dolor rerum!
-          Veritatis voluptatum optio quia saepe perferendis nisi non sunt assumenda iusto ad reprehenderit eum tempora,
-          harum totam perspiciatis eos quas doloribus vel ipsum, eligendi suscipit impedit itaque? Magni, minus dolor.</div>
+        <div class="col-6 text-center mx-auto">
+          <ul>
+            <li><strong>Recepción. </strong>Abierta las 24 h, es un amplio espacio donde siempre te atenderemos, con cómodas butacas donde tomar un café sin prisas.</li>
+            <li><strong>Piscina. </strong>Piscina exterior climatizada de 25 × 10 m y cuatro carriles de 2,5 m cada uno. Durante los meses de marzo a mayo, y desde el 15 de septiembre, se reserva exclusivamente para la natación.</li>
+            <li><strong>Jardines.</strong> Un área ajardinada, con una gran zona de césped en perfecto estado donde siempre apetece tomar el sol, sentarse a leer o pasear.</li>
+            <li><strong>Gimnasio. </strong>Equipado y constantemente actualizado, para que no dejes de estar en forma.</li>
+            <li><strong>Spa.</strong> Tu lugar de máximo relax y desconexión. Cuenta con piscina climatizada de hidromasaje, sauna, baño turco, duchas de sensaciones y tres cabinas destinadas a tratamientos personalizados.</li>
+            <li><strong>Restaurante buffet.</strong> Cocina diversa, fresca y de calidad. En nuestro restaurante, la cocina local se fusiona con la internacional. Podrás disfrutar también de la cocina a la vista, el showcooking de nuestros cocineros.</li>
+            <li><strong>Sala de reuniones. </strong>Esta sala, cómoda y funcional, está equipada con la tecnología necesaria para eventos, reuniones y comidas de trabajo. Tiene capacidad para treinta personas.</li>
+        
+          </ul>
+        </div>
       </div>
     
       <br><br>
@@ -194,7 +206,7 @@
         <h1>Habitaciones</h1>
       </div><br><br>
       <div class="row">
-        <div class="col-6 text-center mx-auto">conoce nuestras habitaciones y los diferentes  bla bla bla del hotel </div>
+        <div class="col-6 text-center mx-auto">Habitaciones de categoría con aire climatizado, Wifi y TV LCD con videocable.</div>
       </div>
     
       <br><br>
@@ -202,37 +214,36 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Habitacion de 1 plaza
+              Habitación Single o Doble
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae commodi, aliquid ea magnam accusantium blanditiis quos eum sequi ducimus ratione nihil in magni beatae? Dolorem magnam autem nostrum consequuntur?
+              Equipados con microondas, pava eléctrica y heladera tipo frigobar, ideales para prepararse una merienda o un snack (no aptos para comidas más elaboradas). TV-LED. Caja de seguridad en las habitaciones. Conexión a Internet inalámbrica (Wi-Fi).
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Habitación 2 plazas
+              Habitaciónes Triples
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati et eligendi neque impedit necessitatibus quisquam dolor in? Debitis molestiae dolore amet delectus cum harum officia consequatur quaerat magnam odio.
+              Equipados con cómodos Kitchenette de 2 x 1,8 m. aprox. con microondas, pava eléctrica y heladera tipo frigobar, ideales para prepararse una merienda o un snack (no aptos para comidas más elaboradas). TV-LED. Caja de seguridad en las habitaciones. Conexión a Internet inalámbrica (Wi-Fi). Sommiers de una plaza como camas adicionales.
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Servicio 3
+              Cuádruples
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut recusandae minus delectus unde vel, rem similique placeat excepturi suscipit voluptas temporibus veniam architecto aliquam distinctio repudiandae quae natus laborum!
-              Obcaecati dolores accusantium ratione asperiores eius ullam harum expedita qui illo, dolor aperiam accusamus explicabo vero. Voluptate nulla incidunt impedit, adipisci fugiat unde aut quis deleniti, cum consequatur laboriosam optio.
+              Habitaciones familiares con 2 ambientes, dos camas doble plaza y 1 baño. Algunas con vistas al lago, TV 42 pulgadas con canales internacionales, minibar, etc.
             </div>
           </div>
         </div>
@@ -240,13 +251,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Servicio 4            
+              Suite exclusiva          
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut recusandae minus delectus unde vel, rem similique placeat excepturi suscipit voluptas temporibus veniam architecto aliquam distinctio repudiandae quae natus laborum!
-              Obcaecati dolores accusantium ratione asperiores eius ullam harum expedita qui illo, dolor aperiam accusamus explicabo vero. Voluptate nulla incidunt impedit, adipisci fugiat unde aut quis deleniti, cum consequatur laboriosam optio.
+            Amplia y elegante habitación equipada con una cama King, muebles de madera oscura, obras de arte en las paredes, baño privado con artículos de aseo gratuitos, escritorio, frigobar, cafetera,   caja fuerte,  sofá cama y sillón de descanso. Esta habitación cuenta con un balcón privado con sillones y  un gran  jacuzzi   que le garantizan un ambiente ideal para un placentero descanso disfrutando la naturaleza circundante
             </div>
           </div>
         </div>
@@ -254,13 +264,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Servicio 5
+              Suite Junior Doble
             </button>
           </h2>
           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore aut recusandae minus delectus unde vel, rem similique placeat excepturi suscipit voluptas temporibus veniam architecto aliquam distinctio repudiandae quae natus laborum!
-              Obcaecati dolores accusantium ratione asperiores eius ullam harum expedita qui illo, dolor aperiam accusamus explicabo vero. Voluptate nulla incidunt impedit, adipisci fugiat unde aut quis deleniti, cum consequatur laboriosam optio.
+              Amplia habitación  equipada con dos camas queen. Disponen de muebles de madera oscura, obras de arte en las paredes, baño privado con artículos de aseo gratuitos, escritorio, frigobar,  caja fuerte, cafetera  terraza con sillones para disfrutar de la naturaleza con vista al jardín.
             </div>
           </div>
         </div>
