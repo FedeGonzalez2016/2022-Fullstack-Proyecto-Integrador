@@ -37,24 +37,27 @@ header {
     background-position: center center;
 }
 
-#menu {
+/* #menu {
     text-transform: uppercase;
-}
+} */
 
 #menu ul {
     list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #menu ul li {
     margin-right: 25px;
     margin-top: 35px;
     float: right;
+
+    
 }
 
 #menu a {
     text-decoration: none;
     color: var(--color-principal);
-    font-size: small;
+    font-size: medium;
 }
 
 #menu a:hover {
@@ -84,8 +87,7 @@ header {
 #inicio ul {
     line-height: 46px;
     text-align: right;
-    list-style: none;
-    text-transform: uppercase;
+    justify-content: flex-end;
     background-color: var(--color-principal);
 
 }
@@ -142,9 +144,13 @@ header {
     }
 }
 
-#logueado {
+#logueadoReserva, #logueadoBienvenido, #logueadoCerrar {
     display: none;
 }
+#deslogLogin, #deslogRegistrate {
+    display: block;
+}
+
 
 .subttl{
     padding-bottom: 2rem;
@@ -181,3 +187,4 @@ header {
 .accordion-button:focus {
     box-shadow: var(--shadow-complementario);
 }
+

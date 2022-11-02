@@ -14,7 +14,7 @@
                 event.stopPropagation()
             }
 
-        form.classList.add('')
+        form.classList.add('non-validated')
         }, false)
     })
     })() 
@@ -31,9 +31,14 @@ function onEnviar(){
     document.getElementById("contrasena-sin-ingresar").style.display = "none";
     document.getElementById("contrasena-incorrecta").style.display = "none"
     
+    
     if (form.checkValidity() && user == "user1" && password == "123"){
-        alert("Pasó la validación correctamente. Llamar a controlador.");  
-        /*window.location = "../index.html";  */
+        
+                
+        window.location = '../index.html'; 
+        
+        
+        alert("Pasó la validación correctamente. Llamar a controlador."); 
         }
     
     if (user == ""){
