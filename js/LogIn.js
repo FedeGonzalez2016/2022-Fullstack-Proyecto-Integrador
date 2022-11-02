@@ -36,7 +36,7 @@ function onEnviar(){
         
         console.log("Después del alert y antes de WinLOC")
         alert("Pasó la validación correctamente. Llamar a controlador.");  
-        window.location = "../index.html";  
+        window.location.href = "../index.html";  
         console.log("Después de WinLOC")
     }
     
