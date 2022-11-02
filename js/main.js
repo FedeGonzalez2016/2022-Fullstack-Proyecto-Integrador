@@ -1,36 +1,28 @@
 
-var botonLogin = document.getElementById("botonLogin");
 
-botonLogin.addEventListener("click", login);
+// var onEnviar = document.getElementById("onEnviar");
 
-//prueba de botones, no finalizado
+// onEnviar.addEventListener("submit", login);
 
-function login() {
-    var user, pass;
-    //var logged =false;
+// //prueba de botones, no finalizado
 
-    user = document.getElementById('floatingInput').value;
-    pass = document.getElementById('floatingPassword').value;
+// function login() {
+//     var user, pass;
+//     var logged =false;
+
+//     user = document.getElementById('floatingInput').value;
+//     pass = document.getElementById('floatingPassword').value;
 
 
-    if(user == "user1" && pass == "1234"){
-        window.location = "../index.html";
-        //logged=true; 
-    }
+//     if(user == "user1" && pass == "123"){
+//         window.location = "/index.html";
+//         logged=true; 
+//     }
 
-    // if logged {
-    //     funcion para mostrar los elementos "logueados"
-    //     funcion para "ocultar" los links a "registrate" y "login"
-    // }
+//     if (logged == true){
+//         document.getElementById('logueado').style.display ="block"
+//         document.getElementById('deslog').style.display ="none"
+       
    
-}
-
-
-    // function mostrarLogueado() {
-        
-    //     if(window.location ="../index.html"){    
-    //         document.getElementById('logueado').style.display ="block"
-
-    //     }
-    // }
-
+//     }
+// }
