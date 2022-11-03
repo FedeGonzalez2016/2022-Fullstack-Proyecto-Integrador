@@ -29,7 +29,7 @@
             <div class="row">
               <div class="col-md  order-first">
                 <div class="mb-3 text-start">
-                  <input type="text" class="form-control" name="nombre" id="nombre" onblur="verificarNombre(this)" onfocus="ocultarErrorNombre(this)" placeholder="Nombre" required>
+                  <input type="text" class="form-control" name="nombre" id="nombre" onblur="verificarNombre(this)" onfocus="ocultarErrorNombre(this)" placeholder="Nombre" required maxlength="20">
                   <label for="nombre"  class="form-label text-start">Nombre </label>
                   <span id="nombre-incorrecto" class="errorDato"> Debe ingresar un nombre </span>
                   <span id="nombre-sin-ingresar" class="errorDato"> Ingrese un nombre </span>
@@ -37,7 +37,7 @@
               </div>
               <div class="col-md order-last">
                 <div class="mb-3 text-start">
-                  <input type="text" class="form-control" name="apellido" id="apellido" onblur="verificarApellido(this)" onfocus="ocultarErrorApellido(this)" placeholder="Apellido" required>
+                  <input type="text" class="form-control" name="apellido" id="apellido" onblur="verificarApellido(this)" onfocus="ocultarErrorApellido(this)" placeholder="Apellido" required maxlength="15">
                   <label for="apellido" class="form-label text-start">Apellido </label>
                   <span id="apellido-incorrecto" class="errorDato"> Debe ingresar un apellido </span>
                   <span id="apellido-sin-ingresar" class="errorDato"> Ingrese un apellido </span>
