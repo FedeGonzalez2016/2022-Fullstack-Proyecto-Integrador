@@ -23,6 +23,7 @@ html {
     --resaltador: #a3b4b9;
     --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
     --tamanio-fuente:1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     }
 body{
