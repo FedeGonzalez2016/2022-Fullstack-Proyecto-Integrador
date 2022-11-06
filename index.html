@@ -290,20 +290,30 @@
         <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">Regresar al Inicio</a>
         <ul class="col-3 list-unstyled">
           <li>
-            <i class="fa fa-map-marked"></i> <script>
-              document.write(" "+hotel.direccion + " - C.P: " + hotel.codPostal); 
+            <i class="fa fa-map-marked"></i>
+            <script>
+              document.write(" " + hotel.direccion + " - C.P: " + hotel.codPostal); 
             </script>
           </li>
-          <li> <script>
-            document.write(" "+ hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
-          </script></li>
-          <li><i class="fa fa-phone"></i></i><script>
-            document.write(" "+ hotel.telefono); 
-          </script></li>
+
           <li>
-            <p><a href="mailto:example@example.com"><i class="fa fa-envelope"></i><script>
-              document.write(" "+ hotel.email); 
-            </script></a></p>
+            <script>
+              document.write(" " + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
+            </script>
+          </li>
+
+          <li><i class="fa fa-phone"></i></i>
+            <script>
+              document.write(" " + hotel.telefono); 
+            </script>
+          </li>
+          
+          <li>
+            <p><a href="mailto:example@example.com"><i class="fa fa-envelope"></i>
+                <script>
+                  document.write(" " + hotel.email); 
+                </script>
+              </a></p>
           </li>
 
         </ul>

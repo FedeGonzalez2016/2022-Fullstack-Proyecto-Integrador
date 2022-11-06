@@ -8,7 +8,7 @@ const hotel = {
     categoria: "2 estrellas",
     info: "Hotel & Spa",
     sucursal: "Central",
-    direccion: "Diagonal San Martin",
+    direccion: "Diagonal San MArtin 125",
     codPostal:"123456",
     ciudad: "La Falda", 
     provincia: "Córdoba", 
