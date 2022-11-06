@@ -1,3 +1,0 @@
-#Registro
-#Login
-#Recuperar Contraseña
