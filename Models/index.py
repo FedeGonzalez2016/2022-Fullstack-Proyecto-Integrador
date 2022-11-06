@@ -1,1 +1,0 @@
-#Creamos la ruta para que se pueda ver la ruta index.html y para que pueda consultar datos a la base de datos
