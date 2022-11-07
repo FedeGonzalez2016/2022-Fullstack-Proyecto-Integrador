@@ -28,3 +28,41 @@ def registro():
         session['nombre'] = nombre
         session['correo'] = correo
         return redirect(url_for("index"))
+
+#Creamos el login
+@app.route('/login', methods=["GET", "POST"])
+def login():
+    if request.method == 'POST':
+        usuario = request.form['usuario']
+        password = request.form['password'].encode('utf-8')
+        
+        cur = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        cur.execute("SELECT * FROM clientes WHERE usuario=%s",(usuario,))
+        user = cur.fetchone()
+        cur.close()
+#Verificamos el metodo post por medio de un if
+        if len(user) > 0:
+            if bcrypt.hashpw(password, user['password'].encode('utf-8')) == user['password'].encode('utf-8'):
+                session['id'] = user['id']
+                session['nombre'] = user['nombre']
+                session['apellido'] = user['apellido']
+                session['tipo_usuario'] = user['tipo_usuario']
+
+                if session['tipo_usuario'] == 'user':
+                    return redirect(url_for("index"))
+                elif session['tipo_usuario'] == 'admin':
+                    return redirect(url_for("sistema"))
+            else:
+                flash('Los datos son incorrectos')
+                return render_template("login.html")
+        else:
+            flash('Los datos son incorrectos')
+            return render_template("login.html")
+    else:
+        return render_template("login.html")
+
+#Creamos salir para cerrar sesión
+@app.route('/salir')
+def salir():
+    session.clear()
+    return redirect(url_for("index"))
