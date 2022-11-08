@@ -11,7 +11,7 @@ def sistema():
     data = cur.fetchall()
     return render_template("sistema/inicio.html", datos=data)
 
-#Creacion de crud cliente
+#Creacion de crud clientes
 
 #INSERT
 
