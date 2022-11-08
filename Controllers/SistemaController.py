@@ -13,6 +13,29 @@ def sistema():
 #Creacion de Crud Clientes
 
 #Insertar datos
+
+#Leer los datos
+#Ruta clientes
+@app.route('/clientes')
+def clientes():
+    if session['tipo_usuario'] == 'admin':
+        cur = mysql.connection.cursor()
+        cur.execute("SELECT * FROM clientes")
+        data = cur.fetchall()
+        cur.close()
+        return render_template("sistema/cliente.html", clientes=data)
+    else:
+        return redirect(url_for("index"))
+
+#Editar los datos
+
+#Eliminar datos
+
+
+
+
+#Creacion de Crud instalaciones
+#Insertar datos
 @app.route('/agregar_instalaciones', methods=['POST'])
 def agregar_instalaciones():
     cur = mysql.connection.cursor()
@@ -26,15 +49,15 @@ def agregar_instalaciones():
     flash('Usuario agregado correctamente')
     return redirect('/instalaciones')
 #Leer los datos
-#Ruta clientes
-@app.route('/clientes')
-def clientes():
+#Ruta instalaciones
+@app.route('/instalaciones')
+def instalaciones():
     if session['tipo_usuario'] == 'admin':
         cur = mysql.connection.cursor()
-        cur.execute("SELECT * FROM clientes")
+        cur.execute("SELECT * FROM instalaciones")
         data = cur.fetchall()
         cur.close()
-        return render_template("sistema/cliente.html", clientes=data)
+        return render_template("sistema/instalaciones.html", instalaciones=data)
     else:
         return redirect(url_for("index"))
 
@@ -59,29 +82,6 @@ def eliminarf(id_data):
     mysql.connection.commit()
     flash('Usuario eliminado correctamente')
     return redirect('/instalaciones')
-
-
-
-#Creacion de Crud instalaciones
-#Insertar datos
-
-#Leer los datos
-#Ruta instalaciones
-@app.route('/instalaciones')
-def instalaciones():
-    if session['tipo_usuario'] == 'admin':
-        cur = mysql.connection.cursor()
-        cur.execute("SELECT * FROM instalaciones")
-        data = cur.fetchall()
-        cur.close()
-        return render_template("sistema/instalaciones.html", instalaciones=data)
-    else:
-        return redirect(url_for("index"))
-
-#Editar los datos
-
-#Eliminar datos
-
 
 #Creacion de Crud reservas
 #Insertar datos
