@@ -13,7 +13,18 @@ def sistema():
 #Creacion de Crud Clientes
 
 #Insertar datos
-
+@app.route('/agregar_instalaciones', methods=['POST'])
+def agregar_instalaciones():
+    cur = mysql.connection.cursor()
+    habitacion = request.form['habitacion']
+    estado = request.form['estado']
+    id_cliente = request.form['id_cliente']
+    tipo = request.form['tipo']
+    piso = request.form['piso']
+    cur.execute("INSERT INTO instalaciones (habitacion,estado,id_cliente,tipo,piso) VALUES(%s,%s,%s,%s,%s)",(habitacion,estado,id_cliente,tipo,piso,))
+    mysql.connection.commit()
+    flash('Usuario agregado correctamente')
+    return redirect('/instalaciones')
 #Leer los datos
 #Ruta clientes
 @app.route('/clientes')
@@ -28,8 +39,27 @@ def clientes():
         return redirect(url_for("index"))
 
 #Editar los datos
-
+@app.route('/actualizar_instalaciones', methods=['POST'])
+def actualizar_instalaciones():
+    if request.method == 'POST':
+        cur = mysql.connection.cursor()
+        habitacion = request.form['habitacion']
+        estado = request.form['estado']
+        id_cliente = request.form['id_cliente']
+        tipo = request.form['tipo']
+        piso = request.form['piso']
+        cur.execute("UPDATE instalaciones SET habitacion = %s, estado = %s, id_cliente = %s, tipo = %s, piso = %s WHERE id=%s",(habitacion,estado,id_cliente,tipo,piso))
+        mysql.connection.commit()
+        return redirect('/instalaciones')
 #Eliminar datos
+@app.route('/eliminar/<string:id_data>', methods=['GET'])
+def eliminarf(id_data):
+    cur = mysql.connection.cursor()
+    cur.execute("DELETE FROM instalaciones WHERE id=%s",(id_data))
+    mysql.connection.commit()
+    flash('Usuario eliminado correctamente')
+    return redirect('/instalaciones')
+
 
 
 #Creacion de Crud instalaciones
