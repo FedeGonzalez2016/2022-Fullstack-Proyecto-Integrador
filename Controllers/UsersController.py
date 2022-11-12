@@ -32,10 +32,14 @@ def registro():
 #Creamos el login
 @app.route('/login', methods=["GET", "POST"])
 def login():
+
+    #La librería Python Request es un estándar que sirve para realizar solicitudes HTTP cuando se está desarrollando el lado del servidor de una página web.
+    #Hacemos la conexion a la base de datos a traves del método "Post" y guardamos lo ingresado en el frontend, en los campos "usuario" y "password" en las variables declaradas para chequearlo mas adelante.
     if request.method == 'POST':
         usuario = request.form['usuario']
         password = request.form['password'].encode('utf-8')
         
+        #Un cursor es un objeto de acceso a datos que se puede utilizar para recorrer el conjunto de filas de una tabla o insertar nuevas filas en una tabla
         cur = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
         cur.execute("SELECT * FROM clientes WHERE usuario=%s",(usuario,))
         user = cur.fetchone()
@@ -48,14 +52,19 @@ def login():
                 session['apellido'] = user['apellido']
                 session['tipo_usuario'] = user['tipo_usuario']
 
+                #Si el tipo de usuario es user, redirige hacia la pagina de inicio.
                 if session['tipo_usuario'] == 'user':
                     return redirect(url_for("index"))
+                #De lo contrario, si el tipo de usuario es admin, redirige hacia el sistema interno.
                 elif session['tipo_usuario'] == 'admin':
                     return redirect(url_for("sistema"))
             else:
+
+                #Si no es ninguno de los dos casos anteriores, devuelve al login, e indica que los datos ingresados son incorrectos.
                 flash('Los datos son incorrectos')
                 return render_template("login.html")
         else:
+            #Si el user que se ha ingresado no tiene mas de 0 caracteres de largo(es decir no se ha ingresado valor alguno), devuelve al login, e indica que los datos ingresados son incorrectos.
             flash('Los datos son incorrectos')
             return render_template("login.html")
     else:
