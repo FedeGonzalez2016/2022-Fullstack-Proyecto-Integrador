@@ -1,7 +1,24 @@
 # 2022-Fullstack-Proyecto-Integrador
 Trabajo realizado para el modulo Proyecto Integrador del ISPC cohorte 2022
 
-Toda la documentación solicitada se encuentra en la carpeta "DOCS".
+Con respecto a la consigna: "Entregable en GitHub: Se valorará rama main con 3 carpetas: front, Back ( o MVC) y
+documentación (Diagramas, Scripts, doc IEEE830)", a continuación se hará una descripción y calificación de las carpetas entregadas en el presente repositorio, no pudiendo realizarse las modificaciones solicitadas ya que afectarían directamente al desarrollo del Proyecto en sí, atrasando considerablemente la fecha de entrega y calidad del mismo".
+
+Carpetas:
+
+Controllers -> BACKEND
+Database -> BACKEND
+Models -> BACKEND
+Views -> FRONTEND
+Css -> FRONTEND
+Docs -> DOCUMENTACIÓN (Toda la documentación solicitada se encuentra en esta carpeta)
+img -> FRONTEND
+js -> FRONTEND
+libs -> FRONTEND
+README.md -> DOCUMENTACIÓN
+app.py -> BACKEND
+conexion.py -> BACKEND
+index.html -> FRONTEND
 
 Links Relevantes: 
 
