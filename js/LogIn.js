@@ -14,7 +14,7 @@
                 event.stopPropagation()
             }
 
-        form.classList.add('')
+        form.classList.add('non-validated')
         }, false)
     })
     })() 
@@ -31,14 +31,18 @@ function onEnviar(){
     document.getElementById("contrasena-sin-ingresar").style.display = "none";
     document.getElementById("contrasena-incorrecta").style.display = "none"
     
+    
     if (form.checkValidity() && user == "user1" && password == "123"){
-        console.log("Antes del alert")
         
-        console.log("Después del alert y antes de WinLOC")
-        alert("Pasó la validación correctamente. Llamar a controlador.");  
-        window.location = "../index.html";  
-        console.log("Después de WinLOC")
-    }
+                
+        
+        window.location = '../index.html'; 
+
+        alert("Pasó la validación correctamente. Llamar a controlador."); 
+        
+        
+        
+        }
     
     if (user == ""){
         console.log("Usuario vacío")

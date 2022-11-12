@@ -9,12 +9,13 @@
 
         <link rel="stylesheet" href="../../libs/bootstrap-5.2.2-dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <!--<link rel="stylesheet" href="../../css/setup.css" />-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="setupI.css">
     </head>
 
     <body>
-      <nav class="navbar navbar-dark bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
             <a class="navbar-brand fw-bold" href="#">HOTEL CALIFORNIA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,57 +23,54 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <i class="bi bi-house-door-fill fill-curre"style="font-size: white; 2rem;"></i>
-                <i class="fas fa-camera fa-xs"></i>
                 <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
-                <i class="bi bi-house"></i>
-                <a class="nav-link" href="reservas.html">Reservas</a>
-                <a class="nav-link" href="instalaciones.html">Instalaciones</a>
-                <a class="nav-link" href="cliente.html">Clientes</a>
-                <a class="nav-link" href="usuarios.html">Usuarios</a>
-                <a class="nav-link" href="setup.html">Configuración</a>
+                <a class="nav-link text-white" href="reservas.html">Reservas</a>
+                <a class="nav-link text-white" href="instalaciones.html">Instalaciones</a>
+                <a class="nav-link text-white" href="cliente.html">Clientes</a>
+                <a class="nav-link text-white" href="usuarios.html">Usuarios</a>
+                <a class="nav-link text-white" href="setup.html">Configuración</a>
               </div>
             </div>
           </div>
         </nav>
-      </nav>   
+      </nav> 
         <div class="container col-6"> <!--Contenedor Principal-->
-          <div class="row mt-5"> <!--Fila y margen arriba de 5-->
+          <div class="row m-5"> <!--Fila y margen arriba de 5-->
               <div class="col"> <!--Dentro tengo una columna-->
                 <div class="d-flex">
-                  <i class="bi bi-gear p-1"></i><h1>Configuración</h1>
+                  <i class="bi bi-gear px-4" style="font-size: 2rem;"></i><h1>Configuración</h1>
                 </div>
                 <hr>
               </div>
-              <form class="bg-primary p-5">
+              <form class=" p-5">
                 <div class="mb-3">
-                  <label for="exampleInputName" class="form-label"><span>Nombre del Hotel</span></label>
+                  <label for="exampleInputName" class="form-label text-light"><span>Nombre del Hotel</span></label>
                   <input type="text" class="form-control form-control-lg" placeholder="Hotel California" id="exampleInputName" aria-describedby="emailHelp">
                 </div>
 
                 <div class="mb-3">
-                  <label for="exampleInputEmail" class="form-label"><span>Correo Electrónico</span></label>
+                  <label for="exampleInputEmail" class="form-label text-light"><span>Correo Electrónico</span></label>
                   <input type="email" class="form-control form-control-lg" placeholder="hotel-california@innovacionit.tech" id="exampleInputEmail" aria-describedby="emailHelp">
                 </div>
 
                 <div class="mb-3">
-                  <label for="exampleInputUbicacion" class="form-label"><span>Ubicación</span></label>
+                  <label for="exampleInputUbicacion" class="form-label text-light"><span>Ubicación</span></label>
                   <input type="text" class="form-control form-control-lg" placeholder="Ubicación" id="exampleInputUbicacion">
                 </div>
 
-                <label for="exampleInputUbicacion" class="form-label"><span>Elegir Moneda</span></label>
+                <label for="exampleInputUbicacion" class="form-label text-light"><span>Elegir Moneda</span></label>
                   <select class="form-select form-select-lg" aria-label="Default select example">
                     <option selected>Pesos Argentinos(ARG)</option>
                     <option value="2">Dólares (USD)</option>
                   </select>
-                  <div class="d-flex mt-5 justify-content-center align-items-center">
-                    <button type="submit" class="btn btn-success"><span>Aceptar</span></button>
+                  <div class="d-flex mt-5 justify-content-center align-items-center text-light">
+                    <button type="submit" class="btn btn-light"><span>Aceptar</span></button>
                   </div>
               </form>
           </div>
         </div>
-        
 
+        
       <script src="../../libs/boostrap/js/bootstrap.min.js"></script>
     </body>
 

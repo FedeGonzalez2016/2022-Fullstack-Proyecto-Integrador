@@ -23,6 +23,7 @@ html {
     --resaltador: #a3b4b9;
     --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
     --tamanio-fuente:1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
     }
 body{
@@ -37,24 +38,27 @@ header {
     background-position: center center;
 }
 
-#menu {
+/* #menu {
     text-transform: uppercase;
-}
+} */
 
 #menu ul {
     list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #menu ul li {
     margin-right: 25px;
     margin-top: 35px;
     float: right;
+
+    
 }
 
 #menu a {
     text-decoration: none;
     color: var(--color-principal);
-    font-size: small;
+    font-size: medium;
 }
 
 #menu a:hover {
@@ -84,8 +88,7 @@ header {
 #inicio ul {
     line-height: 46px;
     text-align: right;
-    list-style: none;
-    text-transform: uppercase;
+    justify-content: flex-end;
     background-color: var(--color-principal);
 
 }
@@ -123,6 +126,9 @@ header {
     color: var(--segundo-complementario);
 }
 
+#listaServicio {
+    list-style: none;
+}
 @media only screen and (max-width: 992px) {
     .descripcion-de-imagenes {
         padding-top: 28%;
@@ -142,9 +148,13 @@ header {
     }
 }
 
-#logueado {
+#logueadoReserva, #logueadoBienvenido, #logueadoCerrar {
     display: none;
 }
+#deslogLogin, #deslogRegistrate {
+    display: block;
+}
+
 
 .subttl{
     padding-bottom: 2rem;
@@ -180,4 +190,13 @@ header {
 
 .accordion-button:focus {
     box-shadow: var(--shadow-complementario);
+}
+/*links*/
+footer a {
+    text-decoration: none;
+    color: var(--color-claro);
+}
+
+footer a:hover {
+    color: var(--tercer-complementario);
 }

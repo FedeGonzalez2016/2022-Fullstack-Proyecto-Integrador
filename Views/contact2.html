@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hotel California - Registro</title>
+  <title>Hotel California - Contacto</title>
   <!-- Aca va el nombre de la pagina por ejemplo "pizzeria don roque" y es lo que se muestra en la pestaña del navegador -->
 
   <!-- el proyecto ya tiene instalado Boostrap, pero por ahora no lo vamos a usar  -->
@@ -45,29 +45,41 @@
             <div class="row datos">
               <div class="col-lg col-md-12 redes">
                 <ul class="socialNets text-start">
+                  
+                  <li> <a href="#"><i class="fa fa-map-marked"></i>
+                      <script>
+                        document.write(" " + hotel.direccion + " - C.P: " + hotel.codPostal + "<br>" + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
+                      </script>
+                    </a></li>
+                  
                   <li> <a href="#"><i class="fa fa-phone"></i>
                       <script>
-                        document.write(" "+ hotel.telefono); 
+                        document.write(" " + hotel.telefono); 
                       </script>
                     </a></li>
                   <li> <a href="#"><i class="fa fa-envelope"></i>
-                    <script>
-                      document.write(" "+ hotel.email); 
-                    </script>
-                  </a></li>
-                  <li> <a href="#"><i class="fa fa-map-marked"></i>
-                    <script>
-                      document.write(" "+hotel.direccion + " - C.P: " + hotel.codPostal + "<br>" + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
-                    </script>
-                  </a></li>
-                  <li> <script> document.write('<a href="'+ hotel.instragram.link + '"><i class="fa-brands fa-instagram"></i>'+" "+ hotel.instragram.usuario + '</a>'); </script> </li>
-                  <li> <script> document.write('<a href="'+ hotel.facebook.link + '"><i class="fa-brands fa-facebook"></i>'+ " "+hotel.facebook.usuario + '</a>'); </script> </li>
-                  <li> <script> document.write('<a href="'+ hotel.twitter.link + '"><i class="fa-brands fa-twitter"></i>'+ " "+ hotel.twitter.usuario + '</a>'); </script> </li>                 
+                      <script>
+                        document.write(" " + hotel.email); 
+                      </script>
+                    </a></li>
+                  
+                  <li>
+                    <script> document.write('<a href="' + hotel.instragram.link + '"><i class="fa-brands fa-instagram"></i>' + " " + hotel.instragram.usuario + '</a>'); </script>
+                  </li>
+
+                  <li>
+                    <script> document.write('<a href="' + hotel.facebook.link + '"><i class="fa-brands fa-facebook"></i>' + " " + hotel.facebook.usuario + '</a>'); </script>
+                  </li>
+
+                  <li>
+                    <script> document.write('<a href="' + hotel.twitter.link + '"><i class="fa-brands fa-twitter"></i>' + " " + hotel.twitter.usuario + '</a>'); </script>
+                  </li>
+                  
                   <li> <a href="#"><i class="fa-solid fa-calendar-week"></i>
-                    <script>
-                      document.write(" "+hotel.abierto); 
-                    </script>
-                  </a></li>
+                      <script>
+                        document.write(" " + hotel.abierto); 
+                      </script>
+                    </a></li>
                 </ul>
               </div>
               <div class="col-lg col-md-12 map">

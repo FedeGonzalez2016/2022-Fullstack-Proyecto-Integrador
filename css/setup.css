@@ -32,6 +32,7 @@ span {
     --color-oscuro: #384043;
     --color-claro: #dfe2e3;
     --resaltador: #a3b4b9;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
  header {
     background-image: url("../img/campanilla.png");

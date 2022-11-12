@@ -1,0 +1,37 @@
+:root {
+  --color-principal: #33464e;
+  --primer-complementario: #afb0b1;
+  --segundo-complementario: #d7794a;
+  --tercer-complementario: #89553b;
+  --color-oscuro: #384043;
+  --color-claro: #dfe2e3;
+  --resaltador: #a3b4b9;
+  --shadow-complementario: 0 0 0 0.25rem rgba(51, 70, 78, 0.3);
+  --tamanio-fuente: 1.5rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.navbar-dark{
+    background: #33464e;
+  }
+  .btn-lg{
+    background-color: #d7794a;
+  }
+
+  .card{
+    background-color: #33464e;
+  }
+
+  .btn-lg{
+    background-color: #db865c;
+  }
+
+  .p-5{
+    background-color: #354850;
+  }
+
+.btn-light{
+    background-color: #db865c; 
+}
