@@ -6,19 +6,19 @@ documentación (Diagramas, Scripts, doc IEEE830)", a continuación se hará una 
 
 Carpetas:
 
-Controllers -> BACKEND
-Database -> BACKEND
-Models -> BACKEND
-Views -> FRONTEND
-Css -> FRONTEND
-Docs -> DOCUMENTACIÓN (Toda la documentación solicitada se encuentra en esta carpeta)
-img -> FRONTEND
-js -> FRONTEND
-libs -> FRONTEND
-README.md -> DOCUMENTACIÓN
-app.py -> BACKEND
-conexion.py -> BACKEND
-index.html -> FRONTEND
+Controllers -> BACKEND <br>
+Database -> BACKEND <br>
+Models -> BACKEND <br>
+Views -> FRONTEND <br>
+Css -> FRONTEND <br>
+Docs -> DOCUMENTACIÓN (Toda la documentación solicitada se encuentra en esta carpeta) <br>
+img -> FRONTEND <br>
+js -> FRONTEND <br>
+libs -> FRONTEND <br>
+README.md -> DOCUMENTACIÓN <br>
+app.py -> BACKEND <br>
+conexion.py -> BACKEND <br>
+index.html -> FRONTEND <br>
 
 Links Relevantes: 
 
