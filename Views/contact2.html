@@ -93,17 +93,17 @@
                 <form action="#" autocomplete="off">
                   <div class="row r1">
                     <div class="mb-3 col-lg-6 col-md-12">
-                      <input type="text" name="nombre" class="form-control" id="contactoNombre" aria-describedby="emailHelp" placeholder="Ingresa tu nombre" required>
+                      <input type="text" name="nombre" class="form-control" id="contactoNombre" onblur="verificarNombre(this)" " onkeypress="return soloLetras(event) " aria-describedby="emailHelp" placeholder="Ingresa tu nombre" required>
                       <label for="contactoNombre" class="form-label text-start">Nombre</label>
                     </div>
                     <div class="mb-3 col-lg-6 col-md-12">
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email" required>
+                      <input type="email" class="form-control" id="contactoEmail" onblur="verificarEmail(this)" aria-describedby="emailHelp" placeholder="Ingresa tu email" required>
                       <label for="exampleInputEmail1" class="form-label text-start">Correo electrónico</label>
                     </div>                                        
                   </div>
 
                   <div class="form-floating col-sm-12 col-6">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; font-size: var(--tamanio-fuente);"></textarea>
+                    <textarea class="form-control" placeholder="Leave a comment here" required id="floatingTextarea2" style="height: 100px; font-size: var(--tamanio-fuente);"></textarea>
                     <label for="floatingTextarea2">Comentarios</label>
                   </div>
                   <div class="row r3">
@@ -126,6 +126,7 @@
   <!-- no borrar -->
   <script src="./libs/boostrap/js/bootstrap.min.js"></script> <!-- no borrar -->
   <script src="../js/registro.js"></script>
+  <script src="../js/form-contacto.js"></script>
 </body>
 
 </html>
