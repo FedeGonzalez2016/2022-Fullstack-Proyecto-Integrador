@@ -27,3 +27,6 @@ VIDEO PRESENTACIÒN DE 10 MINUTOS SOBRE TODO EL TRABAJO REALIZADO: https://www.y
 WEB EMPRESARIAL (realizada en Wordpress para el mòdulo "CMS" o "SISTEMA DE GESTIÒN DE CONTENIDOS", presentando al equipo): https://innovacionit.tech/
 
 WEB PROYECTO FULLSTACK (realizada en Html, Css y Javascript -Frontend- // realizada en Python con Flask -Backend-): https://hcalifornia.innovacionit.tech/
+Nota: Para ingresar como usuario admin y visualizar todas las secciones, utilice las siguientes credenciales: <br>
+Usuario: "marcelo" sin comillas <br>
+Contraseña: "marcelo" sin comillas <br>
