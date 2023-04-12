@@ -30,3 +30,5 @@ WEB PROYECTO FULLSTACK (realizada en Html, Css y Javascript -Frontend- // realiz
 Nota: Para ingresar como usuario admin y visualizar todas las secciones, utilice las siguientes credenciales: <br>
 Usuario: "marcelo" sin comillas <br>
 Contraseña: "marcelo" sin comillas <br>
+
+Prueba para borrar
