@@ -2,5 +2,6 @@ Se revisó el fucionamiento de la web en diferentes resoluciones (1400/1200/922/
 En general la pagina se adapta a los diferentes dispositivos, pero tiene posibilidades de mejora.
 Las principales cosas a mejorar son el header y el footer. 
 Para el header recomiendo aplicar un boton hamburguesa para resoluciones inferiores a 992px y reemplazar "loguin/registro" por un icono y también reemplazar el boton de contacto por un icono al llegar a una resolucion inferior a 576px.
-Para las secciones login / Consulta / Registro recomiendo revisar la imagen de fondo que tiene distintos puntos de quiebre y que no coinciden con los brackpoint del resto de la web pero las secciones son responsive en su funcionamiento. Se recomienda agregar beackpoints en 576px y 390px para que tenga los mismos puntos de quiebre que el resto de las secciones.
-En general el funcionamiento responsive es adecuado, pero tiene posibilildades de mejorar.
+En el footer se recomienda modificar la cantidad de columnas de la seccion a medida que va disminuyendo el tamaño de la pantalla ultilizada: Para resoluciones >= 992px se recomienda mantener las 4 columas. En resolucion entre 991px y 576px recomiendo que se acomode en 2 columnas y finalmente que sea una unica columna cuando la resolucinón sea menor a 576px.
+Para las secciones login / Consulta / Registro recomiendo revisar la imagen de fondo, ya que tiene distintos puntos de quiebre que no coinciden con los brackpoint del resto de la web. Las secciones son responsive en su funcionamiento. Se recomienda agregar beackpoints en 576px y 390px para que tenga los mismos puntos de quiebre que el resto de las secciones.
+En general el funcionamiento responsive es adecuado con posibilildades de mejorar.
