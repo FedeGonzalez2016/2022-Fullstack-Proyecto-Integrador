@@ -7,6 +7,8 @@ import { HabitacionesEcommerceComponent } from './pages/habitaciones-ecommerce/h
 import { LoginComponent } from './auth/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { ConsultaComponent } from './pages/consulta/consulta.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ConsultaComponent } from './pages/consulta/consulta.component';
     HabitacionesEcommerceComponent,
     LoginComponent,
     RegistroComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
