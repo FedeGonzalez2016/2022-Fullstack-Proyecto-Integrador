@@ -29,15 +29,16 @@ html {
   }
 body{
   font-size:var(--tamanio-fuente);
+
 }
 
 
-header {
-  background-image: url("/src/assets/img/campanilla.png");
+/* header {
+  background-image: url("./assets/img/campanilla.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
+} */
 
 /* #menu {
   text-transform: uppercase;
