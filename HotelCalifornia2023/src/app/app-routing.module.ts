@@ -5,6 +5,7 @@ import { NuestraHistoriaComponent } from './pages/nuestra-historia/nuestra-histo
 import { ConsultaComponent } from './pages/consulta/consulta.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 const routes: Routes = [
   {path:'habitaciones', component: HabitacionesEcommerceComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'consulta', component: ConsultaComponent},
   {path:'login', component: LoginComponent},
   {path:'registro', component: RegistroComponent},
+  {path:'servicio', component: ServiciosComponent},
 ];
 
 @NgModule({
