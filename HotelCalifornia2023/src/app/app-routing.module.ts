@@ -9,7 +9,7 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 const routes: Routes = [
   {path:'habitaciones', component: HabitacionesEcommerceComponent},
-  {path:'nuestra-historia', component: NuestraHistoriaComponent},
+  {path:'nosotros', component: NuestraHistoriaComponent},
   {path:'consulta', component: ConsultaComponent},
   {path:'login', component: LoginComponent},
   {path:'registro', component: RegistroComponent},

@@ -37,10 +37,18 @@ body{
   background-image: url("../src/assets/img/campanilla.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 30%;
-  padding: 10rem;
-  margin: 10rem;
+  background-position: center;
+  background-position-y: 45%;
+  border: #fff 1px solid;
+}
+
+ .mensajeBienvenida .welcome {
+  margin-top: 10rem;
+  margin-right: 3rem;
+}
+.mensajeBienvenida .calHot{
+  margin-bottom: 10rem;
+  margin-right: 3rem;
 }
 
 /* #menu {
@@ -123,9 +131,9 @@ body{
   font-family: 'Times New Roman', Times, serif;
   text-align: end;
   padding: 10rem;
-  margin-top: 21rem auto;
-  margin-bottom: 4rem;
-}
+   margin-top: 21rem auto;
+   margin: 4rem;
+ }
 
 .calHot {
   color: var(--segundo-complementario);
