@@ -33,12 +33,15 @@ body{
 }
 
 
-/* header {
-  background-image: url("./assets/img/campanilla.png");
+ .mensajeBienvenida {
+  background-image: url("../src/assets/img/campanilla.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-} */
+  height: 30%;
+  padding: 10rem;
+  margin: 10rem;
+}
 
 /* #menu {
   text-transform: uppercase;
