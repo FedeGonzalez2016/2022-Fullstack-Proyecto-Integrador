@@ -13,7 +13,8 @@ const routes: Routes = [
   {path:'consulta', component: ConsultaComponent},
   {path:'login', component: LoginComponent},
   {path:'registro', component: RegistroComponent},
-  {path:'servicio', component: ServiciosComponent},
+  {path:'servicios', component: ServiciosComponent}
+
 ];
 
 @NgModule({
