@@ -1,0 +1,194 @@
+/* el selector * es universal */
+* {
+    box-sizing: border-box;
+    /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 65.5%;
+    /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
+}
+
+/*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
+/* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
+:root {
+    --color-principal: #33464e;
+    --primer-complementario: #afb0b1;
+    --segundo-complementario: #d7794a;
+    --tercer-complementario: #89553b;
+    --color-oscuro: #384043;
+    --color-claro: #dfe2e3;
+    --resaltador: #a3b4b9;
+    --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
+    --tamanio-fuente:1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size:var(--tamanio-fuente);
+    background-image: url("../../../assets/img/campanilla.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+/* seccion logo */
+.logohc{
+    width: 150px;
+    margin-bottom: 0.5rem;
+}
+.hotelName{
+    margin-bottom: 0.1rem;
+}
+.subtitle{
+    margin-top: 0.1rem;
+}
+
+.form-signin {
+    max-width: 30vw;
+    min-width: 400px;
+    padding: 15px;
+  }
+
+  /*recuadro verde*/
+  
+#formulario {
+    color:var(--color-claro);
+    background-color: var(--color-principal);
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    height: auto;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+/*links*/
+a {
+    text-decoration: none;
+    color: var(--color-claro);
+}
+
+a:hover {
+    color: var(--tercer-complementario);
+}
+
+/* formulario*/
+
+.form-floating {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+ .form-control{
+   font-size: var(--tamanio-fuente);
+   color: var(--color-claro);
+ }
+
+ .form-control:focus {
+    color: var(--color-oscuro);
+    background-color:var(--resaltador);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: var(--shadow-complementario);
+}
+
+input {
+    margin: .4rem 0;
+    color: var(--color-claro);
+}
+
+label {
+    margin: -0.5rem 0;
+    color: var(--color-claro);
+}
+
+.form-signin input {
+    /* width:10rem; */
+    border: none;
+    border-bottom: 2px solid var(--color-claro);
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/*boton*/
+.btn-complementario {
+    text-transform: uppercase;
+    font-size: var(--tamanio-fuente) ;
+    background-color: var(--segundo-complementario);
+    color: var(--color-claro);
+}
+
+.btn:hover {
+    background-color: var(--tercer-complementario);
+}
+
+.btn:focus-visible {
+    color: var(--color-claro);
+    background-color:  var(--tercer-complementario);
+    border-color: var(--bs-btn-hover-border-color);
+    outline: 0;
+    box-shadow: var(--shadow-complementario);
+}
+
+
+.registrate {
+    text-decoration: none;
+    color:var(--color-claro);
+  }
+  /* input[type="checkbox"]:enabled:checked {
+    
+    background-color: #aa1d24 !important;
+    color: white;
+} */
+
+input[type='checkbox'] {
+    accent-color: var(--segundo-complementario);
+}
+  .backToMenu{
+    text-decoration: none;
+    color:var(--segundo-complementario);
+    font-size:1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+  }
+ 
+.footer{
+    background-color: var(--color-oscuro);
+    color:var(--color-claro);
+}
+
+.errorDato{
+    background-color: var(--tercer-complementario);
+    color: var(--color-claro);
+    font-style: italic;
+    
+}
+
+#usuario-incorrecto{
+    display: none;
+}
+
+#usuario-sin-ingresar{
+    display: none;
+}
+
+#contrasena-incorrecta{
+    display: none;
+}
+
+#contrasena-sin-ingresar{
+    display: none;
+}

@@ -1,0 +1,107 @@
+<div class="form-signin w-100 m-auto text-center sinClase">
+    <div class="row justify-content-center">
+        <img class="img-fluid d-block mx-auto mb-4 logohc" src="../../../assets/img/LogoHC.png" alt="LogoHC" width="75"
+            height="">
+        <h1 class="display-5 fw-bold hotelName"> Hotel
+            <script> document.write(hotel.nombre); </script>
+        </h1>
+        <h4 class="subtitle">
+            <script> document.write(hotel.info); </script>
+        </h4>
+    </div>
+    <div class="row justify-content-center" id="formulario">
+        <div class="col-lg-12 mx-auto">
+            <form class="formulario">
+                <h1 class="h1 mb-5 fw-normal">Contactános</h1>
+
+                <p>Estamos a disposición para atenderte. No dudes en completar el siguiente formulario para que podamos
+                    responder tus consultas: </p>
+                <br>
+                <!-- Example Code -->
+                <div class="container text-start">
+                    <div class="row datos">
+                        <div class="col-lg col-md-12 redes">
+                            <ul class="socialNets text-start">
+
+                                <li> <a href="#"><i class="fa fa-map-marked"></i>
+                                        <script>
+                                            document.write(" " + hotel.direccion + " - C.P: " + hotel.codPostal + "<br>" + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
+                                        </script>
+                                    </a></li>
+
+                                <li> <a href="#"><i class="fa fa-phone"></i>
+                                        <script>
+                                            document.write(" " + hotel.telefono); 
+                                        </script>
+                                    </a></li>
+                                <li> <a href="#"><i class="fa fa-envelope"></i>
+                                        <script>
+                                            document.write(" " + hotel.email); 
+                                        </script>
+                                    </a></li>
+
+                                <li>
+                                    <script> document.write('<a href="' + hotel.instragram.link + '"><i class="fa-brands fa-instagram"></i>' + " " + hotel.instragram.usuario + '</a>'); </script>
+                                </li>
+
+                                <li>
+                                    <script> document.write('<a href="' + hotel.facebook.link + '"><i class="fa-brands fa-facebook"></i>' + " " + hotel.facebook.usuario + '</a>'); </script>
+                                </li>
+
+                                <li>
+                                    <script> document.write('<a href="' + hotel.twitter.link + '"><i class="fa-brands fa-twitter"></i>' + " " + hotel.twitter.usuario + '</a>'); </script>
+                                </li>
+
+                                <li> <a href="#"><i class="fa-solid fa-calendar-week"></i>
+                                        <script>
+                                            document.write(" " + hotel.abierto); 
+                                        </script>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg col-md-12 map">
+                            <div class="map-responsive">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1015.7571158315792!2d-64.48743331478322!3d-31.09343905080235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d82fdeb73eef1%3A0x89e390b0db0847e8!2sDiag.%20San%20Mart%C3%ADn%20125%2C%20La%20Falda%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1667157272224!5m2!1ses-419!2sar"
+                                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row cform">
+                        <div class="form-floating">
+                            <form action="#" autocomplete="off">
+                                <div class="row r1">
+                                    <div class="mb-3 col-lg-6 col-md-12">
+                                        <input type="text" name="nombre" class="form-control" id="contactoNombre"
+                                            aria-describedby=" emailHelp" placeholder="Ingresa tu nombre" required>
+                                        <label for="contactoNombre" class="form-label text-start">Nombre</label>
+                                    </div>
+                                    <div class="mb-3 col-lg-6 col-md-12">
+                                        <input type="email" class="form-control" id="contactoEmail"
+                                             aria-describedby="emailHelp"
+                                            placeholder="Ingresa tu email" required>
+                                        <label for="exampleInputEmail1" class="form-label text-start">Correo
+                                            electrónico</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-floating col-sm-12 col-6">
+                                    <textarea class="form-control" placeholder="Leave a comment here" required
+                                        id="floatingTextarea2"
+                                        style="height: 100px; font-size: var(--tamanio-fuente);"></textarea>
+                                    <label for="floatingTextarea2">Comentarios</label>
+                                </div>
+                                <div class="row r3">
+                                    <button class="w-100 btn btn-lg btn-complementario" type="submit"
+                                        id="botonEnviar">Enviar mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <a [routerLink]="['/']" class="backToMenu">VOLVER AL MENU PRINCIPAL</a>
+</div>

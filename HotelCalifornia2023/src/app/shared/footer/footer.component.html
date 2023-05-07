@@ -1,0 +1,51 @@
+<footer class="bg-dark text-white mt-4 py-4">
+    <div class="container" id="contacto">
+      <nav class="row">
+        <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">Regresar al Inicio</a>
+        <ul class="col-3 list-unstyled">
+          <li>
+            <i class="fa fa-map-marked"></i>
+            <script>
+              document.write(" " + hotel.direccion + " - C.P: " + hotel.codPostal); 
+            </script>
+          </li>
+
+          <li>
+            <script>
+              document.write(" " + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
+            </script>
+          </li>
+
+          <li><i class="fa fa-phone"></i>
+            <script>
+              document.write(" " + hotel.telefono); 
+            </script>
+          </li>
+          
+          <li>
+            <p><a href="mailto:example@example.com"><i class="fa fa-envelope"></i>
+                <script>
+                  document.write(" " + hotel.email); 
+                </script>
+              </a></p>
+          </li>
+
+        </ul>
+        <ul class="col-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+          <li class="d-flex justify-content-around">
+            <script> document.write('<a href="'+ hotel.instragram.link + '"><i class="fa-brands fa-instagram"></i></a>'); </script>
+            <script> document.write('<a href="'+ hotel.facebook.link + '"><i class="fa-brands fa-facebook"></i> </a>'); </script> 
+            <script> document.write('<a href="'+ hotel.twitter.link + '"><i class="fa-brands fa-twitter"></i> </a>'); </script> 
+          </li>
+        </ul>
+        <ul class="col-3 list list-unstyled">
+          <li><a href="#" class="text-reset">Legales</a></li>
+          <li><a href="#" class="text-reset">Publicidad</a></li>
+          <li><a href="#" class="text-reset">Politicas de privacidad</a></li>
+          <li><a href="#" class="text-reset">Bases y condiciones</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </footer>
