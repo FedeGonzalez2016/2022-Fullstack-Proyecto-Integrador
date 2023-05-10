@@ -6,9 +6,6 @@ import { NuestraHistoriaComponent } from './nuestra-historia/nuestra-historia.co
 import { RegistroComponent } from './registro/registro.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ReservasComponent } from './vista-interna/reservas/reservas.component';
-import { AuthModule } from '../auth/auth.module';
-import { SharedModule } from '../shared/shared.module';
-
 
 
 
@@ -22,9 +19,7 @@ import { SharedModule } from '../shared/shared.module';
     ReservasComponent
   ],
   imports: [
-    CommonModule,
-    AuthModule,
-    SharedModule
+    CommonModule
   ]
 })
 export class PagesModule { }
