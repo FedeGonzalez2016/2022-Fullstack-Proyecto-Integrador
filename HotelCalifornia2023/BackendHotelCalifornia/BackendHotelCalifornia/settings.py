@@ -9,10 +9,9 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -76,9 +75,20 @@ WSGI_APPLICATION = 'BackendHotelCalifornia.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'Hotel-database.sql',
+#        'USER': 'root', # Poner usuario de acceso a la base de datos.
+#        'PASSWORD': 'pass', #En mi servidor no utilizo contraseña, asi que pongo un string vacio.
+#        'HOST': 'localhost', # Donde este levantada la base de datos.
+#        'PORT': '8080', # Como el puerto es default, pongo un string vacio.
+#    }
+#}
 
 
 # Password validation
