@@ -6,6 +6,7 @@ import { NuestraHistoriaComponent } from './nuestra-historia/nuestra-historia.co
 import { RegistroComponent } from './registro/registro.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ReservasComponent } from './vista-interna/reservas/reservas.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -19,7 +20,8 @@ import { ReservasComponent } from './vista-interna/reservas/reservas.component';
     ReservasComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class PagesModule { }
