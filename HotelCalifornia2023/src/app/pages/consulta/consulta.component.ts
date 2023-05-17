@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConsultaService } from 'src/app/services/consulta.service';
 
 @Component({
   selector: 'app-consulta',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private consultaService: ConsultaService) { }
 
   ngOnInit(): void {
   }
