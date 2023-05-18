@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/service/auth/login.service';
+import { User } from 'src/app/service/auth/user';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   userLoginOn:Boolean=false;
-  constructor() { }
+  userData?:User;
+  constructor(private loginService:LoginService) { }
 
   ngOnInit(): void {
+    this.loginService.currentUserLoginOn.subscribe({
+      next:(userLoginOn) => {
+        this.userLoginOn=userLoginOn;
+      }
+    });
+
+    this.loginService.currentUserData.subscribe({
+      next:(userData)=>{
+        this.userData=userData;
+      }
+    })
   }
 
 }
