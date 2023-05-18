@@ -161,12 +161,12 @@ body{
   }
 }
 
-#logueadoReserva, #logueadoBienvenido, #logueadoCerrar {
+#logueadoReserva {
   display: none;
 }
-#deslogLogin, #deslogRegistrate {
+/* #deslogLogin, #deslogRegistrate {
   display: block;
-}
+} */
 
 
 .subttl{
