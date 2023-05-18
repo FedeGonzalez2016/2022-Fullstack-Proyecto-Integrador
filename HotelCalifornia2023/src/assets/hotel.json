@@ -190,13 +190,13 @@
 	"factura":[
 	{
 		"facturaId": 1,
-		"nroFactura": 000100000036,
+		"nroFactura": 100000036,
 		"hotelId": 1,
 		"clienteId": 1
 	},
 	{
 		"facturaId": 2,
-		"nroFactura": 000100000037,
+		"nroFactura": 100000037,
 		"hotelId": 1,
 		"clienteId": 2
 	}],
