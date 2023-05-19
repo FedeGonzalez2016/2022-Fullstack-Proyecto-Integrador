@@ -50,3 +50,11 @@ class Empleado(models.Model):
     telefono = models.IntegerField(blank=False)
     hotelId = models.ForeignKey(Hotel, to_field="hotelId", on_delete=models.CASCADE)
     rol = models.CharField(max_length=70 ,blank=False)
+    class Meta:
+        db_table = "Empleado"
+        verbose_name = "Todos los empleados registrados en el hotel"
+        verbose_name_plural = "Empleados"
+        def __unicode__(self):
+            return "Empleado"
+        def __str__(self):
+            return self.nombre
