@@ -11,7 +11,7 @@
   <div class="col">
     <nav id="menu">
       <ul>
-        <li><a *ngIf="userLoginOn"  href="#" class="botonesInicio" >CERRAR SESIÓN</a></li>
+        <li><a *ngIf="userLoginOn"  routerLink="" class="botonesInicio" >CERRAR SESIÓN</a></li>
         <!-- <li *ngIf="!userLoginOn" > 
           <a routerLink=""> Bienvenido User </a>
         </li> -->
@@ -24,9 +24,9 @@
         <li *ngIf="!userLoginOn">
           <a routerLink="/registro" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio" id="deslogRegistrate">Regístrate</a>
         </li>
-        <li *ngIf="userLoginOn">
+        <!-- <li *ngIf="userLoginOn">
           <p>Bienvenidx {{userData?.name}}</p>
-        </li>
+        </li> -->
 
         <!-- <li><a routerLink="/consulta" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio">Consulta</a></li> -->
         <!-- <li id="logueadoBienvenido">

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from 'src/app/service/auth/login.service';
-import { User } from 'src/app/service/auth/user';
+import { LoginService } from 'src/app/services/login.service';
+import { User } from 'src/app/services/user';
 
 @Component({
   selector: 'app-header',
@@ -8,20 +8,19 @@ import { User } from 'src/app/service/auth/user';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  userLoginOn:Boolean=false;
+  userLoginOn:boolean=false;
   userData?:User;
   constructor(private loginService:LoginService) { }
 
   ngOnInit(): void {
     this.loginService.currentUserLoginOn.subscribe({
-      next:(userLoginOn) => {
+      next:(userLoginOn)=> {
         this.userLoginOn=userLoginOn;
       }
     });
-
     this.loginService.currentUserData.subscribe({
       next:(userData)=>{
-        this.userData=userData;
+      this.userData=userData;
       }
     })
   }

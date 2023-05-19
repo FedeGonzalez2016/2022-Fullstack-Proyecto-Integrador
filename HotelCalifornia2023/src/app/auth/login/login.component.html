@@ -8,7 +8,6 @@
         <div class="col-lg-12 mx-auto">
 
             <form [formGroup]="loginForm" id="myform" class="formulario">
-                <p class="text-danger">{{loginError}}</p>
                 <h1 class="h1 mb-5 fw-normal text-center">Logueate</h1>
                 <div class="mb-3 text-start">
                     <input formControlName="email" type="email" name="nombreUsuario" class="form-control" id="nombreUsuario"
@@ -46,7 +45,7 @@
                     </label>
                 </div>
                 <button type="submit" (click)="login()" class="w-100 btn btn-lg btn-complementario" id="botonLogin">
-                    <a class="nav-link" routerLink="/habitaciones">Iniciar Sesión</a> 
+                    <a class="nav-link" >Iniciar Sesión</a> 
                 </button>
                 <!-- <button class="w-100 btn btn-lg btn-complementario" type="submit" id="botonLogin">Ingresar</button> -->
                 <p class="mt-5 mb-3">Todavía no tenés cuenta?<a [routerLink]="['/registro']" class="registrate">
