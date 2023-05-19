@@ -2,6 +2,8 @@ from django.db import models
 from GestionReservas.models import Reserva
 from GestionUsuarios.models import Cliente, Hotel
 
+# Aquí se encuentra el código de las clases Factura, Detalle, TipoPago y DetallePago
+
 class Factura(models.Model):
     facturaId = models.AutoField(primary_key=True)
     nroFactura = models.CharField(max_length=10, blank=False, unique=True)

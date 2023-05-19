@@ -9,7 +9,7 @@ class Cliente(models.Model):
     apellido = models.CharField(max_length=100, blank=False)
     usuario = models.EmailField(max_length=254, blank=False, unique=True)
     contraseña = models.CharField(max_length=150, blank=False)
-    fechadenacimiento = models.DateField(auto_now=False, auto_now_add=False, blank=False)
+    fechaDeNacimiento = models.DateField(auto_now=False, auto_now_add=False, blank=False)
     class Meta:
         db_table = "Cliente"
         verbose_name = "Todos los clientes registrados"
