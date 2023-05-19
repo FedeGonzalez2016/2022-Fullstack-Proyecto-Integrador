@@ -21,18 +21,19 @@ class Cliente(models.Model):
         
 class Hotel(models.Model):
     hotelId = models.AutoField(primary_key=True)
-    razonsocial= models.TextField(max_length=150, blank=False)
-    cuil = models.TextField(blank=False, 
+    razonsocial= models.CharField(max_length=150, blank=False)
+    cuil = models.CharField(max_length=13,
+                            blank=False, 
                             unique=True, 
                             validators=[RegexValidator(
                                 regex="^(20|2[3-7]|30|3[3-4])(\d{8})(\d)$", 
                                 message="CUIL inválido")])
-    domicilio = models.TextField(max_length=150, blank=False)
+    domicilio = models.CharField(max_length=150, blank=False)
     localidad = models.CharField(max_length=100,blank=False)
     provincia = models.CharField(max_length=100, blank=False)
     cp = models.PositiveSmallIntegerField(blank=False)
     telefono = models.IntegerField(blank=False)
-    categoria = models.TextField(max_length=50, blank=False)
+    categoria = models.CharField(max_length=50, blank=False)
     email = models.EmailField(max_length=254, blank=False)
     class Meta:
         db_table = "Hotel"
@@ -49,7 +50,7 @@ class Empleado(models.Model):
     apellido = models.CharField(max_length=100, blank=False)
     usuario = models.EmailField(max_length=254, blank=False, unique=True)
     contraseña = models.CharField(max_length=150, blank=False)
-    domicilio = models.TextField(max_length=150, blank=False)
+    domicilio = models.CharField(max_length=150, blank=False)
     localidad = models.CharField(max_length=100, blank=False)
     provincia = models.CharField(max_length=100, blank=False)
     cp = models.PositiveSmallIntegerField(blank=False)
