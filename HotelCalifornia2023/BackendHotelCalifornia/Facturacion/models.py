@@ -1,5 +1,6 @@
 from django.db import models
-from myapp.models import Hotel, Cliente, Reserva
+from myapp.models import Reserva
+from GestionUsuarios.models import Cliente, Hotel
 
 class Factura(models.Model):
     facturaId = models.AutoField(primary_key=True)
