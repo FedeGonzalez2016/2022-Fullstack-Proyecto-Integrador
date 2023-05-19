@@ -11,12 +11,12 @@
   <div class="col">
     <nav id="menu">
       <ul>
-        <li><a *ngIf="userLoginOn"  routerLink="" class="botonesInicio" >CERRAR SESIÓN</a></li>
+        <li><a *ngIf="userLoginOn"  routerLink="login"class="botonesInicio" >CERRAR SESIÓN</a></li>
         <!-- <li *ngIf="!userLoginOn" > 
           <a routerLink=""> Bienvenido User </a>
         </li> -->
         <li *ngIf="userLoginOn">
-          <p routerLink="" class="botonesInicio" >Bienvenidx!</p>
+          <p routerLink="" class="botonesInicio" >Bienvenidx! {{userData?.name}}</p>
         </li>
         <li *ngIf="!userLoginOn">
           <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio" id="deslogLogin">Login</a>
