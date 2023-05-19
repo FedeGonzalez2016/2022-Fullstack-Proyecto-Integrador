@@ -22,15 +22,16 @@ export class LoginService {
     )
   }
 
-}
 
-get userData():Observable<User>{
-  return this.currentUserData.asObservable(),
 
-}
+  get userData():Observable<User>{
+  return this.currentUserData.asObservable();
+
+  }
  
-get userLoginOn():Observable<User>{
+  get userLoginOn():Observable<boolean>{
   return this.currentUserLoginOn.asObservable();
 
-}
+  }
 
+}
