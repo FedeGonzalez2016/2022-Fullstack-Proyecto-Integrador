@@ -41,9 +41,9 @@ class TipoPago(models.Model):
         verbose_name = "Tipo de Pago de las facturas"
         verbose_name_plural = "Tipos de pago"
     def __unicode__(self):
-        return self.tipo
+        return self.tipoPago
     def __str__(self) -> str:
-        return self.tipo
+        return self.tipoPago
     
 class DetallePago(models.Model):
     detallePagoId = models.AutoField(primary_key=True)
