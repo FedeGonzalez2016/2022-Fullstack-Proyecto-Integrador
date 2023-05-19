@@ -8,7 +8,7 @@ class DetalleAdmin(admin.ModelAdmin):
 class DetallePagoAdmin(admin.ModelAdmin):
     list_display = ("facturaId", "tipoPagoId", "porcentajePago")
 class TipoPagoAdmin(admin.ModelAdmin):
-    list_display = ("tipoPago")
+    list_display = ["tipoPago"]
 
 admin.site.register(Factura, FacturaAdmin)
 admin.site.register(Detalle, DetalleAdmin)
