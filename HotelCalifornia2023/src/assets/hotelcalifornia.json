@@ -8,15 +8,15 @@
 		"localidad": "La Falda",
 		"provincia": "Córdoba",
 		"cp": 5152,
-		"telefono": +54 9 351 987654,
+		"telefono": 549351987654,
 		"categoría": "4 estrellas",
 		"email": "administracion@hotelcalifornia.com"
-	}]
+	}],
 	
 	"empleado": [
 	{
-		"empleadoId": 1
-		"nombre": "Juan"
+		"empleadoId": 1,
+		"nombre": "Juan",
 		"apellido": "Perez",
 		"usuario": "juan.perez@hotelcalifornia.com",
 		"correo": "juan.perez@hotelcalifornia.com",
@@ -151,7 +151,7 @@
 		"reservaPorHabitacionId":2,
 		"habitacionId": 3,
 		"fechaReserva": "01/05/2023",
-		"clienteId": 2
+		"clienteId": 2,
 		"fechaIngreso": "01/06/2023",
 		"fechaEgreso": "04/06/2023"
 	},
@@ -159,7 +159,7 @@
 		"reservaPorHabitacionId":3,
 		"habitacionId": 1,
 		"fechaReserva": "01/05/2023",
-		"clienteId": 2
+		"clienteId": 2,
 		"fechaIngreso": "01/06/2023",
 		"fechaEgreso": "04/06/2023"
 	}],
@@ -167,12 +167,12 @@
 	"factura":[
 	{
 		"facturaId": 1,
-		"nroFactura": 000100000036,
+		"nroFactura": 100000036,
 		"clienteId": 1
 	},
 	{
 		"facturaId": 2,
-		"nroFactura": 000100000037,
+		"nroFactura": 100000037,
 		"clienteId": 2
 	}],
 	

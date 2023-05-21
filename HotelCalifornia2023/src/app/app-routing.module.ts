@@ -9,6 +9,7 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ReservasComponent } from './pages/vista-interna/reservas/reservas.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'/nosotros', pathMatch:'full'},
   {path:'habitaciones', component: HabitacionesEcommerceComponent},
   {path:'nosotros', component: NuestraHistoriaComponent},
   {path:'consulta', component: ConsultaComponent},
@@ -17,10 +18,11 @@ const routes: Routes = [
   {path:'servicios', component: ServiciosComponent},
   {path: 'reservas', component: ReservasComponent}
 
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
