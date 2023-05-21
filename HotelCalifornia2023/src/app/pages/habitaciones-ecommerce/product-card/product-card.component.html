@@ -1,0 +1,52 @@
+<!-- Comando  en consiola para generar el componente: ng g c pages/habitaciones-ecommerce/product-card -->
+
+<div *ngFor="let reserva of misReservas; let i=index" class="card" >
+  <img src="../../../../assets/img/room01.jpg" class="card-img-top" alt="room1">
+  <div class="card-body">
+    <h4 class="card-title"> {{reserva.tipo}} </h4>
+    <p class="card-text">{{reserva.descripcion}}</p>
+    <a href="#" class="btn btnCalifornia" data-bs-toggle="modal" data-bs-target="#targetIdPunto2">Reservar</a>
+  </div>
+</div>
+<div *ngFor="let reserva of misReservas; let i=index" class="modal" tabindex="-1" id="targetIdPunto2">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content contenidoModal p-3">
+      <div class="modal-header">
+        <h2 class="modal-title"> {{reserva.tipo}} </h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-8 col-sm-12">
+          <img src="../../../../assets/img/room01.jpg" class="modalImg" alt="room1">
+          <div class="roomServices">
+            <ul class="serviceList">
+              <li class="service">Microondas</li>
+              <li class="service">Frigobar</li>
+              <li class="service">Pava Electrica</li>
+              <li class="service">Calefacción</li>
+              <li class="service">Aire Acondicionado</li>
+              <li class="service">Tv led</li>
+              <li class="service">Caja de seguridad</li>
+              <li class="service">Wi-Fi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 col-sm-12 reservaForm">
+
+            <label for="startDate">Desde:</label>
+            <input type="date" id="startDate" name="trip-start" value="2023-05-20" min="2023-05-20" max="2023-12-31">
+
+            <label for="leaveDate">Hasta:</label>
+            <input type="date" id="leaveDate" name="trip-end" value="2023-05-20" min="2023-05-20" max="2023-12-31">
+            <div class="roomAvail"> {{ reserva.disponible}} </div>
+            <div class="rommPrice"> Precio diario {{ reserva.precio}} por persona</div>
+
+            <a href="#" class="btn btnCalifornia">Confirmar</a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+

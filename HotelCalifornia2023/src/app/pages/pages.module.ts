@@ -7,6 +7,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ReservasComponent } from './vista-interna/reservas/reservas.component';
 import { RouterModule } from '@angular/router';
+import { ProductCardComponent } from './habitaciones-ecommerce/product-card/product-card.component';
 
 
 
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
     NuestraHistoriaComponent,
     RegistroComponent,
     ServiciosComponent,
-    ReservasComponent
+    ReservasComponent,
+    ProductCardComponent
   ],
   imports: [
     CommonModule,
