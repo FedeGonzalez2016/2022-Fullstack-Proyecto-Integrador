@@ -1,0 +1,73 @@
+
+
+.card{
+  width: 20vw;
+  margin:1.5rem;
+  display: inline-flex;
+  text-align: center;
+  border: 1px solid var(--resaltador);
+}
+.card:hover{
+  transform: scale(1.025);
+  transition: 2s;
+}
+.card-title, .modal-title{
+  text-align: center;
+  height: 5rem;
+}
+
+.card-text{
+  font-size: 1.2rem;
+  height: 15rem;
+}
+.btnCalifornia{
+  text-transform: uppercase;
+  font-size: var(--tamanio-fuente) ;
+  background-color: var(--segundo-complementario);
+  color: var(--color-claro);
+}
+
+.btnCalifornia:hover {
+  background-color: var(--tercer-complementario);
+}
+
+.btnResebtnCaliforniarvar:focus-visible {
+  color: var(--color-claro);
+  background-color:  var(--tercer-complementario);
+  border-color: var(--bs-btn-hover-border-color);
+  outline: 0;
+  box-shadow: var(--shadow-complementario);
+}
+
+/* MODAL*/
+.modal-dialog{
+  width: 40%;
+  max-width: none;
+}
+.modalImg{
+  width: 100%;
+}
+
+.serviceList {
+
+  text-align: center;
+  justify-content: space-evenly;
+
+}
+
+.service{
+  display: inline-block;
+  font-size: x-small;
+  margin: 0.5rem ;
+  text-transform: uppercase;
+  line-height: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-dialog{
+    width: 80%;
+  }
+  .modal-body.row{
+    flex-direction: column;
+  }
+}

@@ -33,6 +33,7 @@ body{
 }
 
 
+
  .mensajeBienvenida {
   background-image: url("../src/assets/img/campanilla.png");
   background-repeat: no-repeat;
@@ -160,13 +161,13 @@ body{
       padding-bottom: 8%;
   }
 }
-
-#logueadoReserva, #logueadoBienvenido, #logueadoCerrar {
+/* 
+#logueadoReserva {
   display: none;
-}
-#deslogLogin, #deslogRegistrate {
+} */
+/* #deslogLogin, #deslogRegistrate {
   display: block;
-}
+} */
 
 
 .subttl{

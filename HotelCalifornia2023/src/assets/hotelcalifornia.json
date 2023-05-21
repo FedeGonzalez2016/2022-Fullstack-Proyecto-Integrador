@@ -1,0 +1,208 @@
+{
+	"hotel": [
+	{
+		"hotelId": 1,
+		"razonSocial": "Hotel California",
+		"cuil": "3014752391",
+		"domicilio": "Diagonal San Martin",
+		"localidad": "La Falda",
+		"provincia": "Córdoba",
+		"cp": 5152,
+		"telefono": 549351987654,
+		"categoría": "4 estrellas",
+		"email": "administracion@hotelcalifornia.com"
+	}],
+	
+	"empleado": [
+	{
+		"empleadoId": 1,
+		"nombre": "Juan",
+		"apellido": "Perez",
+		"usuario": "juan.perez@hotelcalifornia.com",
+		"correo": "juan.perez@hotelcalifornia.com",
+		"contrasenia": "jp.1234",
+		"domicilio": "San Martín 123",
+		"localidad": "Villa Carlos Paz",
+		"provincia": "Córdoba",
+		"cp": 5152,
+		"telefono": 3541555111,
+		"hotelId": 1,
+		"rol": "Administrador"
+	}],
+	
+	"habitacion": [
+	{
+		"habitacionId": 1,
+		"numero": 101,
+		"piso": 1,
+		"estado": "disponible",
+		"tipo": "doble",
+		"precio": 7000,
+		"hotelId": 1
+	},
+	{
+		"habitacionId": 2,
+		"numero": 102,
+		"piso": 1,
+		"estado": "en reparación",
+		"tipo": "doble",
+		"precio": 7000,
+		"hotelId": 1
+	},
+	{
+		"habitacionId": 3,
+		"numero": 103,
+		"piso": 1,
+		"estado": "disponible",
+		"tipo": "cuádruple",
+		"precio": 9000,
+		"hotelId": 1
+	},
+	{
+		"habitacionId": 4,
+		"numero": 104,
+		"piso": 1,
+		"estado": "disponible",
+		"tipo": "simple",
+		"precio": 5000,
+		"hotelId": 1
+	},
+	{
+		"habitacionId": 5,
+		"numero": 202,
+		"piso": 2,
+		"estado": "no disponible",
+		"tipo": "cuádruple",
+		"precio": 9000,
+		"hotelId": 1
+	},
+	{
+		"habitacionId": 6,
+		"numero": 203,
+		"piso": 2,
+		"estado": "disponible",
+		"tipo": "simple",
+		"precio": 5000,
+		"hotelId": 1
+	},
+	{
+		"habitacionId": 7,
+		"numero": 204,
+		"piso": 2,
+		"estado": "disponible",
+		"tipo": "simple",
+		"precio": 5000,
+		"hotelId": 1
+	},
+	{
+		"habitacionId": 8,
+		"numero": 201,
+		"piso": 2,
+		"estado": "disponible",
+		"tipo": "cuádruple",
+		"precio": 9000,
+		"hotelId": 1
+	}],
+	
+	"cliente":[
+	{
+		"clienteId": "1",
+		"nombre": "Romina",
+		"apellido": "Martinez",
+		"correo": "romimartinez@gmail.com",
+		"contrasenia": "rm.1234",
+		"fechaNacimiento": "15/11/1989"
+	},
+	{
+		"clienteId": "2",
+		"nombre": "David",
+		"apellido": "Gimenez",
+		"correo": "dgimenez@gmail.com",
+		"contrasenia": "dg.1234",
+		"fechaNacimiento": "10/04/1980"
+	},
+	{
+		"clienteId": "3",
+		"nombre": "Soraya",
+		"apellido": "Camillo",
+		"correo": "camillosoy@gmail.com",
+		"contrasenia": "sc.1234",
+		"fechaNacimiento": "25/12/1975"
+	},
+	{
+		"clienteId": "4",
+		"nombre": "Francisco",
+		"apellido": "Lopez",
+		"correo": "pancholopez1@gmail.com",
+		"contrasenia": "fl.1234",
+		"fechaNacimiento": "02/01/1995"
+	}],
+	
+	"reservaPorHabitacion":[
+	{
+		"reservaPorHabitacionId": 1,
+		"habitacionId": 8,
+		"fechaReserva": "10/05/2023",
+		"clienteId": 1,
+		"fechaIngreso": "17/05/2023",
+		"fechaEgreso": "20/05/2023"
+	},
+	{
+		"reservaPorHabitacionId":2,
+		"habitacionId": 3,
+		"fechaReserva": "01/05/2023",
+		"clienteId": 2,
+		"fechaIngreso": "01/06/2023",
+		"fechaEgreso": "04/06/2023"
+	},
+	{
+		"reservaPorHabitacionId":3,
+		"habitacionId": 1,
+		"fechaReserva": "01/05/2023",
+		"clienteId": 2,
+		"fechaIngreso": "01/06/2023",
+		"fechaEgreso": "04/06/2023"
+	}],
+	
+	"factura":[
+	{
+		"facturaId": 1,
+		"nroFactura": 100000036,
+		"clienteId": 1
+	},
+	{
+		"facturaId": 2,
+		"nroFactura": 100000037,
+		"clienteId": 2
+	}],
+	
+	"detalle":[
+	{
+		"detalleId":1,
+		"facturaId": 1,
+		"reservaId": 1,
+		"descuento": 0,
+		"importe": 9000
+	},
+	{
+		"detalleId": 2,
+		"facturaId": 2,
+		"reservaId": 2,
+		"descuento": 0,
+		"importe": 16000
+	}],
+	
+	"detallePago": [
+	{
+		"detallePagoId": 1,
+		"facturaId": 1,
+		"tipoPago": "Transferencia",
+		"porcentajePago": 100
+	},
+	{
+		"detallePagoId": 2,
+		"facturaId": 2,
+		"tipoPago": "Tarjeta Crédito",
+		"porcentajePago": 100
+	}]
+}

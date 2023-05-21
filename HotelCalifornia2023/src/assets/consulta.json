@@ -1,0 +1,29 @@
+{
+  "consultas": [
+    {
+      "id": 1,
+      "nombre": "Martin Jezer",
+      "email": "mjezer@topmail.com",
+      "consulta": "Me gustaría reservar una habitación para el próximo fin de semana."
+    },
+    {
+      "id": 2,
+      "nombre": "Carolina Barrios",
+      "email": "cbarrios@walla.co.il",
+      "consulta": "Quisiera obtener información sobre las tarifas y disponibilidad de habitaciones."
+    },
+    {
+      "id": 3,
+      "nombre": "Carlinhos Brown",
+      "email": "musiquinha@samba.br",
+      "consulta": "Estoy interesado en conocer los servicios adicionales que ofrece el hotel."
+    },
+    {
+      "id": "1684704651054",
+      "fecha": "2023-05-21T21:30:51.054Z",
+      "nombre": "tincho",
+      "email": "garcia@holas",
+      "mensaje": "asdasdasdad"
+    }
+  ]
+}
