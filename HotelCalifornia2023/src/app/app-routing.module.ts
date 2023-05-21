@@ -8,13 +8,14 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'/nosotros', pathMatch:'full'},
   {path:'habitaciones', component: HabitacionesEcommerceComponent},
   {path:'nosotros', component: NuestraHistoriaComponent},
   {path:'consulta', component: ConsultaComponent},
   {path:'login', component: LoginComponent},
   {path:'registro', component: RegistroComponent},
-  {path:'servicios', component: ServiciosComponent}
-
+  {path:'servicios', component: ServiciosComponent},
+  
 ];
 
 @NgModule({
