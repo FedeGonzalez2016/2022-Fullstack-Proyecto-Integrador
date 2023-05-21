@@ -24,11 +24,7 @@
         <li *ngIf="!userLoginOn">
           <a routerLink="/registro" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio" id="deslogRegistrate">Regístrate</a>
         </li>
-        <!-- <li *ngIf="userLoginOn">
-          <p>Bienvenidx {{userData?.name}}</p>
-        </li> -->
-
-        <!-- <li><a routerLink="/consulta" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio">Consulta</a></li> -->
+ 
         <!-- <li id="logueadoBienvenido">
           <p>Bienvenido/a <script>document.write(usuario.nombre + " "+ usuario.apellido)</script></p>
         </li> -->
@@ -43,7 +39,8 @@
     <li><a routerLink="servicios"  routerLinkActive="active" ariaCurrentWhenActive="page">Servicios</a></li>
     <li><a routerLink="habitaciones"  routerLinkActive="active" ariaCurrentWhenActive="page">Habitaciones</a></li>
     <li><a routerLink="/consulta"  routerLinkActive="active" ariaCurrentWhenActive="page">Contacto</a></li>
-    <li><a href="./Views/sistema/inicio.html" id="logueadoReserva">Mis reservas</a></li>
+    <li><a   *ngIf="userLoginOn" routerLink="/reservas" routerLinkActive="active">Mis reservas</a></li>
+ 
   </ul>
 </nav>
 <div class="mensajeBienvenida">
