@@ -2,12 +2,8 @@
     <div class="row justify-content-center">
         <img class="img-fluid d-block mx-auto mb-4 logohc" src="../../../assets/img/LogoHC.png" alt="LogoHC" width="75"
             height="">
-        <h1 class="display-5 fw-bold hotelName"> Hotel
-            <script> document.write(hotel.nombre); </script>
-        </h1>
-        <h4 class="subtitle">
-            <script> document.write(hotel.info); </script>
-        </h4>
+        <h1 class="display-5 fw-bold hotelName"> {{nombreHotel}} </h1>
+        <h4 class="subtitle"> {{infoHotel}} </h4>
     </div>
     <div class="row justify-content-center" id="formulario">
         <div class="col-lg-12 mx-auto">
@@ -23,40 +19,28 @@
                         <div class="col-lg col-md-12 redes">
                             <ul class="socialNets text-start">
 
-                                <li> <a href="#"><i class="fa fa-map-marked"></i>
-                                        <script>
-                                            document.write(" " + hotel.direccion + " - C.P: " + hotel.codPostal + "<br>" + hotel.ciudad + ", " + hotel.provincia + ", " + hotel.pais + "."); 
-                                        </script>
+                                <li> <a href="#"><i class="fa-solid fa-map-marked"></i>
+                                        {{direccionHotel}}, C.P.: {{cpHotel}}, {{ciudadHotel}}, {{provinciaHotel}}, {{paisHotel}} 
                                     </a></li>
 
-                                <li> <a href="#"><i class="fa fa-phone"></i>
-                                        <script>
-                                            document.write(" " + hotel.telefono); 
-                                        </script>
+                                <li> <a href="#"><i class="fa-solid fa-phone"></i>
+                                        Teléfono: {{telefonoHotel}}
                                     </a></li>
-                                <li> <a href="#"><i class="fa fa-envelope"></i>
-                                        <script>
-                                            document.write(" " + hotel.email); 
-                                        </script>
+                                <li> <a href="#"><i class="fa-solid fa-envelope"></i>
+                                        Email: {{emailHotel}}
                                     </a></li>
 
                                 <li>
-                                    <script> document.write('<a href="' + hotel.instragram.link + '"><i class="fa-brands fa-instagram"></i>' + " " + hotel.instragram.usuario + '</a>'); </script>
+                                    <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram: {{instagramHotel}} </a>
                                 </li>
 
                                 <li>
-                                    <script> document.write('<a href="' + hotel.facebook.link + '"><i class="fa-brands fa-facebook"></i>' + " " + hotel.facebook.usuario + '</a>'); </script>
+                                    <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook: {{facebookHotel}} </a>
                                 </li>
 
                                 <li>
-                                    <script> document.write('<a href="' + hotel.twitter.link + '"><i class="fa-brands fa-twitter"></i>' + " " + hotel.twitter.usuario + '</a>'); </script>
-                                </li>
-
-                                <li> <a href="#"><i class="fa-solid fa-calendar-week"></i>
-                                        <script>
-                                            document.write(" " + hotel.abierto); 
-                                        </script>
-                                    </a></li>
+                                    <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter: {{twitterHotel}} </a>
+                                </li>  
                             </ul>
                         </div>
                         <div class="col-lg col-md-12 map">
@@ -70,33 +54,42 @@
                     </div>
                     <div class="row cform">
                         <div class="form-floating">
-                            <form action="#" autocomplete="off">
+                            <form  autocomplete="off" [formGroup]="consultaForm" (ngSubmit)="onConsulta()">
                                 <div class="row r1">
                                     <div class="mb-3 col-lg-6 col-md-12">
-                                        <input type="text" name="nombre" class="form-control" id="contactoNombre"
-                                            aria-describedby=" emailHelp" placeholder="Ingresa tu nombre" required>
+                                        <input type="text" name="nombre" class="form-control" id="contactoNombre" aria-describedby=" emailHelp" placeholder="Ingresa tu nombre" required #nombre formControlName="nombre">
                                         <label for="contactoNombre" class="form-label text-start">Nombre</label>
+                                        <div class="text-danger" *ngIf="consultaForm.get('nombre')!.invalid && (consultaForm.get('nombre')!.touched || consultaForm.get('nombre')!.dirty)">
+                                            El nombre es requerido.
+                                        </div>
                                     </div>
                                     <div class="mb-3 col-lg-6 col-md-12">
-                                        <input type="email" class="form-control" id="contactoEmail"
-                                             aria-describedby="emailHelp"
-                                            placeholder="Ingresa tu email" required>
+                                        <input type="email" class="form-control" id="contactoEmail" aria-describedby="emailHelp" placeholder="Ingresa tu email" required #email formControlName="email">
                                         <label for="exampleInputEmail1" class="form-label text-start">Correo
                                             electrónico</label>
+                                        <div class="text-danger" *ngIf="consultaForm.get('email')!.invalid && (consultaForm.get('email')!.touched || consultaForm.get('email')!.dirty)">
+                                            El email es requerido y debe ser válido.
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="form-floating col-sm-12 col-6">
-                                    <textarea class="form-control" placeholder="Leave a comment here" required
+                                    <textarea class="form-control" placeholder="Leave a comment here" required #mensaje formControlName="mensaje"
                                         id="floatingTextarea2"
                                         style="height: 100px; font-size: var(--tamanio-fuente);"></textarea>
                                     <label for="floatingTextarea2">Comentarios</label>
+                                    <div class="text-danger" *ngIf="consultaForm.get('mensaje')!.invalid && (consultaForm.get('mensaje')!.touched || consultaForm.get('mensaje')!.dirty)">
+                                        El mensaje es requerido.
+                                    </div>
                                 </div>
                                 <div class="row r3">
-                                    <button class="w-100 btn btn-lg btn-complementario" type="submit"
+                                    <button class="w-100 btn btn-lg btn-complementario" type="submit" [disabled]="consultaForm.invalid"
                                         id="botonEnviar">Enviar mensaje</button>
                                 </div>
                             </form>
+                            <div *ngIf="consultaEnviada" class="bg-success">
+                                <p>La consulta se ha registrado correctamente</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -7,6 +7,8 @@ import { RegistroComponent } from './registro/registro.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ReservasComponent } from './vista-interna/reservas/reservas.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule} from '@angular/forms'
 
 
 
@@ -21,7 +23,12 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    
+    
   ]
 })
 export class PagesModule { }
