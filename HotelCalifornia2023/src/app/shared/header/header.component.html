@@ -1,40 +1,49 @@
 <div id="logo" class="row">
-      <div class="col-1">
+  <div class="col-1">
 
-        <img class="img m-4 pe-4 logohc" src="../../../assets/img/LogoHC.png" alt="Logo Hotel" width="100">
+    <img class="img m-4 pe-4 logohc" src="../../../assets/img/LogoHC.png" alt="Logo Hotel" width="100">
 
-      </div>
-      <div class="col-3 m-auto ps-auto iso-hotel">
-        <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
-        <h4 class="subtitle"> Hotel & Spa </h4>
-      </div>
-      <div class="col">
-        <nav id="menu">
-          <ul>
-            <li><a href="#" class="botonesInicio" id="logueadoCerrar">CERRAR SESIÓN</a></li>
-
-
-            <li><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio" id="deslogLogin">Login</a></li>
-            <li><a routerLink="/registro" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio" id="deslogRegistrate">Regístrate</a></li>
-            <li><a routerLink="/consulta" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio">Consulta</a></li>
-            <li id="logueadoBienvenido">
-              <p>Bienvenido/a <script>document.write(usuario.nombre + " "+ usuario.apellido)</script></p>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <nav id="inicio">
+  </div>
+  <div class="col-3 m-auto ps-auto iso-hotel">
+    <h2 class="display-7 fw-bold hotelName">Hotel California </h2>
+    <h4 class="subtitle"> Hotel & Spa </h4>
+  </div>
+  <div class="col">
+    <nav id="menu">
       <ul>
-
-        <li><a routerLink="nosotros" routerLinkActive="active" ariaCurrentWhenActive="page">Nosotros</a> </li>
-        <li><a routerLink="servicios"  routerLinkActive="active" ariaCurrentWhenActive="page">Servicios</a></li>
-        <li><a routerLink="habitaciones"  routerLinkActive="active" ariaCurrentWhenActive="page">Habitaciones</a></li>
-        <li><a routerLink="contacto"  routerLinkActive="active" ariaCurrentWhenActive="page">Contacto</a></li>
-        <li><a href="./Views/sistema/inicio.html" id="logueadoReserva">Mis reservas</a></li>
+        <li><a *ngIf="userLoginOn"  routerLink="login"class="botonesInicio" >CERRAR SESIÓN</a></li>
+        <!-- <li *ngIf="!userLoginOn" > 
+          <a routerLink=""> Bienvenido User </a>
+        </li> -->
+        <li *ngIf="userLoginOn">
+          <p routerLink="" class="botonesInicio" >Bienvenidx! {{userData?.name}}</p>
+        </li>
+        <li *ngIf="!userLoginOn">
+          <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio" id="deslogLogin">Login</a>
+        </li>
+        <li *ngIf="!userLoginOn">
+          <a routerLink="/registro" routerLinkActive="active" ariaCurrentWhenActive="page" class="botonesInicio" id="deslogRegistrate">Regístrate</a>
+        </li>
+ 
+        <!-- <li id="logueadoBienvenido">
+          <p>Bienvenido/a <script>document.write(usuario.nombre + " "+ usuario.apellido)</script></p>
+        </li> -->
       </ul>
     </nav>
-    <div class="mensajeBienvenida">
-      <h1 class="welcome">WELCOME TO</h1>
-      <h1 class="calHot">CALIFORNIA HOTEL</h1>
-    </div>
+  </div>
+</div>
+<nav id="inicio">
+  <ul>
+
+    <li><a routerLink="nosotros" routerLinkActive="active" ariaCurrentWhenActive="page">Nosotros</a> </li>
+    <li><a routerLink="servicios"  routerLinkActive="active" ariaCurrentWhenActive="page">Servicios</a></li>
+    <li><a routerLink="habitaciones"  routerLinkActive="active" ariaCurrentWhenActive="page">Habitaciones</a></li>
+    <li><a routerLink="/consulta"  routerLinkActive="active" ariaCurrentWhenActive="page">Contacto</a></li>
+    <li><a   *ngIf="userLoginOn" routerLink="/reservas" routerLinkActive="active">Mis reservas</a></li>
+ 
+  </ul>
+</nav>
+<div class="mensajeBienvenida">
+  <h1 class="welcome">WELCOME TO</h1>
+  <h1 class="calHot">CALIFORNIA HOTEL</h1>
+</div>
