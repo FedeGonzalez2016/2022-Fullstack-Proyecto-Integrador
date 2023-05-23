@@ -5,7 +5,9 @@ A continuación se hará una descripción y calificación de las carpetas del re
 
 Carpetas:
 
-Hotel California 2023 -> Se encuentran Angular y los componentes y carpetas, pertenecientes a la nueva estructura del proyecto, los cuales fueron migrados de HTML, CSS y Javascript Vanilla al nuevo repositorio presentado.
+HotelCalifornia2023 -> Se encuentran Angular y los componentes y carpetas, pertenecientes a la nueva estructura del proyecto, los cuales fueron migrados de HTML, CSS y Javascript Vanilla al nuevo repositorio presentado.
+
+HotelCalifornia2023/BackendHotelCalifornia -> Se encuentra el proyecto Django con el desarrollo del backend.
 
 Maqueta -> Archivos y codigo obsoleto, perteneciente a la primer parte del proyecto, llevado a cabo en el año 2022, y toda la base sobre la cual se sustenta las mejoras del corriente año (2023)
 
