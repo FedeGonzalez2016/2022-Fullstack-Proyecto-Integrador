@@ -52,7 +52,7 @@ class DetallePago(models.Model):
     porcentajePago = models.PositiveSmallIntegerField(blank=False, default=100)
     class Meta:
         db_table = "detallePagp"
-        verbose_name = "Detalle de Pago de las facturas emitidas por el hotel"
+        verbose_name = "Detalle de pago de las facturas emitidas por el hotel"
         verbose_name_plural = "Detalles de pago"
         constraints = [
             models.CheckConstraint(
