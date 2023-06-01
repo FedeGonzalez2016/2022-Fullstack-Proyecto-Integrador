@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework', # OK
     'rest_framework.authtoken', # OK
+    'corsheaders',
     'Facturacion',
     'GestionReservas',
     'GestionUsuarios',
@@ -58,6 +59,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost'
 ]
 
 ROOT_URLCONF = 'BackendHotelCalifornia.urls'
