@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'GestionReservas',
     'GestionUsuarios',
     'login', # OK
+    'register',
 ]
 
 REST_FRAMEWORK = {
