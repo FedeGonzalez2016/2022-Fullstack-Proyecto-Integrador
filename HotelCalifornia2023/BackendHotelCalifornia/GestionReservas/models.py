@@ -58,12 +58,12 @@ class ReservaPorHabitacion(models.Model):
         db_table = "reserva_habitacion"
         verbose_name = "Habitaciones en una reserva"
         verbose_name_plural = "reserva_habitaciones"
-        constraints = [
-            models.CheckConstraint(
-                check=models.Q(fechaIngreso__lte=models.F('fechaEgreso'), fechaIngreso__gte=Now()),
-                name='Correctas fecha de reserva'
-            ),
-        ]
+        # constraints = [
+        #     models.CheckConstraint(
+        #         check=models.Q(fechaIngreso__lte=models.F('fechaEgreso'), fechaIngreso__gte=Now()),
+        #         name='Correctas fecha de reserva'
+        #     ),
+        # ]
     def __unicode__(self):
         return self.reservaHabitacionId
     def __str__(self) -> str:
