@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'GestionUsuarios',
     'login', # OK
     'register',
+    'logout', # OK
 ]
 
 REST_FRAMEWORK = {
