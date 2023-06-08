@@ -1,9 +1,10 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import status, generics
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from .serializer import ClienteSerializer
 
 class LoginView(APIView):
     def get(self, request):
@@ -30,3 +31,6 @@ class LogoutView(APIView):
         logout(request)
 
         return Response(status=status.HTTP_200_OK)
+    
+class SingupView(generics.CreateAPIView):
+    serializer_class = ClienteSerializer

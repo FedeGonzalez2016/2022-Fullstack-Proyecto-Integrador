@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'Facturacion',
     'GestionReservas',
     'GestionUsuarios',
-    'register',
     'hotel_auth',
 ]
 
