@@ -1,14 +1,9 @@
-# IMPORTACION DE LOS MODULOS NECESARIOS PARA EL FUNCIONAMIENTO DE LA APP
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
-
-# Este archivo define las vistas, que son las funciones o clases que manejan las solicitudes HTTP entrantes y crean las respuestas.
-# (Vistas de clases, de funciones o renderizado de plantillas.)
 
 class LoginView(APIView):
     def get(self, request):
@@ -29,3 +24,9 @@ class LoginView(APIView):
         else:
             messages.error(request, 'Credenciales inválidas')
             return redirect('login')
+
+class LogoutView(APIView):
+    def post(self, request):
+        logout(request)
+
+        return Response(status=status.HTTP_200_OK)
