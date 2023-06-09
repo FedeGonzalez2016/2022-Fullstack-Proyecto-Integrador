@@ -17,6 +17,8 @@ class TipoHabitacion(models.Model):
         return self.tipoHabitacion
     def __str__(self) -> str:
         return self.tipoHabitacion
+class Imagen(models.Model):
+    imagen = models.ImageField(upload_to='img/habitaciones')
 
 class Habitacion(models.Model):
     habitacionId = models.AutoField(primary_key=True)
@@ -26,6 +28,7 @@ class Habitacion(models.Model):
     precio = models.IntegerField(blank=False)
     hotelId = models.ForeignKey(Hotel, to_field='hotelId', on_delete=models.CASCADE)
     tipoHabitacionId = models.ForeignKey(TipoHabitacion, to_field="tipoHabitacionId", on_delete=models.CASCADE)
+    imagenes = models.ManyToManyField(Imagen)
     class Meta:
         db_table = "habitacion"
         verbose_name = "Habitaciones de un hotel"
@@ -68,3 +71,4 @@ class ReservaPorHabitacion(models.Model):
         return self.reservaHabitacionId
     def __str__(self) -> str:
         return f"Reserva {self.reservaId}, fecha ingreso {self.fechaEgreso}, fecha egreso {self.fechaEgreso}, habitacion {self.habitacionId}"
+
