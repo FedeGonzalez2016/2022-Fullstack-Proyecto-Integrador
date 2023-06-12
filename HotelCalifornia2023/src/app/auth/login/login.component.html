@@ -1,0 +1,59 @@
+<div class="form-signin w-100 m-auto text-center sinClase">
+    <div class="row justify-content-center">
+        <img class="img-fluid d-block mx-auto mb-4 logohc" src="../../../assets/img/LogoHC.png" alt="LogoHC" width="100" height="">
+        <h1 class="display-5 fw-bold hotelName"> Hotel California </h1>
+        <h4 class="subtitle"> Hotel & Spa </h4>
+    </div>
+    <div id="formulario" class="row justify-content-center container-fluid">
+        <div class="col-lg-12 mx-auto">
+
+            <form [formGroup]="loginForm" id="myform" class="formulario">
+                <h1 class="h1 mb-5 fw-normal text-center">Logueate</h1>
+                <div class="mb-3 text-start">
+                    <input formControlName="email" type="email" name="nombreUsuario" class="form-control" id="nombreUsuario"
+                        placeholder="Ingrese su email" required maxlength="20">
+                        <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                        class="text-danger">
+                        <div *ngIf="email.errors?.['required']">
+                         El email es requerido.
+                        </div>
+                        <div *ngIf="email.errors?.['email']">
+                        El email debe tener un formato válido.
+                        </div>
+                        </div>
+                    <!-- <label for="nombreUsuario" class="form-label text-start">Nombre de Usuario</label>
+                    <span id="usuario-incorrecto" class="errorDato"> El nombre de usuario no esta registrado </span>
+                    <span id="usuario-sin-ingresar" class="errorDato"> Ingrese un usuario </span> -->
+                </div>
+                <div class="mb-3 text-start">
+                    <input formControlName="password" type="password" id="floatingPassword" class="form-control"
+                    placeholder="Ingrese su contraseña" required>
+                        <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                        class="text-danger">
+                        <div *ngIf="password.errors?.['required']">
+                        La contraseña es requerida.
+                        </div>
+                        </div>
+
+                    <!-- <label for="floatingPassword" class="form-label text-start">Contraseña</label> -->
+                    <!-- <span id="contrasena-incorrecta" class="errorDato"> La contraseña ingresada es incorrecta </span>
+                    <span id="contrasena-sin-ingresar" class="errorDato"> Ingrese una contraseña </span> -->
+                </div>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Recordarme
+                    </label>
+                </div>
+                <button type="submit" (click)="login()" class="w-100 btn btn-lg btn-complementario" id="botonLogin">
+                    <a class="nav-link" >Iniciar Sesión</a> 
+                </button>
+                <!-- <button class="w-100 btn btn-lg btn-complementario" type="submit" id="botonLogin">Ingresar</button> -->
+                <p class="mt-5 mb-3">Todavía no tenés cuenta?<a [routerLink]="['/registro']" class="registrate">
+                    <strong>Registrate </strong> </a> </p>
+            </form>
+
+        </div>
+
+    </div>
+    <a [routerLink]="['/']" class="backToMenu">VOLVER AL MENU PRINCIPAL</a>
+</div>

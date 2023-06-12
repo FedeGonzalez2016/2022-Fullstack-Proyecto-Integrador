@@ -1,0 +1,216 @@
+/* You can add global styles to this file, and also import other style files */
+/* el selector * es universal */
+* {
+  box-sizing: border-box;
+  /* calcula automaticamente paRA QUE NO HAYA SCROLL HORIZONTAL*/
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 65.5%;
+  /* esta linea indica que un REM es igual a 10px* lo que nos permite usar el rem como unidad de medida estandar para todo el proyecto */
+}
+
+/*AGREGAR ESTA PARTE Al inicio de  TODOS LOS ARCHIVOS CSS*/
+/* usar rem como unidad de edida para las dimensiones no spermite tener un mejor control del tamaño*/
+:root {
+  --color-principal: #33464e;
+  --primer-complementario: #afb0b1;
+  --segundo-complementario: #d7794a;
+  --tercer-complementario: #89553b;
+  --color-oscuro: #384043;
+  --color-claro: #dfe2e3;
+  --resaltador: #a3b4b9;
+  --shadow-complementario: 0 0 0 0.25rem rgba(51,70,78,0.3);
+  --tamanio-fuente:1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+body{
+  font-size:var(--tamanio-fuente);
+
+}
+
+
+
+ .mensajeBienvenida {
+  background-image: url("../src/assets/img/campanilla.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: 45%;
+  border: #fff 1px solid;
+}
+
+ .mensajeBienvenida .welcome {
+  margin-top: 10rem;
+  margin-right: 3rem;
+}
+.mensajeBienvenida .calHot{
+  margin-bottom: 10rem;
+  margin-right: 3rem;
+}
+
+/* #menu {
+  text-transform: uppercase;
+} */
+
+#menu ul {
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu ul li {
+  margin-right: 25px;
+  margin-top: 35px;
+  float: right;
+
+
+}
+
+#menu a {
+  text-decoration: none;
+  color: var(--color-principal);
+  font-size: medium;
+}
+
+#menu a:hover {
+  color: var(--tercer-complementario)
+}
+
+@media only screen and (max-width: 992px) {
+  .iso-hotel {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .iso-hotel {
+      padding-left: 40px;
+  }
+}
+
+#logo {
+  background-color: white;
+  text-align: justify;
+  line-height: 20px;
+
+}
+
+
+#inicio ul {
+  line-height: 46px;
+  text-align: right;
+  justify-content: flex-end;
+  background-color: var(--color-principal);
+
+}
+
+#inicio ul li {
+  display: inline-block;
+  font-size: x-large;
+  margin-right: 30px;
+
+
+}
+
+#inicio a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 75px;
+
+}
+
+#inicio a:hover {
+  color: black;
+
+}
+
+.mensajeBienvenida {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: end;
+  padding: 10rem;
+   margin-top: 21rem auto;
+   margin: 4rem;
+ }
+
+.calHot {
+  color: var(--segundo-complementario);
+}
+
+#listaServicio {
+  list-style: none;
+}
+@media only screen and (max-width: 992px) {
+  .descripcion-de-imagenes {
+      padding-top: 28%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .descripcion-de-imagenes {
+      padding-top: 22%;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .descripcion-de-imagenes {
+      padding-top: 2%;
+      padding-bottom: 8%;
+  }
+}
+/* 
+#logueadoReserva {
+  display: none;
+} */
+/* #deslogLogin, #deslogRegistrate {
+  display: block;
+} */
+
+
+.subttl{
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  font-style: italic;
+  color:var(--resaltador)
+}
+
+/* acordion */
+.accordion-button {
+  background-color: var(--color-principal);
+  color: var(--color-claro);
+  font-size: x-large;
+  text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--color-principal);
+  background-color: var(--resaltador);
+}
+
+.accordion-body {
+  background-color: var(--color-claro);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2333464e'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); /* ... fill='%23{codigo hexadecimal del color sin el #}'%3e%3cpath fill*/
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23dfe2e3'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); /* ... fill='%23{codigo hexadecimal del color sin el #}'%3e%3cpath fill*/
+}
+
+.accordion-button:focus {
+  box-shadow: var(--shadow-complementario);
+}
+/*links*/
+footer a {
+  text-decoration: none;
+  color: var(--color-claro);
+}
+
+footer a:hover {
+  color: var(--tercer-complementario);
+}

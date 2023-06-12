@@ -1,0 +1,14 @@
+
+.habitacionesContainer{
+  width: 90%;
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .habitacionesContainer{
+    flex-direction: column;
+  }
+}
